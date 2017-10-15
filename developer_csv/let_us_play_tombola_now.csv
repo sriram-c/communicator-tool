@@ -1,0 +1,8 @@
+calo_0,aba_0,wambolA_0,KeleM 
+let,we,now,Tambola,play
+1,2,3,4,5
+v,pron,time_adv,propn,v
+,,,,
+[- - pres],[- pl u],,[- sg a],
+comm
+,5:ARG1/NEQ,5:ARG1/EQ,5:ARG2/NEQ,1:ARG2/H

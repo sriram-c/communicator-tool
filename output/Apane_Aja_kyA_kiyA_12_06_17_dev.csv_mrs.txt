@@ -1,0 +1,10 @@
+[ RELS: < [ _do_v_1 LBL: h1 ARG0: e8 [ e PROG: - TENSE: past MOOD: indicative PERF: - SF: ques ] ARG1: x9 [ x PERS: 2 PT: std ] ]
+          [ pron LBL: h2 ARG0: x9 ]
+          [ pronoun_q LBL: h3 ARG0: x9 RSTR: h14 ]
+          [ loc_nonsp LBL: h1 ARG0: e10 [ e PROG: - TENSE: untensed MOOD: indicative PERF: - SF: prop ] ARG1: e8 ARG2: x11 [ x PERS: 3 NUM: sg ] ]
+          [ time_n LBL: h4 ARG0: x11 ]
+          [ def_implicit_q LBL: h5 ARG0: x11 RSTR: h15 ]
+          [ _today_a_1 LBL: h4 ARG0: e12 [ e PROG: - TENSE: untensed MOOD: indicative PERF: - SF: prop ] ARG1: x11 ]
+          [ thing LBL: h6 ARG0: x13 ]
+          [ which_q LBL: h7 ARG0: x13 RSTR: h16 ] >
+  HCONS: < h14 qeq h2 h15 qeq h4 h16 qeq h6 > ]

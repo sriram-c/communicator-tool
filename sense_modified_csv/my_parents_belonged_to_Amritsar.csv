@@ -1,0 +1,8 @@
+mere_0,mAwA-piwA_0,amqwasara_se_We
+I_poss,parent,Amritsar,belong
+1,2,3,4
+poss_pron,n,propn,v
+,,,
+[- sg u],[- pl a],[- sg a],[- - past]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,4:ARG1/NEQ,4:ARG2/NEQ,

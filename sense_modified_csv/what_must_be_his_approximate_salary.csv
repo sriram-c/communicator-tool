@@ -1,0 +1,8 @@
+aMxAjana_0,vaha_kI,waMKvAha_0,kyA_0,hogI
+approximate,he_poss,salary,what,be,must
+1,2,3,4,5,6
+manner_adv,poss_pron,n,wh-pron,v,modal
+,,,,,
+,[m sg a],[- sg a],,,[- - pres]
+ques
+,2:ARG2/NEQ-poss_pron-3:ARG1/EQ,5:ARG2/NEQ+1:ARG1/EQ,5:ARG1/NEQ,6:ARG1/H,

@@ -1,0 +1,8 @@
+ApakA_0,vijZanesa_0,kEsA_0,cala-0_rahA_hE 
+you_poss,business,how,go
+1,2,3,4
+poss_pron,n,wh-adv,v
+,,,
+[- - m],[- sg a],,[- + pres]
+ques
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,4:ARG1/NEQ,4:ARG1/EQ,

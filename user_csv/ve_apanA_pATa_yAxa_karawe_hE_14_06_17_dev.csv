@@ -1,0 +1,8 @@
+ve,apanA,pATa_0,yAxa+kara-wA_hE,.
+they,they,lesson,learn_0
+1,2,3,4
+pron,poss_pron,n,v
+,,,
+[m pl a],[m pl a],[- sg a],[- - pres]
+prop,
+4:ARG1/NEQ,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,4:ARG2/NEQ,

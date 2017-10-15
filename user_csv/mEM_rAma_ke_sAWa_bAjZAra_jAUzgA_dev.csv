@@ -1,0 +1,8 @@
+mEM_0,rAma_ke_sAWa,bAjZAra_0,jA-gA,.
+I,rAma,market,go_will_0,to,with
+1,2,3,4,5,6
+pron,propn,n,v,p,p
+,,def,
+[- sg u],[m sg a],[- sg a],[- - fut],,
+prop,
+4:ARG1/NEQ,,,,4:ARG1/EQ-to-3:ARG2/NEQ,4:ARG1/EQ-with-2:ARG2/NEQ,

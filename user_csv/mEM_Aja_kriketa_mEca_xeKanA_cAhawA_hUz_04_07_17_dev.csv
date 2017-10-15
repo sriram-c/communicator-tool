@@ -1,0 +1,8 @@
+mEM_0,Aja_0,kriketa+mEca_0,xeKa-nA_cAhawA_hE,.
+I,today,cricket-match,see_want_to_0,want
+1,2,3,4,5
+pron,time_adv,comp_n,v,v
+,,def,
+[- sg u],,[- sg a],,[- - pres]
+prop,
+4:ARG1/NEQ,4:ARG1/EQ,4:ARG2/NEQ,5:ARG2/H,

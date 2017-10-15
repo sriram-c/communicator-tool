@@ -1,0 +1,21 @@
+1. mkdir databases
+2. mkdir bin
+
+
+copied the following files:
+---------------------------
+1. create-gdbm.pl -- src
+2. ir.lex         -- src 
+3. ir_no@.lex     -- src
+4. utf8_wx        -- bin
+5. comp.sh        -- chl
+
+
+Modified the files:
+------------------
+1. compile.sh --- modified path for databases
+		  added compilation for -- ir, ir_no
+2. convert_user_csv_to_facts.py 
+3. convert_facts_to_csv.py 
+4. Readme
+

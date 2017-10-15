@@ -1,0 +1,5 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>unspec_manner</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>which_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+2"><gpred>manner</gpred><sortinfo cvarsort="x" /></node>
+<link from="?1" to="?1+2"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="?1+1" to="?1+2"><rargname>RSTR</rargname><post>H</post></link>

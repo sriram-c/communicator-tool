@@ -1,0 +1,8 @@
+harI_0,kala,mumbaI_0,jA-0_rahA_hE,.
+harI,tomorrow,mumbaI,go_be_ing,to
+1,2,3,4,5
+propn,time_adv,propn,v,p
+,,,
+[m sg a],,[- sg a],[- + pres],
+prop,
+4:ARG1/NEQ,4:ARG1/EQ,,,4:ARG1/EQ-to-3:ARG2/NEQ,

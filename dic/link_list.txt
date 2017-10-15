@@ -1,0 +1,51 @@
+####noun-verb####
+------------------------------------
+k1	ARG1/NEQ
+k2	ARG2/NEQ
+k2p	ARG2/NEQ
+k3	ARG2/NEQ
+kq-karma	ARG2/H
+k7p	ARG1/EQ
+k7t	ARG1/EQ
+preposition	ARG1/EQ
+k5	ARG1/NEQ
+k4	ARG3/NEQ
+k4a	ARG1/NEQ
+sk1	ARG1/EQ
+k2-praSna	ARG2/NEQ
+nominalization-karma	ARG2/NEQ
+nominalization-karwA	ARG1/NEQ
+sImA	ARG1/EQ
+ras-k1	ARG2/NEQ
+emp	ARG1/H
+yaw-waw	ARG1/EQ
+r6-k1	ARG1/NEQ
+neg	ARG1/H
+jk1	ARG1/NEQ
+pk1	ARG1/NEQ
+kx	ARG2/NEQ
+k7	ARG2/NEQ
+k7te	ARG2/EQ
+k7ts	ARG2/EQ
+r6-k2	ARG2/NEQ
+
+####noun-noun####
+------------------------------------
+viSeRaNa	ARG1/EQ
+sambanXa	ARG1/EQ
+preposition	ARG2/NEQ
+k1s	ARG2/NEQ
+k2s	ARG1/NEQ
+saMKyA-viSeRaNa	ARG1/EQ
+intf	ARG1/EQ
+
+####verb-verb link####
+-------------------------------
+causative_verb	ARG2/H
+modal	ARG1/H
+negation	ARG1/H
+adv	ARG1/EQ
+rt	ARG1/H
+kriyA-viSeRaNa	ARG1/EQ
+control_v	ARG2/H
+vAkya-viSeRaNa	ARG1/H

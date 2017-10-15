@@ -1,0 +1,8 @@
+hAM_0,mEM_0,apane_0,jIvana_kA,eka_0,mahawwvapUrNa_0,aXyAya_0,samApwa-0_kara_cukI_hoUMgI
+yes,I,I_poss,life,a,important,chapter,finish,of
+1,2,3,4,5,6,7,8,9
+manner_adv,pron,poss_pron,n,det,adj,n,v,p
+,,,,,,,,
+,[- sg u],[- sg u],[- sg a],,,[- sg a],[+ - fut],
+prop
+8:ARG1/H,8:ARG1/NEQ,3:ARG2/NEQ-poss_pron-4:ARG1/EQ,,7:,7:ARG1/EQ,8:ARG2/NEQ,,7:ARG1/EQ-of-4:ARG2/NEQ

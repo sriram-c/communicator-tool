@@ -1,0 +1,8 @@
+mEM_0,ise_0,apanI_0,pawnI_ke_sAWa,jvAinta_0,nAma_0,cAhawA_hUM
+I,it,I_poss,wife,joint,name,want,with,in,a
+1,2,3,4,5,6,7,8,9,10
+pron,pron,poss_pron,n,manner_adv,n,v,p,p,det
+,,,,,,,,,
+[- sg u],[n sg a],[- sg u],[- sg a],,[- sg a],[- - pres],,,
+prop
+7:ARG1/NEQ,7:ARG2/NEQ,3:ARG2/NEQ-poss_pron-4:ARG1/EQ,,,5:ARG1/EQ,,7:ARG1/EQ-with-4:ARG2/NEQ,7:ARG1/EQ-in-6:ARG2/NEQ,6:

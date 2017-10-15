@@ -1,0 +1,5 @@
+<node cfrom="-1" cto="1" nodeid="?1"><realpred lemma="?" pos="c" /><sortinfo cvarsort="e" mood="indicative" perf="?" prog="?" sf="?" tense="?" /></node>
+<link from="?1" to="?"><rargname>L-HNDL</rargname><post>H</post></link>
+<link from="?1" to="?"><rargname>L-INDEX</rargname><post>NEQ</post></link>
+<link from="?1" to="?"><rargname>R-HNDL</rargname><post>H</post></link>
+<link from="?1" to="?"><rargname>R-INDEX</rargname><post>NEQ</post></link>

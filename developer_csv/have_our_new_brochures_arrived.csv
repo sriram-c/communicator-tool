@@ -1,0 +1,8 @@
+hamAre_0,nae_0,broSarjZa_0,A_gaye 
+we_poss,new,brochure,arrive
+1,2,3,4
+poss_pron,manner_adv,n,v
+,,,
+[- pl u],,[- pl a],[+ - pres]
+ques
+1:ARG2/NEQ-poss_pron-3:ARG1/EQ,4:ARG1/NEQ,2:ARG1/EQ+4:ARG1/NEQ,

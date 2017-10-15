@@ -1,0 +1,8 @@
+vaha_0,mumbaI_meM,kyA_0,kara-0_rahI_WI
+she,Mumbai,what,do,in
+1,2,3,4,5
+pron,propn,wh-pron,v,p
+,,,,
+[f sg a],[- sg a],,[- + past],
+ques
+4:ARG1/NEQ,,4:ARG2/NEQ,,4:ARG1/EQ-in-2:ARG2/NEQ

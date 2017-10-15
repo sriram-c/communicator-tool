@@ -1,0 +1,8 @@
+mEM_0,kala_0,yaha_0,A-yA
+I,yesterday,here,come
+1,2,3,4
+pron,time_adv,place_adv,v
+,,,
+[- sg u],[- sg a],[- sg a],[- - past]
+prop
+4:ARG1/NEQ,4:ARG1/EQ,4:ARG1/EQ,

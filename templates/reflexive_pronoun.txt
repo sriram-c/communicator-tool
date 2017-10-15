@@ -1,0 +1,3 @@
+*<node cfrom="-1" cto="1" nodeid="?1"><gpred>pron</gpred><sortinfo cvarsort="x" gend="?" num="?" pers="?" pt="refl" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>pronoun_q</gpred><sortinfo /></node>
+<link from="?1+1" to="?1"><rargname>RSTR</rargname><post>H</post></link>

@@ -1,0 +1,8 @@
+rAma_0,cammaca_se,cAvala_0,KA_wA_hE
+Rama,spoon,rice,eat,with
+1,2,3,4,5
+propn,n,massn,v,p
+,yes,
+[m sg a],[n sg -],[n sg -],[- - pres],
+prop
+4:ARG1/NEQ,,4:ARG2/NEQ,,4:ARG1/EQ-with-2:ARG2/NEQ

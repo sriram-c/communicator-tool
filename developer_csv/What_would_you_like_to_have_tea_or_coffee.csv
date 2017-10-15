@@ -1,0 +1,8 @@
+Apa_0,kyA_0,lena_0,pasanxa_kareMge,cAya_0,yA_0,koYPI
+you,what,have,like,tea,or,coffee,would
+1,2,3,4,5,6,7,8
+pron,wh-pron,v,v,n,noun_conj,n,modal
+,,,,,,,
+[- - m],,,,[- sg a],,[- sg a],[- - pres]
+ques
+4:ARG1/NEQ,3:ARG1/NEQ,4:ARG2/H,8:ARG1/H,6:L-INDEX/NEQ,3:ARG2/NEQ,6:R-INDEX/NEQ,

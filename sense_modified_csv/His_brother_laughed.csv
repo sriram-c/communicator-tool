@@ -1,0 +1,8 @@
+vaha_kA,BAI_0,hasza-yA
+he_poss,brother,laugh
+1,2,3
+poss_pron,n,v
+,,
+[m sg a],[m sg 3],[- - past]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,3:ARG1/NEQ,

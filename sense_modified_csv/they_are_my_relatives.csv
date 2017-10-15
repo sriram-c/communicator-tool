@@ -1,0 +1,8 @@
+vE_0,mere_0,saMbaMXI_,0,hEM
+they,I_poss,relative,be
+1,2,3,4
+pron,poss_pron,n,v
+,,,
+[- pl a],[- sg u],[- pl a],[- - pres]
+prop
+4:ARG1/NEQ,2:ARG2/NEQ-poss_pron-3:ARG1/EQ,4:ARG2/NEQ,

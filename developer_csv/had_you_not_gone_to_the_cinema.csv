@@ -1,0 +1,8 @@
+kyA_0,wuma_0,sinemA_0,nahIM_0,gae_We
+,you,cinema,not,go,to
+1,2,3,4,5,6
+,pron,n,neg,v,p
+,,yes,,
+,[- - m],[- sg a],,[+ - past],
+ques
+,5:ARG1/NEQ,,,4:ARG1/H,5:ARG1/EQ-to-3:ARG2/NEQ

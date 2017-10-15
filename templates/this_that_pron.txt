@@ -1,0 +1,4 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>generic_entity</gpred><sortinfo cvarsort="x" num="?" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><realpred lemma="?" pos="q" sense="dem" /><sortinfo /></node>
+<link from="?1+1" to="?1" ><rargname>RSTR</rargname><post>H</post></link>
+<link from="?" to="?1" ><rargname>ARG1</rargname><post>NEQ</post></link>

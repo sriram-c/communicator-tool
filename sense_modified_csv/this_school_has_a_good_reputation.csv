@@ -1,0 +1,8 @@
+isa_0,skUla_kA,kAPI_0,nAma_0,hE
+this,school,good,reputation,have,a
+1,2,3,4,5,6
+det,n,manner_adv,n,v,det
+,,,,,
+,[- sg a],,[- sg a],[- - pres],
+prop
+2:,5:ARG1/NEQ,,5:ARG2/NEQ+3:ARG1/EQ,,4:

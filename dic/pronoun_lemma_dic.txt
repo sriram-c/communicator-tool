@@ -1,0 +1,17 @@
+vaha_1,pron,[m sg a]	he
+vaha_1,pron,[f sg a]	she
+vaha_1,pron,[m pl a]	they
+vaha_1,pron,[f pl a]	they
+ve_1,pron,[m pl a]	they
+ve_1,pron,[f pl a]	they
+vaha_1,pron,[n sg a]	it
+mEM_1,pron,[- sg u]	I
+hama_1,pron,[- pl u]	we
+wuma_1,pron,[- - m]	you
+Apa_1,pron,[- - m]	you
+jaba_1,rel_pron,	when
+waba_1,pron,	then
+yaha_1,pron,[- sg a]	this
+yaha_1,pron,[- pl a]	these
+vaha_1,pron,[- sg a]	that
+vaha_1,pron,[- pl a]	those

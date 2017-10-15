@@ -1,0 +1,8 @@
+wuma_0,sadZaka_0,kaba_0,pAra_0,karawe_h0
+you,road,when,cross
+1,2,3,4
+pron,n,wh-adv,v
+,yes,,
+[- sg m],[- sg a],,[- - pres]
+ques
+4:ARG1/NEQ,4:ARG2/NEQ,4:ARG1/EQ,

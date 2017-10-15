@@ -1,0 +1,8 @@
+vaha_0,bAjZAra_se,eka,puswaka_0,KarIxa-gA,.
+he,market,a,book,buy_will_0,from
+1,2,3,4,5,6
+pron,n,det,n,v,p
+,def,,,
+[m sg a],[- sg a],,[- sg a],[- - fut],
+prop,
+5:ARG1/NEQ,,4:,5:ARG2/NEQ,,5:ARG1/EQ-from-2:ARG2/NEQ,

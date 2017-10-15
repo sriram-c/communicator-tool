@@ -1,0 +1,8 @@
+mEM_kA,SikRaka_kA,betA_0,eka_0,doctor_hE
+I_poss,teacher_poss,son,a,doctor,be
+1,2,3,4,5,6
+poss_pron,poss_n,n,det,n,v
+,,,,,
+[- sg u],[- sg a],[- sg a],,[- sg a],[- - pres]
+prop
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,2:ARG2/NEQ-poss_n-3:ARG1/EQ,6:ARG1/NEQ,5:RSTR/H,6:ARG2/NEQ,

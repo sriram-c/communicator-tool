@@ -1,0 +1,8 @@
+kyA,wuma_kA,piwAjI_0,sarakArI+nOkarI,kara-wA_hE,?
+,you,father,government-job,do_0
+1,2,3,4,5
+,poss_pron,n,comp_n,v
+,,,def,
+,[- - m],[m sg a],[- sg a],[- - pres]
+ques,
+,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,5:ARG1/NEQ,5:ARG2/NEQ,

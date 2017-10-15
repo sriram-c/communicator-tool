@@ -1,0 +1,8 @@
+vaha_0,tumhArA_0,sinemA_0,inwajAra_0,kara-gA
+she,you,cinema,wait,at
+1,2,3,4,5
+pron,pron,n,v,p
+,,yes,,
+[f sg a],[- - m],[- sg -],[- - fut],
+prop
+4:ARG1/NEQ,4:ARG2/NEQ,,,4:ARG1/EQ-at-3:ARG2/NEQ

@@ -1,0 +1,6 @@
+#Readme
+#######
+
+Q: How to fill dmrs relations in CSV file?
+A: python src/get_dmrs_rel.py <input.csv> <output.csv>
+	Ex: python src/get_dmrs_rel.py sleep.csv sleep1.csv

@@ -1,0 +1,8 @@
+kyA_0,wuma_kA,Gara_meM,wuma_kA,buA_0,gA-0_rahI_WI
+,you_poss,house,you_poss,aunt,sing,at
+1,2,3,4,5,6,7
+,poss_pron,n,poss_pron,n,v,p
+,,,,,,
+,[- - m],[- sg a],[- - m],[f sg a],[- + past],
+ques
+,2:ARG2/NEQ-poss_pron-5:ARG1/EQ,,4:ARG2/NEQ-poss_pron-3:ARG1/EQ,6:ARG1/NEQ,,6:ARG1/EQ-at-3:ARG2/NEQ

@@ -1,0 +1,8 @@
+rAjIva_kI,xAxI_0,kamare_meM,bETa-yA_hE,.
+rAjIva,grandmother,room,sit_has_en,in
+1,2,3,4,5
+poss_propn,n,n,v,p
+,,def,
+[m sg m],[f sg a],[- sg a],[+ - pres],
+prop,
+2:ARG1/EQ-poss_propn-1:ARG2/NEQ,4:ARG1/NEQ,,,4:ARG1/EQ-in-3:ARG2/NEQ,

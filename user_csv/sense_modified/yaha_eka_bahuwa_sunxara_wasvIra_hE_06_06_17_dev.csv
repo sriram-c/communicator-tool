@@ -1,0 +1,8 @@
+yaha_0,eka,bahuwa,sunxara,wasvIra_0,hE-hE,.
+this,a,very,beautiful,picture,be_is
+1,2,3,4,5,6
+pron,det,intf,adj,n,v
+,,,,,
+[- sg a],,,,[- sg a],[- - pres]
+prop,
+6:ARG1/NEQ,5:,4:ARG1/EQ,5:ARG1/EQ,6:ARG2/NEQ,

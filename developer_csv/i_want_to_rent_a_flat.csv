@@ -1,0 +1,8 @@
+muJe_0,kirAye_para,makAna_0,cAhiye
+I,rent,a,flat,want
+1,2,3,4,5
+pron,v,det,n,v
+,,,,
+[- sg u],,,[- sg a],[- - pres]
+prop
+5:ARG1/NEQ,5:ARG2/H,4:,2:ARG2/NEQ,

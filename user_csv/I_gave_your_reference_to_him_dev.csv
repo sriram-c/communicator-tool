@@ -1,0 +1,8 @@
+mEM_ne,vaha_ko,Apa_kA,rePZareMsa_0,xe-yA,.
+I,he,you,reference,give_ed,to
+1,2,3,4,5,6
+pron,pron,poss_pron,n,v,p
+,,,,
+[- sg u],[m sg a],[- - m],[- sg a],[- - past],
+prop,
+5:ARG1/NEQ,,4:ARG1/EQ-poss_pron-3:ARG2/NEQ,5:ARG2/NEQ,,5:ARG1/EQ-to-2:ARG2/NEQ,

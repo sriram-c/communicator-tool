@@ -1,0 +1,6 @@
+<node cfrom="-1" cto="1" nodeid="?1"><realpred lemma="?" pos="n" sense="1" /><sortinfo cvarsort="x" num="?" pers="?" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>def_explicit_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+2"><gpred>poss</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<link from="?1+1" to="?" ><rargname>RSTR</rargname><post>H</post></link>
+<link from="?1+2" to="?1" ><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="?1+2" to="?" ><rargname>ARG1</rargname><post>EQ</post></link>

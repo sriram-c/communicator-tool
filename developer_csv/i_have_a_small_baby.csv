@@ -1,0 +1,8 @@
+merA_0,CotA_sA,baccA_hE
+I,a,small,baby,have
+1,2,3,4,5
+pron,det,adj,n,v
+,,,,
+[- sg u],,,[- sg a],[- - pres]
+prop
+5:ARG1/NEQ,4:,4:ARG1/EQ,5:ARG2/NEQ,

@@ -1,0 +1,23 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10000"><realpred lemma="approximate" pos="a" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><gpred>def_explicit_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><gpred>poss</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><gpred>pron</gpred><sortinfo cvarsort="x" gend="m" num="sg" pers="3" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10008"><realpred lemma="be" pos="v" sense="id" /><sortinfo cvarsort="e" mood="indicative"     /></node>
+<node cfrom="-1" cto="1" nodeid="10009"><realpred lemma="must" pos="v" sense="modal" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="ques" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10005"><realpred lemma="salary" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10006"><gpred>thing</gpred><sortinfo cvarsort="x" /></node>
+<node cfrom="0" cto="4" nodeid="10007"><gpred>which_q</gpred><sortinfo /></node>
+
+<link from="10002" to="10004"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10003" to="10004"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10000" to="10005" ><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10001" to="10005"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10005"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10007" to="10006"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10008" to="10005"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10008" to="10006"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10009" to="10008"><rargname>ARG1</rargname><post>H</post></link>
+
+</dmrs>

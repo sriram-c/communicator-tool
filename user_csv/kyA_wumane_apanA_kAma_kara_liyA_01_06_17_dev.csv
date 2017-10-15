@@ -1,0 +1,8 @@
+kyA_0,wuma_ne,apanA_0,kAma_0,kara-0_liyA,?
+,you,you,work,do_ed
+1,2,3,4,5
+,pron,poss_pron,n,v
+,,,,
+,[- - m],[- - m],[- sg a],[- - past]
+ques,
+,5:ARG1/NEQ,4:ARG1/EQ-poss_pron-3:ARG2/NEQ,5:ARG2/NEQ,

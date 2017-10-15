@@ -1,0 +1,8 @@
+rAma,apanA,piwA_ko,pawra_0,liKa-0_rahA_hE,.
+rAma,he,father,letter,write_be_ing,to
+1,2,3,4,5,6
+propn,poss_pron,n,n,v,p
+,,,,
+[m sg a],[m sg a],[m sg a],[- sg a],[- + pres],
+prop,
+5:ARG1/NEQ,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,,5:ARG2/NEQ,,5:ARG1/EQ-to-3:ARG2/NEQ,

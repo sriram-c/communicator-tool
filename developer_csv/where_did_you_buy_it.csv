@@ -1,0 +1,8 @@
+wuma_ne,ye_0,kahAM_se,khrIdI
+you,it,where,buy
+1,2,3,4
+pron,pron,wh-adv,v
+,,,
+[- - m],[n sg a],,[- - past]
+ques
+4:ARG1/NEQ,4:ARG2/NEQ,4:ARG1/EQ, 

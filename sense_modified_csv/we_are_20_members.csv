@@ -1,0 +1,8 @@
+hama_0,20_0,membara_0,hEM
+we,20,member,be
+1,2,3,4
+pron,card,n,v
+,,,
+[- pl u],,[- pl a],[- - pres]
+prop
+4:ARG1/NEQ,3:ARG1/EQ,4:ARG2/NEQ, 

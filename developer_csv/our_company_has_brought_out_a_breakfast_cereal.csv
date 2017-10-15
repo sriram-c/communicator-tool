@@ -1,0 +1,8 @@
+hamArI_0,kampanI_ne,eka_0,brekaPAsta-sIriyala_0,nikAlA_hE
+we_poss,company,a,breakfast-cereal,bring
+1,2,3,4,5
+poss_pron,n,det,comp_n,v
+,,,,
+[- pl u],[- sg a],,[- sg a],[+ - pres]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,5:ARG1/NEQ,4:,4:ARG1/EQ-comp_n-4:ARG2/NEQ,

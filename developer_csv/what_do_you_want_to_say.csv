@@ -1,0 +1,8 @@
+wuma_0,kyA_0,kahanA_0,cAhawe_ho
+you,what,say,want
+1,2,3,4
+pron,wh-pron,v,v
+,,,
+[- - m],,,[- - pres]
+ques
+4:ARG1/NEQ+3:ARG1/NEQ,3:ARG2/NEQ,4:ARG2/H,

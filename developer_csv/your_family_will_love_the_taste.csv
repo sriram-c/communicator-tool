@@ -1,0 +1,8 @@
+Apa_kI,PZEmilI_ko,svAxa_0,pasaMxa_AyegA
+you_poss,family,taste,love
+1,2,3,4
+poss_pron,n,n,v
+,,yes,
+[- - m],[- sg a],[- sg a],[- - fut]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,4:ARG1/NEQ,4:ARG2/NEQ,

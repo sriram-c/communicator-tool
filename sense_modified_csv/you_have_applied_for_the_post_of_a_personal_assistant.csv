@@ -1,0 +1,8 @@
+Apa_ne,parsanala_0,asisteMta_kI,nOkarI_ke_lie,eplAi-0_kiyA_hE 
+you,personal,assistant,post,apply,of,a
+1,2,3,4,5,6,7
+pron,adj,n,n,v,p,det
+,,,yes,,,
+[- - m],,[- sg a],[- sg a],[+ - pres],,
+prop
+5:ARG1/NEQ,,2:ARG1/EQ,5:ARG2/NEQ,,4:ARG1/EQ-of-3:ARG2/NEQ,3:

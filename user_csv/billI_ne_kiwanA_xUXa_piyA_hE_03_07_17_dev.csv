@@ -1,0 +1,8 @@
+billI_ne,kiwanA,xUXa_0,pI-yA_hE,?
+cat,how-many,milk,drink_has_en
+1,2,3,4
+n,q_quant,n,v
+def,,,
+[- sg a],,[- sg a],[+ - pres]
+ques,
+4:ARG1/NEQ,3:ARG1/EQ,4:ARG2/NEQ,

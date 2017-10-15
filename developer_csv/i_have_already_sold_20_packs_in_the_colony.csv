@@ -1,0 +1,8 @@
+mEM_0,aBI_0,kAlonI_me,bIsa_0,pEketa_0,beca-0_cukI_hUM
+I,already,colony,20,pack,sell,in
+1,2,3,4,5,6,7
+pron,manner_adv,n,card,n,v,p
+,,yes,,,,
+[- sg u],,[- sg a],,[- pl a],[+ - pres],
+prop
+6:ARG1/NEQ,,,5:ARG1/EQ,6:ARG2/NEQ,2:ARG1/EQ,5:ARG1/EQ-in-3:ARG2/NEQ

@@ -1,0 +1,8 @@
+hama_kA,kampanI_ne,eka,brekaPAsta+sIriyala,nikAla-yA_hE,.
+we,company,a,breakfast-cereal,launch_has_en
+1,2,3,4,5
+poss_pron,n,det,comp_n,v
+,,,,
+[- pl u],[- sg a],,[- sg a],[+ - pres]
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,5:ARG1/NEQ,4:,5:ARG2/NEQ,

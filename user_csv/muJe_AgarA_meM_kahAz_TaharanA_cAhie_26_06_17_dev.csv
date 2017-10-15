@@ -1,0 +1,8 @@
+mEM_ko,AgarA_meM,kahAz_0,Tahara-nA_cAhie,?
+I,AgarA,where,stay_should_0,in,should
+1,2,3,4,5,6
+pron,propn,wh-word,v,p,modal
+,,,
+[- sg u],[- sg a],,,,[- - pres]
+ques,
+4:ARG1/NEQ,,4:ARG1/EQ,6:ARG1/H,4:ARG1/EQ-in-2:ARG2/NEQ,

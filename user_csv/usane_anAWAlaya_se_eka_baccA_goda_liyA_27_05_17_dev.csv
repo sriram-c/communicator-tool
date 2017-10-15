@@ -1,0 +1,8 @@
+vaha_ne,anAWAlaya_se,eka,baccA_0,goxa+le-yA,.
+he,orphanage,a,baby,adopt_ed,from
+1,2,3,4,5,6
+pron,n,det,n,v,p
+,def,,,
+[m sg a],[- sg a],,[- sg a],[- - past],
+prop,
+5:ARG1/NEQ,,4:,5:ARG2/NEQ,,5:ARG1/EQ-from-2:ARG2/NEQ,

@@ -1,0 +1,19 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10006"><realpred lemma="say" pos="v" sense="about" /><sortinfo cvarsort="e" mood="indicative"     /></node>
+<node cfrom="-1" cto="1" nodeid="10007"><realpred lemma="can" pos="v" sense="modal" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="ques" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>generic_entity</gpred><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><realpred lemma="that" pos="q" sense="dem" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><gpred>pron</gpred><sortinfo cvarsort="x" num="sg" pers="1" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><gpred>thing</gpred><sortinfo cvarsort="x" /></node>
+<node cfrom="0" cto="4" nodeid="10005"><gpred>which_q</gpred><sortinfo /></node>
+
+<link from="10001" to="10000" ><rargname>RSTR</rargname><post>H</post></link>
+<link from="10003" to="10002"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10005" to="10004"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10006" to="10000"><rargname>ARG3</rargname><post>NEQ</post></link>
+<link from="10006" to="10002"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10006" to="10004"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10007" to="10006"><rargname>ARG1</rargname><post>H</post></link>
+
+</dmrs>

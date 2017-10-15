@@ -1,0 +1,8 @@
+mEM_0,pEse_0,lAwI_hUM
+I,money,get,let
+1,2,3,4
+pron,n,v,v
+,yes,,
+[- sg u],[- sg a],,[- - pres]
+comm
+3:ARG1/NEQ,3:ARG2/NEQ,4:ARG2/H, 

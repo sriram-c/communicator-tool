@@ -1,0 +1,8 @@
+vaha_0,eka_0,ladakI_0,hE
+she,a,girl,be
+1,2,3,4
+pron,det,n,v
+,,,
+[f sg a],,[f sg a],[- - pres]
+prop
+4:ARG1/NEQ,3:RSTR/H,4:ARG2/NEQ,

@@ -1,0 +1,8 @@
+rAma_0,mAra-yA_gayA
+Rama,kill
+1,2
+propn,pass_v
+,
+[m sg a],[- - past]
+prop
+2:ARG2/NEQ,2:ARG1/EQ-pass_v-1:ARG2/NEQ

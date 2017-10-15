@@ -1,0 +1,8 @@
+mEM_ne,yaha,meja_0,Aja_0,banA-yA_hE,.
+I,this,table,today,make_has_en
+1,2,3,4,5
+pron,det,n,time_adv,v
+,,,,
+[- sg u],,[- sg a],[- sg a],[+ - pres]
+prop,
+5:ARG1/NEQ,3:,5:ARG2/NEQ,5:ARG1/EQ,

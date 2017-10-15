@@ -1,0 +1,9 @@
+rAma_0,xo_0,kiwAba_0,paDa-0_rahA_hE
+Rama,two,book,read
+1,2,3,4
+propn,card,n,v
+,,
+[m sg -],,[- pl -],[- + pres]
+prop,
+4:ARG1/NEQ,3:ARG1/EQ,4:ARG2/NEQ
+,,book#1,

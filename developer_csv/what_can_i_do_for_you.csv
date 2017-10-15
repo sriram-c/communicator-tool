@@ -1,0 +1,8 @@
+mEM_0,ApakI_0,kyA_0,sevA_karuM
+I,you,what,do,can,for
+1,2,3,4,5,6
+pron,pron,wh-pron,v,modal,p
+,,,,,
+[- sg u],[- - m],,,[- - pres],
+ques
+,,,,,4:ARG1/EQ-for-2:ARG2/NEQ

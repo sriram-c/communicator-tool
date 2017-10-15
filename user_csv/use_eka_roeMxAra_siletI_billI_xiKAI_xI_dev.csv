@@ -1,0 +1,8 @@
+vaha_ko,eka,roeMxAra,siletI,billI_0,xiKa-AI_xI,.
+he,1,furry,grey,cat,see
+1,2,3,4,5,6
+pron,card,adj,adj,n,v
+,,,,,
+[m sg a],,,,[- sg a],[+ - past]
+prop,
+6:ARG1/NEQ,5:ARG1/EQ,5:ARG1/EQ,5:ARG1/EQ,6:ARG2/NEQ,

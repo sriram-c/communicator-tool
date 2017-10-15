@@ -1,0 +1,8 @@
+maSIna_0,hama_ke_pAsa,CodZa_xe-yA
+machine,we,leave,with
+1,2,3,4
+n,pron,v,p
+yes,,,
+[- sg a],[- pl u],[- - pres],
+comm
+3:ARG2/NEQ,,,3:ARG1/EQ-with-2:ARG2/NEQ

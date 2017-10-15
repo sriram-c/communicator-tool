@@ -1,0 +1,8 @@
+rAwa_ke,Bojana_meM,kyA_0,hE
+dinner,menu,what,be,for
+1,2,3,4,5
+n,n,wh-pron,v,p
+,yes,,,
+[- sg a],[- sg a],,[- - pres],
+ques
+,4:ARG1/NEQ,4:ARG2/NEQ,,2:ARG1/EQ-for-1:ARG2/NEQ

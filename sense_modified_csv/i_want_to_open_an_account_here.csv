@@ -1,0 +1,8 @@
+mEM_0,yahAM_0,eka_0,KAwA_0,Kola-nA_cAhawA_hE
+I,here,a,account,open,want
+1,2,3,4,5,6
+pron,place_adv,det,n,v,v
+,,,,
+[- sg u],,,[- sg a],,[- - pres]
+prop
+6:ARG1/NEQ,5:ARG1/EQ,4:RSTR/H,5:ARG2/NEQ,6:ARG2/H,

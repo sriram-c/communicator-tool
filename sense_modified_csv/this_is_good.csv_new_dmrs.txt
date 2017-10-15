@@ -1,0 +1,9 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10002"><realpred lemma="good" pos="a" sense="at-for-of" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>generic_entity</gpred><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><realpred lemma="this" pos="q" sense="dem" /><sortinfo /></node>
+
+<link from="10001" to="10000" ><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10000" ><rargname>ARG1</rargname><post>NEQ</post></link>
+
+</dmrs>

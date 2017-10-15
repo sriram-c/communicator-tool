@@ -1,0 +1,5 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><realpred lemma="?" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="+" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+2"><gpred>nominalization</gpred><sortinfo cvarsort="x" gend="n" num="sg" pers="3" /></node>
+<link from="?1" to="?1+2"><rargname>RSTR</rargname><post>H</post></link>
+<link from="?1+2" to="?1+1"><rargname>ARG1</rargname><post>HEQ</post></link>

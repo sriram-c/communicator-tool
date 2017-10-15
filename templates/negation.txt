@@ -1,0 +1,2 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>neg</gpred><sortinfo  /></node>
+<link from="?1" to="?"><rargname>ARG1</rargname><post>H</post></link>

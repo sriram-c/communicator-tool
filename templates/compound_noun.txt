@@ -1,0 +1,7 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>compound</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+2"><realpred lemma="?" pos="n" sense="1" /><sortinfo cvarsort="x" /></node>
+*<node cfrom="-1" cto="1" nodeid="?1+3"><realpred lemma="?" pos="n" sense="1" /><sortinfo cvarsort="x" num="?" pers="?" /></node>
+<link from="?1" to="?1+2"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="?1" to="?1+3"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="?1+1" to="?1+2"><rargname>RSTR</rargname><post>H</post></link>

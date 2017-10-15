@@ -1,0 +1,8 @@
+kya_0,tuma_0,mEM_ko,sO_0,rupE_0,uXAra_0,xE-0_sakawe_hE
+can,you,lend,I,100,rupee
+1,2,3,4,5,6
+modal,pron,v,pron,card,n
+,,,,,
+[- - pres],[- - m],,[- sg u],,[- pl a]
+ques
+,3:ARG1/NEQ,1:ARG1/H,3:ARG3/NEQ,6:ARG1/EQ,3:ARG2/NEQ

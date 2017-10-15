@@ -1,0 +1,8 @@
+usa_kA,ladZakA_0,nahIM_hE
+she,a,son,not,have
+1,2,3,4,5
+pron,det,n,neg,v
+,,,,
+[f sg a],,[m sg a],,[- - pres]
+prop
+5:ARG1/NEQ,3:,5:ARG2/NEQ,,4:ARG1/H

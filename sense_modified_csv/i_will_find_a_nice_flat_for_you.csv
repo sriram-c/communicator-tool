@@ -1,0 +1,8 @@
+mEM_0,Apa_ke,acCA_sA,PZlEta_0,DUMDa_xUMgA
+I,you,nice,flat,find,a,for
+1,2,3,4,5,6,7
+pron,pron,adj,n,v,det,p
+,,,,,,
+[- sg u],[- sg m],,[- sg a],[- - fut],,
+prop
+5:ARG1/NEQ,,,5:ARG2/NEQ+3:ARG1/EQ,,4:,5:ARG1/EQ-for-2:ARG2/NEQ

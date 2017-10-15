@@ -1,0 +1,8 @@
+wuma_kA,mAwAjI_0,kyA_0,kara-wA_hE,?
+you,mother,what,do_0
+1,2,3,4
+poss_pron,n,wh-word,v
+,,,
+[- - m],[f sg a],,[- - pres]
+ques,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,3:ARG1/NEQ,,

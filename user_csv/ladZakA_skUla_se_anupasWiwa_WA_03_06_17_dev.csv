@@ -1,0 +1,8 @@
+ladZakA_0,skUla_se,anupasWiwa_0,WA-WA,.
+boy,school,absent,,from
+1,2,3,4,5
+n,n,pred_adj,,p
+def,def,,
+[m sg a],[- sg a],[- - past],,
+prop,
+3:ARG1/NEQ,,3:ARG2/NEQ,,3:ARG1/EQ-from-2:ARG2/NEQ,

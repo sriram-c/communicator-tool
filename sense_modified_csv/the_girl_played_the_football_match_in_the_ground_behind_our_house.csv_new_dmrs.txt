@@ -1,0 +1,37 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10000"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><gpred>def_explicit_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>poss</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10005"><gpred>pron</gpred><sortinfo cvarsort="x" num="pl" pers="1" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10007"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10009"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10014"><realpred lemma="play" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="past" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><realpred lemma="girl" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10006"><realpred lemma="house" pos="n" sense="of" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10008"><realpred lemma="ground" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10010"><gpred>compound</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10011"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10012"><realpred lemma="football" pos="n" sense="1" /><sortinfo cvarsort="x" /></node>
+<node cfrom="-1" cto="1" nodeid="10013"><realpred lemma="match" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10015"><realpred lemma="in" pos="p" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10016"><realpred lemma="behind" pos="p" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+
+<link from="10003" to="10005"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10004" to="10005"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10000" to="10001"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10006"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10003" to="10006"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10007" to="10008"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10009" to="10013"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10010" to="10012"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10010" to="10013"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10011" to="10012"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10014" to="10001"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10014" to="10013"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10015" to="10014"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10015" to="10008"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10016" to="10008"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10016" to="10006"><rargname>ARG2</rargname><post>NEQ</post></link>
+
+</dmrs>

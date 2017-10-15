@@ -1,0 +1,8 @@
+rAma_0,vixyAlaya_0,jA-gA,kyoM_ki,SiwA_0,vixyAlaya_0,jA-gA
+Rama,school,go,because,Sita,school,go,to,to
+1,2,3,4,5,6,7,8,9
+propn,n,v,reason_conj,propn,n,v,p,p
+,yes,,,,yes,,,
+[m sg a],[- sg a],[- - fut],,[f sg a],[- sg a],[- - fut],,
+prop
+3:ARG1/NEQ,,4:ARG1/H,,7:ARG1/NEQ,,4:ARG2/H,3:ARG1/EQ-to-2:ARG2/NEQ,7:ARG1/EQ-to-6:ARG2/NEQ

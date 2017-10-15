@@ -1,0 +1,2 @@
+*<node cfrom="-1" cto="1" nodeid="?1"><realpred lemma="?" pos="a" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<link from="?1" to="?" ><rargname>?</rargname><post>?</post></link>

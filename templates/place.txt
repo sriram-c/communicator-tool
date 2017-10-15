@@ -1,0 +1,7 @@
+*<node cfrom="-1" cto="1" nodeid="?1"><gpred>loc_nonsp</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>place_n</gpred><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+2"><gpred>def_implicit_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+3"><realpred lemma="?" pos="a" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<link from="?1" to="?1+1"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="?1+2" to="?1+1"><rargname>RSTR</rargname><post>H</post></link>
+<link from="?1+3" to="?1+1"><rargname>ARG1</rargname><post>EQ</post></link>

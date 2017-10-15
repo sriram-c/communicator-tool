@@ -1,0 +1,8 @@
+wuma_0,Aja_0,kOna-kOna_sI,dUsarI_0,kampaniyoM_meM,gae 
+you,today,which,other,company,visit
+1,2,3,4,5,6
+pron,time_adv,det,adj,n,v
+,,,,,
+[- - m],,,,[- pl a],[- - past]
+ques
+6:ARG1/NEQ,6:ARG1/EQ,5:,,4:ARG1/EQ+6:ARG2/NEQ,

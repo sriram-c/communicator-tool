@@ -1,0 +1,8 @@
+kyA_0,mEM_0,wuma_kA,PZona_0,iswemAla+kara-0_sakawA_hE,?
+,I,you,phone,use_can_0,can
+1,2,3,4,5,6
+,pron,poss_pron,n,v,modal
+,,,,
+,[- sg u],[- - m],[- sg a],,[- - pres]
+ques,
+,5:ARG1/NEQ,4:ARG1/EQ-poss_pron-3:ARG2/NEQ,5:ARG2/NEQ,6:ARG1/H,

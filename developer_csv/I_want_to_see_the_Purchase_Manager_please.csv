@@ -1,0 +1,8 @@
+muJe_0,paracejZa-mEnejara_se,milanA_hE 
+I,purchase-manager,see,want,please
+1,2,3,4,5
+pron,comp_n,v,v,please
+,yes,,,
+[- sg u],[- sg a],,[- - pres],
+prop
+3:ARG1/NEQ+4:ARG1/NEQ,2:ARG1/EQ-comp_n-2:ARG2/NEQ+3:ARG2/NEQ,5:ARG1/EQ+4:ARG2/H,,

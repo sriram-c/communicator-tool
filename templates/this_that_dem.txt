@@ -1,0 +1,2 @@
+<node cfrom="-1" cto="1" nodeid="?1"><realpred lemma="?" pos="q" sense="dem" /><sortinfo /></node>
+<link from="?1" to="?"><rargname>RSTR</rargname><post>H</post></link>

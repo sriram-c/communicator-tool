@@ -1,0 +1,8 @@
+wuma_0,hamAre_0,yahAM_0,kaba_0,A-0_rahe_ho
+you,we,when,come,to
+1,2,3,4,5
+pron,pron,wh-adv,v,p
+,,,,
+[- - m],[- pl u],,[- + pres],
+ques
+4:ARG1/NEQ,,4:ARG1/EQ,,4:ARG1/EQ-to-2:ARG2/NEQ

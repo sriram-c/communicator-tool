@@ -1,0 +1,8 @@
+mEM_ne,gOra_kiyA_hE,vaha_0,blEkaborda_0,TIka_0,paDZa_pAwI
+I,notice,she,blackboard,proper,read,unable
+1,2,3,4,5,6,7
+pron,v,pron,n,manner_adv,v,pred_adj
+,,,yes,,,
+[- sg u],[+ - pres],[f sg a],[- sg a],,,[- - pres]
+prop
+2:ARG1/NEQ,,7:ARG1/NEQ+6:ARG1/NEQ,6:ARG2/NEQ,,7:ARG2/H+5:ARG1/EQ,2:ARG2/H

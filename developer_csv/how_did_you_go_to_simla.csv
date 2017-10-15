@@ -1,0 +1,8 @@
+wuma_0,SimalA_0,kEse_0,gaye
+you,Simla,how,go,to
+1,2,3,4,5
+pron,propn,wh-adv,v,p
+,,,,
+[- - m],[- sg a],,[- - past],
+ques
+4:ARG1/NEQ,,4:ARG1/EQ,,4:ARG1/EQ-to-2:ARG2/NEQ

@@ -1,0 +1,8 @@
+mere_0,pAsa_0,koI_0,nakaxa_rupayA,nahIM_hE
+I,have,any,cash,not
+1,2,3,4,5
+pron,v,det,n,neg
+,,,,
+[- sg u],[- - pres],,[- sg a],
+prop
+2:ARG1/NEQ,5:ARG1/H,4:,2:ARG2/NEQ,

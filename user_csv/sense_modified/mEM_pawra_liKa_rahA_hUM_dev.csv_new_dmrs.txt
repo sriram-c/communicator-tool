@@ -1,0 +1,13 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10002"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="write" pos="v" sense="to" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="+" sf="prop" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>pron</gpred><sortinfo cvarsort="x" num="sg" pers="1" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><realpred lemma="letter" pos="n" sense="of" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+
+<link from="10001" to="10000"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10003"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10004" to="10000"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10004" to="10003"><rargname>ARG2</rargname><post>NEQ</post></link>
+
+</dmrs>

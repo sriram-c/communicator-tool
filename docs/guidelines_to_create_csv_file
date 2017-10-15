@@ -1,0 +1,130 @@
+#Guidelines for making csv::
+###########################
+
+#Format of csv:
+#============
+CSV file is divided into two parts:
+	a) User CSV
+	b) Developer CSV
+
+#Guidelines for Developer CSV:
+#=============================
+CSV file contains total 10 rows namely:
+	1. LWG - Local Word Grouping
+	2. ID  - ID no. for each word in LWG row
+	3. GNP - [Gender Number Person]
+	4. Explicit Realtions from Hindi Parser
+	5. Implicit Relations "		"
+	6. mass noun/proper noun info
+	7. English lemma for each word in LWG
+	8. Catagory (PoS) 
+	9. Sentence_type
+	10.Link relations as per DMRS guidelines
+#####################################################################################################
+
+#How to prepare CSV file?
+#=========================
+As the name suggests CSV file is a Comma Separated Values.
+a) Each field in a row should be separated by Comma(,)
+b) If a field has no value then only comma need to be typed.
+
+#Description of each rows:
+#========================
+
+LWG row:
+-------
+	Each word and its vibhakti(s) should be written together joined by '_'. 
+	If a word does not have any vibhakti then the vibhakti part will be replace with '0'.
+	Ex: ladakA_0 , wuma_kA
+ID row:
+------
+	For each word in LWG , id starts from 1
+
+GNP row:
+-------
+	As the name stands GNP means Gender Number Person
+	GNP info of each field should be written in "[]" in the order mentioned and separated by spaces.
+	Gender field takes values: m/f/n 
+		where 'm' stands for masculine
+		      'f' stands for feminine
+		      'n' stands for neutral
+	Number field takes values: sg/pl
+		where 'sg' stands for singular
+		      'pl' stands for plural
+	Person field takes values: u/m/a
+		where 'u' stands for uwama puruSa
+		      'm' stands for maxyma puruSa
+		      'a' stands for anya
+	If any of the above fields are not neccessary then mark the field as '-'
+	Ex: GNP info of 'rAma_0' is [m - -]
+	
+Explicit Realtions row:
+----------------------
+	Explicit relations from Hindi parser need to be filled. 
+	Ex: 2:karwA
+	(where 2 id is in karwA relation with the word where we fill it.)
+	If the word is verb then fill it as kriyA-TAM
+
+Implicit Relation row:
+----------------------
+	If implicit relations from Hindi parser are present then we need to fill it as mentioned in explicit relation row.
+
+Proper noun/mass noun row:
+-------------------------
+	If a word is proper noun or mass noun then fill the field as shown:
+		propn	for proper noun
+		mass	for mass noun
+		
+English Lemma row:
+-----------------
+	Lemma of each word need to be filled. 
+	If the word is verb then pattern should be 'Lemma+Tam+Tense'
+		where Lemma is a lemma of the word 
+		      Tam  takes values ing/en/0
+		      Tense takes values pres/past/future 
+	If the word is verb and as 'not' then pattern should be 'Lemma+Tam+Tense+not'
+	Ex: AvaSyakawA_hE_nahIM	->	need+0+pres+not	
+	    A_wA_hE		->	come+0+pres
+	    
+Category row:
+-------------
+	Category of each word need to be filled.
+	Available categories are as shown:
+		noun		n
+		verb		v
+		pronoun		pron
+		proper_noun     propn
+		adverb		adv
+		adjective	adj	
+		wh_adverb	wh-adv 	#Ex: when
+		wh_pronoun	wh-pron	#Ex: what
+		conjunction	c	#Ex: and
+		quantifiers	det	#Ex: the
+		preposition	p	#Ex: in
+		
+Sentence type row:
+-----------------
+	Type of the sentence need to be filled.
+	Ex: 'prop' for simple sentence.
+	    'ques' for questionary sentence.
+
+Link relation row:
+-----------------
+	In relation rows, each word should be tagged with a relation w.r.t its head. 
+	if 'karwA' then map the relation as ARG1/NEQ
+	   'karma' then map the relation as ARG2/NEQ
+	etc.
+
+###################################################################################
+Example of a csv file
+#====================
+wuma_0,kEse_0,A_gA
+1,2,3
+[- - 2],,,
+3:karwA,3:praSna-karaNa,kriyA-TAM
+,,,
+,,,
+you,how,come+0+fut
+pron,wh-adv,v
+ques
+ARG1/NEQ,ARG2/NEQ

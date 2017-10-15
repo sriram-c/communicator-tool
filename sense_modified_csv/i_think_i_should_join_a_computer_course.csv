@@ -1,0 +1,8 @@
+mere_0,vicAra_meM,muJe_0,kampyUtara-korsa_meM,xAKilA-0_lenA_cAhie
+I,think,I,computer-course,join,should,a
+1,2,3,4,5,6,7
+pron,v,pron,comp_n,v,modal,det
+,,,,,,
+[- sg u],[- - pres],[- sg u],[- sg a],,[- - pres],
+prop
+2:ARG1/NEQ,,5:ARG1/NEQ,4:ARG1/EQ-comp_n-4:ARG2/NEQ+5:ARG2/NEQ,6:ARG1/H,2:ARG2/H,4:

@@ -1,0 +1,17 @@
+pron,[m sg a]	vaha_1
+pron,[f sg a]	vaha_1
+pron,[m pl a]	vaha_1
+pron,[f pl a]	vaha_1
+pron,[m pl a]	ve_1
+pron,[f pl a]	ve_1
+pron,[n sg a]	vaha_1
+pron,[- sg u]	mEM_1
+pron,[- pl u]	hama_1
+pron,[- - m]	wuma_1
+pron,[- - m]	Apa_1
+rel_pron,	jaba_1
+pron,	waba_1
+pron,[- sg a]	yaha_1
+pron,[- pl a]	yaha_1
+pron,[- sg a]	vaha_1
+pron,[- pl a]	vaha_1

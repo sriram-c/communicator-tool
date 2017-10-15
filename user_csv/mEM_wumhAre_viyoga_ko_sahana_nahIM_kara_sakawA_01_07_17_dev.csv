@@ -1,0 +1,8 @@
+mEM,wuma_kA,viyoga_ko,sahana+kara-0_sakawA_hE,nahIM,.
+I,you,separation,endure_can_0,not,can
+1,2,3,4,5,6
+pron,poss_pron,n,v,neg,modal
+,,,,
+[- sg u],[- - m],[- sg a],,,[- - pres]
+prop,
+4:ARG1/NEQ,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,4:ARG2/NEQ,6:ARG1/H,6:ARG1/H,

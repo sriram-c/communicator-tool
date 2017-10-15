@@ -1,0 +1,8 @@
+mEM_ne,xo_0,Sera_0,xeKa-yA
+I,2,tiger,see
+1,2,3,4
+pron,card,n,v
+,,,
+[- sg u],,[- pl a],[- - past]
+prop
+4:ARG1/NEQ,3:ARG1/EQ,4:ARG2/NEQ,

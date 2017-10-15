@@ -1,0 +1,8 @@
+bacawa_KAwe_ke_lie,kama_se_kama,kiwanA,jamA-0_karanA_padZawA_0,hE
+savings-account,minimum,what,deposit,be,a,for
+1,2,3,4,5,6,7
+comp_n,manner_adv,wh-pron,n,v,det,p
+,,,yes,,,
+[- sg a],,,[- sg a],[- - pres],,
+ques
+1:ARG1/EQ-comp_n-1:ARG2/NEQ,,5:ARG2/NEQ,5:ARG1/NEQ+2:ARG1/EQ,,1:,4:ARG1/EQ-for-1:ARG2/NEQ

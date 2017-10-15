@@ -1,0 +1,8 @@
+vaha_kA,rAjaXAnI_0,patanA_0,WA-WA,.
+he,capital,patanA,be_was
+1,2,3,4
+poss_pron,n,propn,v
+,,,
+[m sg a],[- sg a],[- sg a],[- - past]
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,4:ARG1/NEQ,4:ARG2/NEQ,

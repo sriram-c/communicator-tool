@@ -1,0 +1,8 @@
+mEM_0,BI_0,calUM
+I,accompany,may,you
+1,2,3,4
+pron,v,modal,pron
+,,,
+[- sg u],,[- - pres],[- - m]
+ques
+2:ARG1/NEQ,3:ARG1/H,,2:ARG2/NEQ

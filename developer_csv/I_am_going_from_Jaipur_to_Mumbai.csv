@@ -1,0 +1,8 @@
+mEM_0,jEpUra_se,mumbaI_0,jA-0_rahA_hE,,
+I,Jaipur,Mumbai,go,from,to
+1,2,3,4,5,6
+pron,propn,propn,v,p,p
+,
+[- sg u],[- sg a],[- sg a],[- + pres],,
+prop,,,,,
+4:ARG1/NEQ,,,,4:ARG1/EQ-from-2:ARG2/NEQ,4:ARG1/EQ-to-3:ARG2/NEQ

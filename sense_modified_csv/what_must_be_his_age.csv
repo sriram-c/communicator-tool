@@ -1,0 +1,8 @@
+vaha_ki,kyA_0,umra_0,hogI
+he_poss,what,age,be,must
+1,2,3,4,5
+poss_pron,wh-pron,n,v,modal
+,,,,
+[m sg a],,[- sg a],,[- - pres]
+ques
+1:ARG2/NEQ-poss_pron-3:ARG1/EQ,4:ARG1/NEQ,4:ARG2/NEQ,5:ARG1/H,

@@ -1,0 +1,8 @@
+yaha_0,ladakA_0,hExrAbAxa_mEM,raha-wA_hE
+this,boy,Hyderabad,live,at
+1,2,3,4,5
+det,n,propn,v,p
+,,,,
+,[m sg 3],[- sg 3],[- - pres],
+prop
+2:,4:ARG1/NEQ,,,4:ARG1/EQ-at-3:ARG2/NEQ

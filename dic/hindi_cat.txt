@@ -1,0 +1,7 @@
+ladakA_1,n
+baccA_1,n
+baccA_2,n
+yUnivarsitI_1,n
+kala_1,adv
+kala_2,adv
+yahAz_1,adv

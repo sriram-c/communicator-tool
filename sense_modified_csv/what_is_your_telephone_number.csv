@@ -1,0 +1,8 @@
+apanA_0,telIPona-nambara,kyA_0,hE
+you_poss,telephone-number,what,be
+1,2,3,4
+poss_pron,comp_n,wh-pron,v
+,,,
+[- - m],[- sg a],,[- - pres]
+ques
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,2:ARG1/EQ-comp_n-2:ARG2/NEQ,4:ARG2/NEQ,

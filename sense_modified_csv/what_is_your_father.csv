@@ -1,0 +1,8 @@
+wumhAre_0,piwAjI_0,kyA_0,karawe_hEM
+you_poss,father,what,be
+1,2,3,4
+poss_pron,n,wh-pron,v
+,,,
+[- - m],[-m sg a],,[- - pres]
+ques
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,4:ARG1/NEQ,4:ARG2/NEQ,

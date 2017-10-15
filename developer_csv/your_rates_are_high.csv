@@ -1,0 +1,8 @@
+Apa_kI,kImaweM_0,jZyAxA_hEM 
+you_poss,rate,high
+1,2,3
+poss_pron,n,pred_adj
+,,
+[- - m],[- pl a],[- - pres]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,3:ARG1/NEQ,

@@ -1,0 +1,8 @@
+mEM_0,helxI_0,hArtas_se,anUmA_0,hUM
+I,healthy,heart,Anupa,be,from
+1,2,3,4,5,6
+pron,adj,n,propn,v,p
+,,,,,
+[- sg u],,[- pl a],[f sg a],[- - pres],
+prop
+5:ARG1/NEQ,,2:ARG1/EQ,5:ARG2/NEQ,,5:ARG1/EQ-from-3:ARG2/NEQ

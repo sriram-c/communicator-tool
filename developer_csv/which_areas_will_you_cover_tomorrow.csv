@@ -1,0 +1,8 @@
+wuma_0,kala_0,kahAM-kahAM_0,jAoge 
+you,tomorrow,which,area,cover
+1,2,3,4,5
+pron,time_adv,det,n,v
+,,,,
+[- - m],[- sg -],,[- pl a],[- - fut]
+ques
+5:ARG1/NEQ,5:ARG1/EQ,4:,5:ARG2/NEQ,

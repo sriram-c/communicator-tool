@@ -1,0 +1,30 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10008"><realpred lemma="get" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative"     /></node>
+<node cfrom="-1" cto="1" nodeid="10009"><realpred lemma="difficult" pos="a" sense="for" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="fut" /></node>
+<node cfrom="-1" cto="1" nodeid="10011"><realpred lemma="a" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>pron</gpred><sortinfo cvarsort="x" num="sg" pers="1" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><gpred>compound</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="engineering" pos="n" sense="1" /><sortinfo cvarsort="x" /></node>
+<node cfrom="-1" cto="1" nodeid="10005"><realpred lemma="college" pos="n" sense="of" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10006"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10007"><realpred lemma="admission" pos="n" sense="of" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10010"><realpred lemma="in" pos="p" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+
+
+
+<link from="10001" to="10000"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10004"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10002" to="10005"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10003" to="10004"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10006" to="10007"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10008" to="10000"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10008" to="10007"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10009" to="10000"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10009" to="10008"><rargname>ARG1</rargname><post>H</post></link>
+<link from="10010" to="10008"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10010" to="10005"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10011" to="10005"><rargname>RSTR</rargname><post>H</post></link>
+
+</dmrs>

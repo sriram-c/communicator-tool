@@ -1,0 +1,8 @@
+mEM_0,basa+addA_0,jA-yA,.
+I,bus-stop,go_ed,to
+1,2,3,4
+pron,comp_n,v,p
+,def,
+[- sg u],[- sg a],[- - past],
+prop,
+3:ARG1/NEQ,,,3:ARG1/EQ-to-2:ARG2/NEQ,

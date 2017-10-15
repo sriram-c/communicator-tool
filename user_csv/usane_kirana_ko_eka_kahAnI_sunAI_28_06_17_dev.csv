@@ -1,0 +1,8 @@
+vaha_ne,kirana_ko,eka,kahAnI_0,sunA-yA,.
+she,kirana,a,story,tell_ed,to
+1,2,3,4,5,6
+pron,propn,det,n,v,p
+,,,,
+[f sg a],[f sg a],,[- sg a],[- - past],
+prop,
+5:ARG1/NEQ,,4:,5:ARG2/NEQ,,5:ARG1/EQ-to-2:ARG2/NEQ,

@@ -1,0 +1,8 @@
+kyA_0,wuma_0,kala_0,Kelane_0,nahIM_0,gae_We
+,you,yesterday,play,not,go,to
+1,2,3,4,5,6,7
+,pron,time_adv,n,neg,v,p
+,,,,,,
+,[- - m],,[- sg a],,[+ - past],
+ques
+,6:ARG1/NEQ,6:ARG1/EQ,,,5:ARG1/H,6:ARG1/EQ-to-4:ARG2/NEQ

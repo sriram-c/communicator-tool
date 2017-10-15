@@ -1,0 +1,3 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>udef_q</gpred><sortinfo /></node>
+*<node cfrom="-1" cto="1" nodeid="?1+1"><realpred lemma="?" pos="n" sense="1" /><sortinfo cvarsort="x" gend="n" ind="-" num="sg" pers="3" /></node>
+<link from="?1" to="?1+1"><rargname>RSTR</rargname><post>H</post></link>

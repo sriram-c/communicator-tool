@@ -1,0 +1,8 @@
+ladakI_ne,hama_kA,Gara_ke_pICe,mExAna_meM,PutaboYla-mEtca_0,Kela-yA
+girl,we_poss,house,ground,football-match,play,in,behind
+1,2,3,4,5,6,7,8
+n,poss_pron,n,n,comp_n,v,p,p
+yes,,,yes,yes,,,
+[f sg a],[- pl u],[- sg a],[- sg a],[- sg a],[- - past],,
+prop
+6:ARG1/NEQ,2:ARG2/NEQ-poss_pron-3:ARG1/EQ,,,5:ARG1/EQ-comp_n-5:ARG2/NEQ+6:ARG2/NEQ,,6:ARG1/EQ-in-4:ARG2/NEQ,4:ARG1/EQ-behind-3:ARG2/NEQ

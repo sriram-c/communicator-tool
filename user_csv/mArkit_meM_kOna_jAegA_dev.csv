@@ -1,0 +1,8 @@
+bAjAra_meM,kOna_0,jA-gA,?
+market,who,go_will_0,to
+1,2,3,4
+n,wh-word,v,p
+def,,
+[- sg a],[m sg a],[- - fut],
+ques,
+,3:ARG1/NEQ,,3:ARG1/EQ-to-1:ARG2/NEQ,

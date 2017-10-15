@@ -1,0 +1,5 @@
+pron,r6,poss_pron
+#n,r6,poss_n
+propn,r6,poss_propn
+comp_n,r6,poss_comp_n
+adj,k1s,pred_adj

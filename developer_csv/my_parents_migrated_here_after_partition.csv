@@ -1,0 +1,8 @@
+mere_0,mAwA-piwA_0,viBAjana_ke,bAxa_0,yahIM_0,Akara-0_basa_gae_We
+I_poss,parent,partition,after,here,migrate
+1,2,3,4,5,6
+poss_pron,n,n,p,place_adv,v
+,,,,,
+[- sg u],[- pl a],[- sg a],,,[- - past]
+prop
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,6:ARG1/NEQ,,6:ARG1/EQ-after-3:ARG2/NEQ,6:ARG1/EQ,

@@ -1,0 +1,8 @@
+wuma_0,ina_0,xinoM_0,kyA_0,kara-0_rahI_ho
+you,these,day,what,do
+1,2,3,4,5
+pron,det,n,wh-pron,v
+,,,,
+[- - m],,[- pl a],,[- + pres]
+ques
+5:ARG1/NEQ,3:,5:ARG2/NEQ,5:ARG3/NEQ,

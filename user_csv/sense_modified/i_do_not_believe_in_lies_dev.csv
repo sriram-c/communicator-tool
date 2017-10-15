@@ -1,0 +1,8 @@
+mEM_0,jUta_ko,mAna-wA_hE,nahIM,.
+I,lie,believe_0,not
+1,2,3,4
+pron,n,v,neg
+,,,
+[- sg u],[- pl a],[- - pres],
+prop,
+3:ARG1/NEQ,3:ARG2/NEQ,4:ARG1/H,

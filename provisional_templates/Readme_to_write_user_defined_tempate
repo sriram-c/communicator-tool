@@ -1,0 +1,16 @@
+#Readme to write user defined template:
+######################################
+
+1. First prepare csv file as per guidelines.
+2. RUN:
+	sh run.sh <filename.csv>
+		Ex: sh run.sh sleep.csv
+3. Check whether the sentence is generated or not.
+	If sentence is not generated then,
+		Check output/<filename.csv>_new_dmrs.txt
+			1) Do the required changes in the above file and then run run_mod_dmrs.sh <filename.csv>
+			2) If node and link doesn't exists for any word then,
+				Create a user defined template file in provisional_templates folder.
+				Filename should be lemma_user_defined_template.txt
+					Ex: how_user_defined_template.txt
+					After creating user defined template run step 2.

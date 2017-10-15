@@ -1,0 +1,8 @@
+mEM_0,eka_0,vyApArI_0,hUM
+I,a,businessman,be
+1,2,3,4
+pron,det,n,v
+,,,
+[- sg u],,[- sg a],[- - pres]
+prop
+4:ARG1/NEQ,3:,4:ARG2/NEQ,

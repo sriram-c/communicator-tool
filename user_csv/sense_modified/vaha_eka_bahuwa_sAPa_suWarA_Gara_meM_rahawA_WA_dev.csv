@@ -1,0 +1,8 @@
+vaha_0,eka,bahuwa,sAPa+suWarA,Gara_meM,raha-wA_WA,.
+he,1,very,clean,house,live_used_to_0,in
+1,2,3,4,5,6,7
+pron,card,intf,adj,n,v,p
+,,,,,
+[m sg a],,,,[- sg a],[- + past],
+prop,
+6:ARG1/NEQ,5:ARG1/EQ,4:ARG1/EQ,5:ARG1/EQ,,,6:ARG1/EQ-in-5:ARG2/NEQ,

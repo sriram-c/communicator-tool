@@ -1,0 +1,8 @@
+vaha_kA,mAz_0,KAnA_0,banA-0_rahA_hE,.
+he,mother,food,cook_be_ing
+1,2,3,4
+poss_pron,n,massn,v
+,,,
+[m sg a],[f sg a],[- sg a],[- + pres]
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,4:ARG1/NEQ,4:ARG2/NEQ,

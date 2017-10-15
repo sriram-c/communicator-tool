@@ -1,0 +1,8 @@
+vaha_ke_pAsa,eka_0,naya_0,kalam_0,WA
+he,a,new,pen,have
+1,2,3,4,5
+pron,det,adj,n,v
+,,,,
+[m sg 3],,,[- sg 3],[- - past]
+prop
+5:ARG1/NEQ,4:,4:ARG1/EQ,5:ARG2/NEQ,

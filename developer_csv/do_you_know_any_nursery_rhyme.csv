@@ -1,0 +1,8 @@
+kyA_0,wume_0,koI_0,narasarI-rAima,yAxa_hE
+,you,any,nursery-rhyme,know
+1,2,3,4,5
+,pron,det,comp_n,v
+,,,,
+,[- - m],,[- sg a],[- - pres]
+ques
+,5:ARG1/NEQ,4:,4:ARG2/NEQ-comp_n-4:ARG1/EQ+5:ARG2/NEQ,

@@ -1,0 +1,8 @@
+rawana_0,eka,manohara,puswaka_0,paDZa-wA_hE,.
+rawana,a,interesting,book,read_0
+1,2,3,4,5
+propn,det,adj,n,v
+,,,,
+[m sg a],,,[- sg a],[- - pres]
+prop,
+5:ARG1/NEQ,4:,4:ARG1/EQ,5:ARG2/NEQ,

@@ -1,0 +1,8 @@
+mEM,cAha-wA_hE,vaha,wuma_ko,mAra-yA
+I,want,he,kill,you
+1,2,3,4,5
+pron,v,pron,v,pron
+,
+[- sg u],[- - pres],[m sg a],,[- - m]
+prop
+2:ARG1/NEQ,,4:ARG1/NEQ,2:ARG2/H,4:ARG2/NEQ

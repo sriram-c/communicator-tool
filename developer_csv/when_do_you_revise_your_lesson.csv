@@ -1,0 +1,8 @@
+wuma_0,apanA_0,pATa_0,kaba_0,xoharAwe_ho
+you,you_poss,lesson,when,revise
+1,2,3,4,5
+pron,poss_pron,n,wh-adv,v
+,,,,
+[- - m],[- - m],[- sg a],,[- - pres]
+ques
+5:ARG1/NEQ,2:ARG2/NEQ-poss_pron-3:ARG1/EQ,5:ARG2/NEQ,5:ARG1/EQ,

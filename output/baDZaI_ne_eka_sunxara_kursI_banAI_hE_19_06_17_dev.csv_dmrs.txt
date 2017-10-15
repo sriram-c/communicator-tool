@@ -1,0 +1,12 @@
+<node cfrom="-1" cto="1" nodeid="10000"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><realpred lemma="a" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><realpred lemma="beautiful" pos="a" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10005"><realpred lemma="make" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="+" prog="-" sf="prop" tense="pres" /></node>
+
+<link from="10000" to="10001"><rargname>RSTR</rargname><post>H</post></link>
+<node cfrom="-1" cto="1" nodeid="10001"><realpred lemma="carpenter" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<link from="10002" to="10004"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10003" to="10004" ><rargname>ARG1</rargname><post>EQ</post></link>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="chair" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<link from="10005" to="10001"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10005" to="10004"><rargname>ARG2</rargname><post>NEQ</post></link>

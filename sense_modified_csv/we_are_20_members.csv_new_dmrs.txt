@@ -1,0 +1,15 @@
+<dmrs cfrom="-1" cto="1">
+<node carg="&quot;20&quot;" cfrom="-1" cto="1" nodeid="10002"><gpred>card</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<node cfrom="-1" cto="1" nodeid="10005"><realpred lemma="be" pos="v" sense="id" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>pron</gpred><sortinfo cvarsort="x" num="pl" pers="1" pt="std" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>udef_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="member" pos="n" sense="of" /><sortinfo cvarsort="x" num="pl" pers="3" /></node>
+
+<link from="10001" to="10000"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10004"><rargname>ARG1</rargname><post>EQ</post></link>
+<link from="10003" to="10004"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10005" to="10000"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="10005" to="10004"><rargname>ARG2</rargname><post>NEQ</post></link>
+
+</dmrs>

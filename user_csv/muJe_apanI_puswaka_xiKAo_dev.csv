@@ -1,0 +1,8 @@
+mEM_ko,apanA_0,puswaka_0,xiKA-o,.
+I,you,book,show_imper,to
+1,2,3,4,5
+pron,poss_pron,n,v,p
+,,,
+[- sg u],[- - m],[- sg a],[- - pres],
+comm,
+,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,4:ARG2/NEQ,,4:ARG1/EQ-to-1:ARG2/NEQ,

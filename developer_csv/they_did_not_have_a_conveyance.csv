@@ -1,0 +1,8 @@
+una_ke,pAsa_0,savArI_0,nahIM_WI
+they,have,a,conveyance,not
+1,2,3,4,5
+pron,v,det,n,neg
+,,,,
+[- pl a],[- - past],,[- sg a],
+prop
+2:ARG1/NEQ,5:ARG1/H,4:,2:ARG2/NEQ,

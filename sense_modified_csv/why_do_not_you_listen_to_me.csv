@@ -1,0 +1,8 @@
+wuma_0,merI_0,bAwa_0,kyoM_0,nahIM_0,sunawe
+you,I,why,not,listen
+1,2,3,4,5
+pron,pron,wh-adv,neg,v
+,,,,
+[- - m],[- sg u],,,[- - pres]
+ques
+5:ARG1/NEQ,5:ARG2/NEQ,5:ARG1/EQ,,4:ARG1/H

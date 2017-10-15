@@ -1,0 +1,8 @@
+vaha_0,xo_0,sabjekta_0,meM,Pela_0,huI_hE
+she,two,subject,fail,in
+1,2,3,4,5
+pron,card,n,v,p
+,,,,
+[f sg a],,[- pl a],[+ - pres],
+prop
+4:ARG1/NEQ,,2:ARG1/EQ,,4:ARG1/EQ-in-3:ARG2/NEQ

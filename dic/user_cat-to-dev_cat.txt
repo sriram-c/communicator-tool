@@ -1,0 +1,15 @@
+saMKyA	card
+saMKyA-viSeRaNa	card
+k7t	time_adv
+k7p	place_adv
+quasi_n	n
+viSeRaNa	adj
+det	det
+intf	intf
+c	c
+qsn	wh-word
+kriyA-viSeRaNa	manner_adv
+quasi_comp_n	comp_n
+conj	conj
+emp	manner_adv
+q-quant	q_quant

@@ -1,0 +1,8 @@
+mere_lie,iMjIniyariMga-kAleja_meM,edamiSana_0,pAnA_0,kaTina_hogA
+I,engineering-college,admission,get,difficult,in,a
+1,2,3,4,5,6,7
+pron,comp_n,n,v,pred_adj,p,det
+,,,,,,
+[- sg u],[- sg a],[- sg a],,[- - fut],,
+prop
+5:ARG2/NEQ+4:ARG1/NEQ,2:ARG1/EQ-comp_n-2:ARG2/NEQ,4:ARG2/NEQ,5:ARG1/H,,4:ARG1/EQ-in-2:ARG2/NEQ,2:

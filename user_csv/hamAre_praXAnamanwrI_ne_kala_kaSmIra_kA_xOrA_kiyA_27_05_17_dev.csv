@@ -1,0 +1,8 @@
+hama_kA,praXAnamanwrI_ne,kala_0,kaSmIra_kA,xOrA+kara-yA,.
+we,prime-minister,yesterday,kaSmIra,visit_ed
+1,2,3,4,5
+poss_pron,comp_n,time_adv,propn,v
+,,,,
+[- pl u],[- sg a],,[- sg a],[- - past]
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,5:ARG1/NEQ,5:ARG1/EQ,5:ARG2/NEQ,

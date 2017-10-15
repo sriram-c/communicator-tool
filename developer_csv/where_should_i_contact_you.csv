@@ -1,0 +1,8 @@
+mEM_0,Apase_0,kahAM_0,saMparka_karUM
+I,you,where,contact,should
+1,2,3,4,5
+pron,pron,wh-adv,v,modal
+,,,,
+[- sg u],[- - m],,,[- - pres]
+ques
+4:ARG1/NEQ,4:ARG2/NEQ,4:ARG1/EQ,5:ARG1/H,

@@ -1,0 +1,13 @@
+#Observations::
+###############
+
+1. Negation template:
+   -----------------
+	Ex1: She does not come here.
+		=> Even though if we dont provide link between "not" and "come" sentence is generated.
+		So, kept only node info of "not"
+	Ex2: Do not waste time.
+		=> Here cvarsort="i" whereas in above case cvarsort="e"
+		So, to use template commonly in both cases modified template by keeping sortinfo empty as shown:
+		<node cfrom="-1" cto="1" nodeid="?1"><gpred>neg</gpred><sortinfo  /></node>
+

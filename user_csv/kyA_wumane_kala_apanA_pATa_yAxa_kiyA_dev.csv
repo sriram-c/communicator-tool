@@ -1,0 +1,8 @@
+kyA,wuma_ne,kala_0,apanA_0,pATa_0,yAxa+kara-yA,?
+,you,yesterday,you,lesson,learn_ed
+1,2,3,4,5,6
+,pron,time_adv,poss_pron,n,v
+,,,,,
+,[- - m],[- sg a],[- - m],[- sg a],[- - past]
+ques,
+,6:ARG1/NEQ,6:ARG1/EQ,5:ARG1/EQ-poss_pron-4:ARG2/NEQ,6:ARG2/NEQ,

@@ -1,0 +1,8 @@
+mEM_ko,Apa_kA,javAba_0,acCA+laga-yA,.
+I,you,answer,like_ed
+1,2,3,4
+pron,poss_pron,n,v
+,,,
+[- sg u],[- - m],[- sg a],[- - past]
+prop,
+4:ARG1/NEQ,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,4:ARG2/NEQ,

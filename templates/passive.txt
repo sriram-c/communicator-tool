@@ -1,0 +1,5 @@
+<node cfrom="-1" cto="1" nodeid="?1"><realpred lemma="?" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="?" prog="?" sf="?" tense="?" /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>parg_d</gpred><sortinfo /></node>
+<link from="?1" to="?"><rargname>?</rargname><post>?</post></link>
+<link from="?1+1" to="?"><rargname>?</rargname><post>?</post></link>
+<link from="?1+1" to="?1"><rargname>ARG1</rargname><post>EQ</post></link>

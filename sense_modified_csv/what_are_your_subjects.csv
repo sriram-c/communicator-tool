@@ -1,0 +1,8 @@
+wumhAre_pAsa,kOna_se,sabjektsa_0,hEM 
+you_poss,what,subject,be
+1,2,3,4
+poss_pron,wh-pron,n,v
+,,,
+[- - m],,[- pl a],[- - pres]
+ques
+1:ARG2/NEQ-poss_pron-3:ARG1/EQ,4:ARG2/NEQ,4:ARG1/NEQ,

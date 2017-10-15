@@ -1,0 +1,8 @@
+vaha,apanA,sAikila_para,skUla_0,jA-wA_hE,.
+she,she,bicycle,school,go_0,to,with
+1,2,3,4,5,6,7
+pron,poss_pron,n,n,v,p,p
+,,,def,
+[f sg a],[f sg a],[- sg a],[- sg a],[- - pres],,
+prop,
+5:ARG1/NEQ,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,,,,5:ARG1/EQ-to-4:ARG2/NEQ,5:ARG1/EQ-with-3:ARG2/NEQ,

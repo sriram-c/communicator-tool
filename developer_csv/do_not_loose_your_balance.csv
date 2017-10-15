@@ -1,0 +1,8 @@
+apanA,saMwulana,mawa,Koo
+you_poss,balance,not,loose
+1,2,3,4
+poss_pron,n,neg,v
+,,,
+[- - m],[- sg a],,[- - pres]
+comm
+1:ARG2/NEQ-poss_pron-2:ARG1/EQ,4:ARG2/NEQ,,3:ARG1/H

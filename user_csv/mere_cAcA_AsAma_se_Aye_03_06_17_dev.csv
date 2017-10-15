@@ -1,0 +1,8 @@
+mEM_kA,cAcA_0,AsAma_se,A-yA_hE,.
+I,uncle,AsAma,come_has_en,from
+1,2,3,4,5
+poss_pron,n,propn,v,p
+,,,
+[- sg u],[m sg a],[- sg a],[+ - pres],
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,4:ARG1/NEQ,,,4:ARG1/EQ-from-3:ARG2/NEQ,

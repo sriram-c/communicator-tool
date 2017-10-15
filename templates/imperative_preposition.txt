@@ -1,0 +1,6 @@
+<node cfrom="-1" cto="1" nodeid="?1"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="?1+1"><gpred>pron</gpred><sortinfo cvarsort="x" pers="2" pt="zero" /></node>
+*<node cfrom="-1" cto="1" nodeid="?1+2"><realpred lemma="?" pos="p" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="comm" tense="pres" /></node>
+<link from="?1" to="?1+1"><rargname>RSTR</rargname><post>H</post></link>
+<link from="?1+2" to="?1+1"><rargname>ARG1</rargname><post>NEQ</post></link>
+<link from="?1+2" to="?"><rargname>?</rargname><post>?</post></link>

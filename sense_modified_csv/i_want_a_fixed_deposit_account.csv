@@ -1,0 +1,8 @@
+mEM_ko,PZiksda_0,dipAjZita-akAunta,cAhawA_hE
+I,fixed,deposit-account,want,a
+1,2,3,4,5
+pron,manner_adv,comp_n,v,det
+,,,,
+[- sg u],,[- sg a],[- - pres],
+prop
+4:ARG1/NEQ,,4:ARG2/NEQ+3:ARG1/EQ-comp_n-3:ARG2/NEQ+2:ARG1/EQ,,3:

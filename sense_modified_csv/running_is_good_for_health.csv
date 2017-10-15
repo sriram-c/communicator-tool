@@ -1,0 +1,8 @@
+xOda_nA,svAsWya_ke_liye,acCA_0,hE
+run,health,good,for
+1,2,3,4
+v_nom,n,pred_adj,p
+,,,
+[- + -],[- sg a],[- - pres],
+prop
+3:ARG1/NEQ,,,3:ARG1/EQ-for-2:ARG2/NEQ

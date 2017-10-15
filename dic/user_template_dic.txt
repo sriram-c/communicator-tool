@@ -1,0 +1,10 @@
+{[Aja_se][xo+sAla][pahale]}	about two-years before	kala_2	yesterday	yesterday
+{[piCalA][xo~GaNtA_se]}	the last two hours	kala_2	yesterday	yesterday
+{[kala][yaha~samaya]}	tomorrow at this time	kala_1	tomorrow	tomorrow
+{[pahuzcanA_se][pahale]}	before you reached	kala_2	yesterday	yesterday
+{[[rAma]~Ora~[SyAma]_ke][bIca_meM]}	between Rama and Shyama	yahAz_1	here	here
+{[[xillI+yUnivarsitI]~Ora~[xUsarA~iMstItyUta]_meM]}	University and various others institutes	yUnivarsitI_1	university	university
+{[apanA_se][CotA_ko]}	our younger	baccA_2	child	children
+{[viktara]~Ora~[manoja]_0}	Victor and Manoj	ladakA_1	boy	boys
+{<viktara><manoja>[Ora]}	Victor and Manoj	ladakA_1	boy	boys
+{<propn><propn>[Ora]}	<propn> and <propn>	ladakA_1	boy	boys

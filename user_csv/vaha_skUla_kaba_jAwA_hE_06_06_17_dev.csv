@@ -1,0 +1,8 @@
+vaha_0,skUla_0,kaba_0,jA-wA_hE,?
+he,school,when,go_0,to
+1,2,3,4,5
+pron,n,wh-word,v,p
+,def,,
+[m sg a],[- sg a],,[- - pres],
+ques,
+4:ARG1/NEQ,,4:ARG1/EQ,,4:ARG1/EQ-to-2:ARG2/NEQ,

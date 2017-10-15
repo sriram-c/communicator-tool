@@ -1,0 +1,8 @@
+mEM_kA,piwAjI_0,vyApArI_0,hE-hE,.
+I,father,businessman,be_is
+1,2,3,4
+poss_pron,n,n,v
+,,def,
+[- sg u],[m sg a],[- sg a],[- - pres]
+prop,
+2:ARG1/EQ-poss_pron-1:ARG2/NEQ,4:ARG1/NEQ,4:ARG2/NEQ,

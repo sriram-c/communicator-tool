@@ -1,0 +1,8 @@
+mEM_0,kala_0,eka_0,kAmakAjI-mahilA_se,mila-yA
+I,yesterday,a,work-lady,meet
+1,2,3,4,5
+pron,time_adv,det,comp_ing_n,v
+,,,,
+[- sg u],,,[- sg a],[- - past]
+prop
+5:ARG1/NEQ,5:ARG1/EQ,4:,4:ARG1/HEQ-comp_ing_in-4:ARG1/EQ,

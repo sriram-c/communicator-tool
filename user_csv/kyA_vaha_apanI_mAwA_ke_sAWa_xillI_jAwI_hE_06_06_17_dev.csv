@@ -1,0 +1,8 @@
+kyA_0,vaha_0,apanA_0,mAwA_ke_sAWa,xillI_0,jA-wA_hE,?
+,she,she,mother,xillI,go_0,to,with
+1,2,3,4,5,6,7,8
+,pron,poss_pron,n,propn,v,p,p
+,,,,,
+,[f sg a],[f sg a],[f sg a],[- sg a],[- - pres],,
+ques,
+,6:ARG1/NEQ,4:ARG1/EQ-poss_pron-3:ARG2/NEQ,,,,6:ARG1/EQ-to-5:ARG2/NEQ,6:ARG1/EQ-with-4:ARG2/NEQ,

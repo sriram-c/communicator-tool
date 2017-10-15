@@ -1,0 +1,8 @@
+kyA,wuma_kA,BAI_0,kanAdA_se,A-0_cukA_hogA,?
+,you,brother,kanAdA,come_have_en,from
+1,2,3,4,5,6
+,poss_pron,n,propn,v,p
+,,,,
+,[- - m],[m sg a],[- sg a],[+ - fut],
+ques,
+,3:ARG1/EQ-poss_pron-2:ARG2/NEQ,5:ARG1/NEQ,,,5:ARG1/EQ-from-4:ARG2/NEQ,

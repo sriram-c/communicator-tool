@@ -1,0 +1,8 @@
+wuma,kAma,kara-gA,meM_kA,le-yA
+you,work,do,I,for
+1,2,3,4,5
+pron,n,v,pron,p
+,yes,,,
+[- - 2],[- sg 3],[- - fut],[- sg 1],
+ques
+3:ARG1/NEQ,3:ARG2/NEQ,,,3:ARG1/EQ-for-4:ARG2/NEQ

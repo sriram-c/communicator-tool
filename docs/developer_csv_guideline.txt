@@ -1,0 +1,149 @@
+Guidelines for making Developer csv file
+-------------------------------------------------
+
+The developer csv file will contain 8 rows.
+
+1.Hindi words and their post positions joined by "_" ("0" when there is no post position)
+		rAma_ne,rAvaNa_ko,mAra-yA
+
+2.	a. Lexical substitution: The second row will is the lexical substitution row. The developer should write only the root form of the word and each word should be separated with comma. For e.g one should not write "books" or "writes"; instead "book" and "write" should be written.
+
+	b. If a sentence has preposition, then it can be written after all the other words in the lexical substitution row. 
+	   For e.g. she,work,office,in
+
+	c. For genitives, we are inserting the preposition "of". One can write genitives as shown below:
+	   I,see,Rama,office,of [sentence: I saw Rama's office]
+
+	d. The adjectives and adverbs are also to be written as separate words.
+	   For e.g. Rama,read,a,good,book
+
+	e. Determiners and quantifiers are to be written as separate words.
+	   For e.g. Sita,a,good,girl. [No need to write "the" in lexical substitution category.]
+
+	f. Conjunctions like "and","or" etc. are also to be written separately.
+		Rama,and,Sita,go,market,to
+
+	g. If the adjective in a sentence is predicative (as in: Rama is good), there is no need to mention the "be" verb.
+		Rama,good
+
+	h. Modals are to be written separately.
+		he,can,go,Mumbai,to
+	i. for possessive pronouns and propernouns with "'s", write the lemma and then "poss" joined with "_".
+		her - she_poss
+		Rama's - Rama_poss
+		today's - today_poss
+	j. for reflexive pronouns, write the root word for the particular pronoun.
+		EX: for yourself - you
+	k. compound nouns (noun + noun) should be written as shown below:
+		#EX: bus-stop
+	l. when "How" behaves like an adjective, it should be treated as predicative adjective.
+
+3. The 3rd row is for IDs for words. IDs should be based on the English words written in 2nd row.
+	he,can,go,Jaipur,Mumbai,from,to
+	1,2,3,4,5,6,7
+
+4. The 4th row is for lexical categories for the words written in the 2nd row.
+	Category of each word needs to be filled.
+	Available categories are as shown:
+		noun		n
+		verb		v
+		pronoun		pron	#Ex: this,that,he,she
+		proper_noun     propn
+		adverb		adv
+		adjective	adj	
+		wh_adverb	wh-adv 	#Ex: when,where
+		wh_pronoun	wh-pron	#Ex: what,who
+		conjunction	c	#Ex: and,or
+		quantifiers	det	#Ex: the,a,an,this,that,these,those
+		preposition	p	#Ex: in,of,from
+		modal		modal	#Ex: can,may
+		predicative adj pred_adj #Ex: good in sentence like "Rama is good"
+		mass noun	mass	#Ex: rice,sugar
+		cardinal nos.	card	#Ex: two, 2
+		Negation	neg	
+		poss propern	poss_propn	#EX: Ram's
+		poss pronoun	poss_pron	#EX: His,her,my,your,our,their
+		poss noun	poss_n		#EX: teacher's, boy's
+		reflexive pron	refl_pron	#EX: yourself,myself
+		compound noun	comp_n		#EX: bus stop		
+
+5. The 5th row contains the information about the noun whether it needs any quantifier or not. The user should write "yes" if the noun needs to have "the" inserted before it. If not, then it should be left empty with a ",".
+		#EX:	boy,	
+			n,
+			yes,
+		#EX:	a,boy,
+			det,n,
+			,,
+
+6. The 6th row contains the GNP and TAM informations of mass/propn/n/pron and verb respectively.
+
+	As the name stands GNP means Gender Number Person
+	GNP info of each field should be written in "[]" in the order mentioned and separated by spaces.
+	Gender field takes values: m/f/n 
+		where 'm' stands for masculine
+		      'f' stands for feminine
+	Number field takes values: sg/pl
+		where 'sg' stands for singular
+		      'pl' stands for plural
+	Person field takes values: u/m/a
+		where 'u' stands for uwama puruSa (1st person)
+		      'm' stands for maxyma puruSa (2nd person)
+		      'a' stands for anya (3rd person)
+	If any of the above fields are not neccessary then mark the field as '-'
+	Ex: GNP info of 'rAma_0' is [m - -] 
+
+	For verbs, TAM info should be written in "[]" in the order of [PERF PROG TENSE].
+	PERF and PROG fields take "+" or "-" as their values.
+	TENSE field takes 4 values: pres/past/fut for Present/Past/Future tense and "-" if there is no tense info.
+	If in any case, all the three fields should have "-" value, then we can skip the TAM field altogether and leave a ",".
+	Ex: Rama,eat,a,cake (for Rama is eating a cake)
+		TAM info of "eat" is [- + pres]
+NOTE: If the adjective is a predicative adjective then the TAM info should be written under it.
+	EX:	He,good
+		pron,pred_adj
+		,[- - pres]
+NOTE: For "How" which behaves like pred_adj, the TAM info should be written under it.	
+
+7. The 7th row shows the type of the sentence. prop/comm/ques for proposition/command/question
+
+8. The last row is for the DMRS relations between the words.
+Note: for the links of any preposition, if the preposition has two links then the links should be written in both the sides of the preposition. See the below example:
+	ARG1/EQ-in-2:ARG2/NEQ
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+DMRS templates:
+-----------------
+For each category DMRS has some patterns to show the nodes and relations. For each node that is created by DMRS there is at least one link which shows the relation between the particular node with some other node. Following the pattern that DMRS gives us as nodes and links, we have created some templates for different categories. For e.g. DMRS generates two nodes for proper noun and one internal link which connects the two nodes using a particular relation. The values of the features which can vary are replaced with "?" to be filled by the machine with the help of programing. We have made  some templates based on our observation and some are yet to be made.
+some of the templates are: noun, pronoun, proper noun, verb, adjective, adverb, wh-adv (where, when), modal, massnoun, pred_adj, quantifier, demonstrative (this,that), possessive, negation, preposition, etc.
+--------------------------------------------------------------------------------------------------------------------------------
+
+We have handled the types of sentences shown below:
+
+questions (yes/no questions)
+sentences with preposition
+negation,
+command
+sentences with possessive noun and proper noun
+questions
+sentences with modal verbs
+sentences with wh-adverbs and adverbs
+sentences with attributive adjectives and predicative adjectives
+copulatives
+
+sentences to be handled in the very next step:
+infinitive verbs, gerundives, passives
+
+-------------------------------------------------------------------------------------------------------
+There are many relations that DMRS comes up with.
+they are mainly based on noun-noun, noun-verb, verb-verb, adjective-noun, verb-adverb etc.
+some relations are:
+ARG1/NEQ
+ARG2/NEQ
+ARG3/NEQ
+ARG1/H
+ARG2/H
+ARG1/EQ
+RSTR/H
+----------------------------------------------------------------------------------------------------------

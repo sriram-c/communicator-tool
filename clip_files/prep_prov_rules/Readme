@@ -1,0 +1,9 @@
+#Readme to use  provisional prep rules
+######################################
+In order to check the existence of clp file :
+    RUN::
+           sh check-existence-for-clp-file.sh <vib>
+             ( EX::  sh check-existence-for-clp-file.sh ke_xvArA )
+    (NOTE:: 1. If the file already exists in prep_rules directory then file is copied to the prep_prov_rules directory.
+            2. If file does not exists then write a new file in prep_prov_rules directory.
+    )

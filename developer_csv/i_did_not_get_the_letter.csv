@@ -1,0 +1,8 @@
+muJe_0,citTI_0,nahIM_0,milI
+I,letter,not,get
+1,2,3,4
+pron,n,neg,v
+,yes,,
+[- sg u],[- sg a],,[- - past]
+prop
+4:ARG1/NEQ,4:ARG2/NEQ,,3:ARG1/H

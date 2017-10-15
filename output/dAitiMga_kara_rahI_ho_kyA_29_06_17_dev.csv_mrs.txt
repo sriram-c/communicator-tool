@@ -1,0 +1,4 @@
+[ RELS: < [ _diet_v_1 LBL: h1 ARG0: e4 [ e PROG: + TENSE: pres MOOD: indicative PERF: - SF: ques ] ARG1: x5 [ x PERS: 3 GEND: f NUM: sg PT: std ] ]
+          [ pron LBL: h2 ARG0: x5 ]
+          [ pronoun_q LBL: h3 ARG0: x5 RSTR: h6 ] >
+  HCONS: < h6 qeq h2 > ]

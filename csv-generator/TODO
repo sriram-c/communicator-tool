@@ -1,0 +1,28 @@
+Objective: 
+
+To generate a telugu csv file given the Hindi csv file and telugu morph
+
+Assumption: 
+
+Hindi and Telugu sentences are parallel and word aligned (i.e same number of words in Hindi and Telugu)
+
+
+Required files/tools:
+
+1. Hindi csv file
+2. Hindi - Telugu parallel sentences
+3. Telugu morph analyser
+
+
+Logic:
+
+1. Read Hindi and Telugu parallel sentence and map the words in the sentences.
+
+2. Run the telugu morph on each word of the Telugu sentence
+
+	2.1. mark the root, vibhakti, tam for each word
+
+3. start writing the Telugu csv file similar to the Hindi csv rows.
+
+
+

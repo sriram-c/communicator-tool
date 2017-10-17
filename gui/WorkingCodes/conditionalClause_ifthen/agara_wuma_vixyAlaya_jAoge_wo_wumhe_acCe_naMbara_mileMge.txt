@@ -1,0 +1,4 @@
+s	agara wuma vixyAlaya jAoge wo wumhe acCe naMbara mileMge
+s1	wuma vixyAlaya jAoge
+s2	wumhe acCe naMbara mileMge
+s.g	if+s1.g+then+s2.g

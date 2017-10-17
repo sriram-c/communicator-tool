@@ -1,0 +1,19 @@
+RUN: 
+
+./comp.sh convert_one_encoding_to_dev
+./convert_one_encoding_to_dev.out   < $1 > output 
+
+This converter converts following langs to devanagiri:
+1. Bengali 
+2. Punjabi
+3. Gujarati
+4. Oriya
+5. Tamil
+6. Telugu
+7.  Kanada
+8. Malayalam
+9. Sinhala
+10. Thai
+11. Tibetan
+12. Samaritan
+

@@ -1,0 +1,16 @@
+To run morph:
+
+lt-proc -c Tamilmorph_KP_CALTS_030917.mo
+
+Example:
+
+marawwE
+^marawwE/maram<n><0><sg><0><d><E>$
+avarE
+^avarE/avar<pn><mf_hon><sg><3><o><E>/avarE<n><0><sg><0><d><0>/avarE<n><0><sg><0><o><ti>$
+
+
+
+To run generator:
+
+lt-proc -cg Tamilgenerator_KP_CALTS_030917.mo

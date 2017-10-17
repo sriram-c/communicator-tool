@@ -1,0 +1,7 @@
+> /home/sriram/phd/communicator/communicator-tool/csv-generator/csv-generator.py(58)<module>()
+-> import sys
+(Pdb) Uncaught exception. Entering post mortem debugging
+Running 'cont' or 'step' will restart the program
+> /usr/lib/python2.7/cmd.py(130)cmdloop()
+-> line = raw_input(self.prompt)
+(Pdb) 

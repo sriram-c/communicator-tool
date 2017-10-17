@@ -54,11 +54,26 @@
 
 #######################################################################
 
+
+import sys
+import csv
+
 #read the hindi csv file
 
 
 
 #read the Hindi Telugu parallel sentences
+
+with open(sys.argv[1], 'rb') as fp:
+    #parallel_sent = fp.readlines()
+    csv_cont = csv.DictReader(fp)
+    
+    csv_file = csv_cont['csv_file']
+    hnd_snt = csv_cont['Hindi']
+    tel_snt = csv_cont['Telugu_wx']
+    
+
+
 
 # run morph on Telugu words
 

@@ -1,1 +1,3 @@
-test file
+Communicator GUI is a graphical interface that provides for the following functionalities:
+
+It is a general interaction tool that allows a user knowing a certain language to select a certain manually created user.csv file of a sentence as an input and get translated outputs in a particular language. Here in this sample project we have used Hindi as input language and prepared a text file having information abouty the words and constructions of that inserted text. This information is used to access several other existing manually maintained linguistic rules and processing modules as discussed below

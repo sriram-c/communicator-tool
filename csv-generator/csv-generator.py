@@ -121,20 +121,23 @@ with open(sys.argv[1], 'rb') as fp_csv:
 
         #create tamil csv file
 
-            tamil_csv = []
             hnd_wds=csv_cont[1].split(',')
             tamil_wds=tamil_snt.split()
 
             print tamil_snt
 
+            concept_dic = []
             tamil_csv_1 = []
             tamil_csv_2 = []
             for i in range(0,len(hnd_wds)):
 
                 wd =  tamil_wds[i].strip()
-                root = tamil_morph[i].strip().split('/')[-1].split('<')[0]
+                root = tamil_morph[i].strip().split('/')[-1].split('<')[0].strip()
                 vib = tamil_morph[i].strip().split('/')[-1].split('<')[-1].split('>')[0]
 
+
+                #concept dictionary:
+                concept_dic.append([hnd_wds[i].strip(),root+"_1"])
 
                 #1st row : word_vibhakti, verb_tam
                 if(vib == "cat:det"):
@@ -145,48 +148,34 @@ with open(sys.argv[1], 'rb') as fp_csv:
                 #2nd row : word_vibhakti, verb_tam
                 tamil_csv_2.append(root+"_1")
 
-                #3rd row count of words
-                tamil_csv_3=range(1,len(tamil_wds)+1)
 
-                #4th,5th,6th,7th row copy as it is from hindi.csv
+                #3rd,4th,5th,6th,7th row copy as it is from hindi.csv
+                tamil_csv_3= csv_cont[2].strip()
                 tamil_csv_4= csv_cont[3].strip()
                 tamil_csv_5= csv_cont[4].strip()
                 tamil_csv_6= csv_cont[5].strip()
                 tamil_csv_7= csv_cont[6].strip()
 
 
-            print tamil_csv_1
-            print tamil_csv_2
-            print tamil_csv_3
-            print tamil_csv_4
-            print tamil_csv_5
-            print tamil_csv_6
-            print tamil_csv_7
+            tamil_csv = []
+            tamil_csv.append(','.join(tamil_csv_1))
+            tamil_csv.append(','.join(tamil_csv_2))
+            tamil_csv.append(tamil_csv_3)
+            tamil_csv.append(tamil_csv_4)
+            tamil_csv.append(tamil_csv_5)
+            tamil_csv.append(tamil_csv_6)
+            tamil_csv.append(tamil_csv_7)
 
 
+            fp = open(sys.argv[2],'w')
+            for line in tamil_csv:
+                fp.write(line+"\n") 
+            fp.close()
 
+            fp = open(sys.argv[3],'w')
+            for line in concept_dic:
+                fp.write(','.join(line)+"\n")
 
+            fp.close()
 
-# run morph on Telugu words
-
-# create csv file
-
-# Create Concept dictionary
-
-
-# create karaka-vibhakti mapping
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                

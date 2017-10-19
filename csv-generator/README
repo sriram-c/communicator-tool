@@ -1,0 +1,16 @@
+
+
+
+Set the path of COMMUNICATOR_TOOL inside csv-generator.py
+
+
+
+
+COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
+
+TO RUN:
+
+python csv-generator.py parallel-sent/hnd-tamil-sent.csv
+
+
+

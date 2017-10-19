@@ -1,0 +1,6 @@
+s	ladZakA usa cammaca se cAvala KA sakawA hE jo mEMne KarIxA
+s1	ladZakA usa cammaca se cAvala KA sakawA hE
+s2	vaha cammaca mEMne KarIxA
+r.w.s	jo - vaha cammaca
+r.w.g	vaha cammaca - that spoon - which
+s.g	s1.g+which+s2.g

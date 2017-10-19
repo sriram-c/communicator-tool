@@ -1,0 +1,6 @@
+s	rAmane vaha kAma kara xiyA jo mEMne kahA WA
+s1	rAmane vaha kAma kara xiyA
+s2	vaha mEMne kahA WA
+r.w.s	jo - vaha
+r.w.g	vaha - that - which
+s.g	s1.g+which+s2.g

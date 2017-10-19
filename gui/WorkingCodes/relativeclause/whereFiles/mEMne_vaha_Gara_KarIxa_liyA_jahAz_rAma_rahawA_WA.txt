@@ -1,0 +1,6 @@
+s	mEMne vaha Gara KarIxa liyA jahAz rAma rahawA WA
+s1	mEMne vaha Gara KarIxa liyA
+s2	usa Gara meM rAma rahawA WA
+r.w.s	jahAz - usa Gara meM
+r.w.g	usa Gara meM - where
+s.g	s1.g+where+s2.g

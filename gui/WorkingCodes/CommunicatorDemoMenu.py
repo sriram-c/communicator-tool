@@ -289,9 +289,9 @@ class Example2(Frame):
 	
 	# Do operations according to types of key in the dictionary
 	
-	# This code looks at the values of the second column of the last row (as splitted by "+" symbol) and 
+	# This code looks at the values of the second column of the last row (as splitted by "+" symbol) as keys of the dictionary "sg" and does the following operations according to given conditions.
 	for key in sg:
-	    if '_' in key:
+	    if '_' in key: # if an index id is available in a key (indicated by "_" with a number) then it identifies the mentioned sub-sentence-id in that Key and finds the sub-sentence and looks for a word having that same index attached to it.
 	        for x in col1:
 	            if x in key:
 	                wordlist=col2[col1.index(x)].split('.\n')[0]

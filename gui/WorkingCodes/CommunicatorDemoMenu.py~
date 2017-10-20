@@ -293,7 +293,7 @@ class Example2(Frame):
 	for key in sg:
 	    if '_' in key: # if an index id is available in a key (indicated by "_" with a number) then it identifies the mentioned sub-sentence-id in that Key and finds the sub-sentence and looks for a word having that same index attached to it.
 	        for x in col1:
-	            if x == key.split('_')[0]:
+	            if x in key:
 	                wordlist=col2[col1.index(x)].split('.\n')[0]
 	                wordlist=wordlist.split()
 	                for word in wordlist:

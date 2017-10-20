@@ -1,6 +1,7 @@
 #!/bin/bash
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# Dr. Abhijit Debnath, RS, Anusaaraka Lab, IIIT-Hyd.
 
 import webbrowser
 from Tkinter import *
@@ -288,7 +289,7 @@ class Example2(Frame):
 	
 	# Do operations according to types of key in the dictionary
 	
-	
+	# This code looks at the values of the second column of the last row (as splitted by "+" symbol) and 
 	for key in sg:
 	    if '_' in key:
 	        for x in col1:

@@ -1,5 +1,47 @@
 <!DOCTYPE html>
 <html>
+<style>
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 150px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 16px;
+	border-width: 10px:
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+</style>
 <head><title></title></head>
 <body><table border=1>
 <tr><th>nAnY_0</th><th>inwa</th><th>attavaNE_E</th><th>inYrYu_0</th><th>ceVy_nw</th></tr>
@@ -8,6 +50,6 @@
 <tr><td>pron</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>[m sg u]</td><td>[- sg a]</td><td>[- sg a]</td><td></td><td></td></tr>
 <tr><td></td><td>2.2:viSeRaNa</td><td></td><td></td><td></td></tr>
-<tr><td>4:k1</td><td></td><td>4:k2</td><td>4:k7t</td><td></td></tr>
+<tr><td><div class="tooltip"> kx1<span class="tooltiptext"> k1 xenA kA karma </span></td><td></td><td>4:k2</td><td>4:k7t</td><td></td></tr>
 </table></body>
 </html>

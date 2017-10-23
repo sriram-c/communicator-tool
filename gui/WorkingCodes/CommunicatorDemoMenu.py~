@@ -151,7 +151,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 	
 	global wrd2delete
 	
-	relWrdRow = col2[col1.index("r.w.g")].split('\n')[0].split(' - ')
+	relWrdRow = col2[col1.index("r.w.g2")].split('\n')[0].split(' - ')
 	wrd2delete= relWrdRow[1]
 	
 	
@@ -315,14 +315,16 @@ class Example2(Frame):
 	        sg[key] = key
 	        
 	    elif '.g' in key:
+	        global wrd2del
 	        sentid = key[key.index('.')-1]
 	        for item in col1:
 	            if "r.w.g"+sentid in item:
 	                wrd2delRow = col2[col1.index("r.w.g"+sentid)].split('\n')[0].split(' - ')
-	                global wrd2del
+	                #global wrd2del
 	                wrd2del = wrd2delRow[1]
+	                
 	            #else:
-	                #wrd2del = ''
+	                #wrd2del = '' 
 	                #return wrd2del, sentid
 	                 
 	        

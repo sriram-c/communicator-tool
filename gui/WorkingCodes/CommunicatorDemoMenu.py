@@ -151,7 +151,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 	
 	global wrd2delete
 	
-	relWrdRow = col2[col1.index("r.w.g")].split('\n')[0].split(' - ')
+	relWrdRow = col2[col1.index("r.w.g2")].split('\n')[0].split(' - ')
 	wrd2delete= relWrdRow[1]
 	
 	
@@ -293,7 +293,7 @@ class Example2(Frame):
 	for key in sg:
 	    if '_' in key: # if an index id is available in a key (indicated by "_" + index number) then it identifies the mentioned sub-sentence-id in that Key and finds the sub-sentence and looks for a word having that same index attached to it.
 	        for x in col1:
-	            if x == key.split("_")[0]:
+	            if x in key:
 	                wordlist=col2[col1.index(x)].split('.\n')[0]
 	                wordlist=wordlist.split()
 	                for word in wordlist:
@@ -315,14 +315,17 @@ class Example2(Frame):
 	        sg[key] = key
 	        
 	    elif '.g' in key:
+	        
 	        sentid = key[key.index('.')-1]
 	        for item in col1:
 	            if "r.w.g"+sentid in item:
 	                wrd2delRow = col2[col1.index("r.w.g"+sentid)].split('\n')[0].split(' - ')
+	                #global wrd2del
 	                global wrd2del
 	                wrd2del = wrd2delRow[1]
+	                
 	            #else:
-	                #wrd2del = ''
+	                #wrd2del = '' 
 	                #return wrd2del, sentid
 	                 
 	        

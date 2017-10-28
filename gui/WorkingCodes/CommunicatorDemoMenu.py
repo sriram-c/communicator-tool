@@ -1,7 +1,6 @@
 #!/bin/bash
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Dr. Abhijit Debnath, RS, Anusaaraka Lab, IIIT-Hyd.
 
 import webbrowser
 from Tkinter import *
@@ -151,7 +150,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 	
 	global wrd2delete
 	
-	relWrdRow = col2[col1.index("r.w.g2")].split('\n')[0].split(' - ')
+	relWrdRow = col2[col1.index("r.w.g")].split('\n')[0].split(' - ')
 	wrd2delete= relWrdRow[1]
 	
 	
@@ -289,9 +288,9 @@ class Example2(Frame):
 	
 	# Do operations according to types of key in the dictionary
 	
-	# This code looks at the values of the second column of the last row (as splitted by "+" symbol) as keys of the dictionary "sg" and does the following operations according to given conditions.
+	
 	for key in sg:
-	    if '_' in key: # if an index id is available in a key (indicated by "_" + index number) then it identifies the mentioned sub-sentence-id in that Key and finds the sub-sentence and looks for a word having that same index attached to it.
+	    if '_' in key:
 	        for x in col1:
 	            if x in key:
 	                wordlist=col2[col1.index(x)].split('.\n')[0]
@@ -315,18 +314,16 @@ class Example2(Frame):
 	        sg[key] = key
 	        
 	    elif '.g' in key:
-	        
 	        sentid = key[key.index('.')-1]
 	        for item in col1:
-	            if "r.w.g"+sentid in item:
+	            
+	            if "r.w.g"+sentid not in item:
+	                wrd2del = ''
+	                #return wrd2del, sentid
+	            elif "r.w.g"+sentid in item:
 	                wrd2delRow = col2[col1.index("r.w.g"+sentid)].split('\n')[0].split(' - ')
-	                #global wrd2del
 	                global wrd2del
 	                wrd2del = wrd2delRow[1]
-	                
-	            #else:
-	                #wrd2del = '' 
-	                #return wrd2del, sentid
 	                 
 	        
 	        for x in col1:

@@ -315,12 +315,13 @@ class Example2(Frame):
 	        sg[key] = key
 	        
 	    elif '.g' in key:
-	        global wrd2del
+	        
 	        sentid = key[key.index('.')-1]
 	        for item in col1:
 	            if "r.w.g"+sentid in item:
 	                wrd2delRow = col2[col1.index("r.w.g"+sentid)].split('\n')[0].split(' - ')
 	                #global wrd2del
+	                global wrd2del
 	                wrd2del = wrd2delRow[1]
 	                
 	            #else:

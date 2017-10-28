@@ -5,53 +5,7 @@
 #######################################################################
 #                               content                               #
 
-
-# Objective
-    
-#    Given the csv file for a source language and morphological analyser for a target language
-#    
-#    generate following files for the target language.
-#
-#    
-#        1.  CSV file
-#        2.  Concept-dictionary
-#        3.  karaka-vibhakti mapping
-#
-#Logic:
-#
-#1. Read Hindi and Telugu parallel sentence and map the words in the sentences.
-#
-#2. Run the telugu morph on each word of the Telugu sentence
-#
-#	2.1. mark the root, vibhakti, tam for each word
-#
-#3. start writing the Telugu csv file similar to the Hindi csv rows.
-
-#
-
-#Functions:
-#
-#    1. Create_concept_dictionary
-#    2. Create_karaka_vibhakti_mapping
-#    3. create_csv
-#
-
-
-#
-#Assumption: 
-#
-#Hindi and Telugu sentences are parallel and word aligned (i.e same number of words in Hindi and Telugu)
-#
-#
-#Required files/tools:
-#
-#1. Hindi csv file
-#2. Hindi - Telugu parallel sentences
-#3. Telugu morph analyser
-#4. Lttoolbox
-#
-
-
+# generate Hindi sentences from Hindi csv file
 #######################################################################
 
 
@@ -59,9 +13,8 @@ import sys
 import csv
 import subprocess
 import os.path
-import re
 
-COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
+COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator/communicator-tool/"
 #read the hindi csv file
 
 #run tamil morph
@@ -92,6 +45,7 @@ def run_morph(tamil_snt):
 
 
 #read the Hindi Telugu parallel sentences
+#Read Hind csv file
 
 with open(sys.argv[1], 'rb') as fp_csv:
     csv_cont = csv.DictReader(fp_csv)
@@ -134,18 +88,11 @@ with open(sys.argv[1], 'rb') as fp_csv:
 
                 wd =  tamil_wds[i].strip()
                 root = tamil_morph[i].strip().split('/')[-1].split('<')[0].strip()
-                pos = tamil_morph[i].strip().split('/')[-1].split('<')[    1].strip('>')
-                if(re.search(r'cat:(.*)>\$', pos)):
-                    pos = re.search(r'cat:(.*)>\$', pos).group(1)
-
-
                 vib = tamil_morph[i].strip().split('/')[-1].split('<')[-1].split('>')[0]
 
 
                 #concept dictionary:
-                concept_dic.append([hnd_wds[i].strip(),root+"_1",pos])
-
-
+                concept_dic.append([hnd_wds[i].strip(),root+"_1"])
 
                 #1st row : word_vibhakti, verb_tam
                 if(vib == "cat:det"):
@@ -175,42 +122,15 @@ with open(sys.argv[1], 'rb') as fp_csv:
             tamil_csv.append(tamil_csv_7)
 
 
-            print tamil_morph
             fp = open(sys.argv[2],'w')
             for line in tamil_csv:
                 fp.write(line+"\n") 
             fp.close()
 
-            #write the cocept dictionary
             fp = open(sys.argv[3],'w')
             for line in concept_dic:
                 fp.write(','.join(line)+"\n")
 
             fp.close()
 
-
-            #prepare karaka vibhakti mapping
-            karak_vib = []
-            k_sen =  tamil_csv_7.split(',')
-            for i in range(0,len(k_sen)):
-                if(k_sen[i] != ''):
-                    vid = int(k_sen[i].split(':')[0])
-                    vwd = tamil_csv_2[vid-1]
-                    vib = tamil_csv_1[i].split('_')[1]
-                    karaka = k_sen[i].split(':')[1]
-
-                    #print karaka,vwd,vib
-                    karak_vib.append([karaka,vwd,vib])
-
-           
-            #write the karaka-vibhakti mapping
-
-            fp = open(sys.argv[4],'w')
-            for l in karak_vib:
-                fp.write(','.join(l)+'\n')
-            fp.close()
-            
-
-
-           
-            
+                

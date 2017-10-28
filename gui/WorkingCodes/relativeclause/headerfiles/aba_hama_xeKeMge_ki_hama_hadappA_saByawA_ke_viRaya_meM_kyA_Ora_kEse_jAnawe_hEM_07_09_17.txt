@@ -1,0 +1,5 @@
+s	अब हम देखेंगे कि हम हड़प्पा सभ्यता के विषय में क्या जानते हैं?
+s1	aba hama xeKeMge 
+s2	hama hadZappA saByawA ke viRaya meM kyA jAnawe hE
+r.w.g	 -  - 
+s.g	s1.g++s2.g

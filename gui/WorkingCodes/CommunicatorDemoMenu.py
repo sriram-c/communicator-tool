@@ -13,6 +13,9 @@ import re
 ##########################
 ## 1. Communicator Tool ##
 ##########################
+
+CommunicatorPath='/home/soma/Hindi-parser/create-hindi-parser/chl_to_dmrs'
+
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
 
     def __init__(self, parent):
@@ -50,14 +53,13 @@ class Example(Frame): # FrameClass in which the given button will open the File 
     def readFile(self, filename):
 
         f = open(filename, "r+") # Open the file that has been selected through file dialogue in Tkinter.
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs') # Target the directory to whichever folder location the run_communicator.sh file is located
+        os.chdir(CommunicatorPath) # Target the directory to whichever folder location the run_communicator.sh file is located
 		
 	
         communicatorOut = subprocess.check_output(['bash run_communicator.sh '+filename], shell=True) # Store the output of the communicator.sh command that has been run upon the filename(i.e., the user.csv).
         return filename + "\n" + "\n" + communicatorOut # In the popup window, displays the list of probable english sentences preceded by the steps of executions (advanced level information).
 
-#####################################	
-    	
+#####################################    	
 
 def main(): # A command that the relevant button can call and execute.
 
@@ -121,7 +123,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
+        os.chdir(CommunicatorPath)
         conceptdic=open('dic/concept_dictionary_user.txt')
         myconcepts= conceptdic.readlines()
         
@@ -266,8 +268,8 @@ class Example2(Frame):
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
-        userdict= open('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/provisional_dics/concept_dictionary_user.txt',"r")
+        os.chdir(CommunicatorPath)
+        userdict= open(CommunicatorPath+'/dic/concept_dictionary_user.txt',"r")
         userdict=userdict.readlines()
         
         
@@ -453,7 +455,7 @@ class Example3(Frame):
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
+        os.chdir(CommunicatorPath)
         
 	global x
 	x=f.readlines()

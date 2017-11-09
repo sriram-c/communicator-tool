@@ -61,8 +61,11 @@ import subprocess
 import os.path
 import re
 
-#COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
-COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
+<<<<<<< HEAD
+COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
+=======
+COMMUNICATOR_TOOL_PATH = "/home/soma/communicator-tool/"
+>>>>>>> bb902af1501ec11f839b086cd457f96595fb578f
 #read the hindi csv file
 
 #run tamil morph
@@ -92,7 +95,7 @@ def run_morph(tamil_snt):
 
 
 
-#read the Hindi Telugu parallel sentences
+#read the Hindi Tamil parallel sentences
 
 with open(sys.argv[1], 'rb') as fp_csv:
     csv_cont = csv.DictReader(fp_csv)

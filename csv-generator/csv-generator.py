@@ -61,7 +61,8 @@ import subprocess
 import os.path
 import re
 
-COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
+#COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
+COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 #read the hindi csv file
 
 #run tamil morph

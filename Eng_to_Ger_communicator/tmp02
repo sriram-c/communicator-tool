@@ -7,3 +7,5 @@ RELS: < [ pron<0:1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
  [ proper_q<10:17> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
  [ named<10:17> LBL: h13 CARG: "Germany" ARG0: x9 ] >
 HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 > ]
+
+

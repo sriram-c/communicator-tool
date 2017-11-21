@@ -8,6 +8,6 @@ python fetch_german.py ger_mrs.dat t2.txt t1.txt german_dict
 python clip_to_mrs_copy.py t2.txt mrs_generated
 cd $HOME/german/german_src
 #cp $2 $MYPATH/file1
-bash mod_mrs_sent.sh $HOME/Eng_to_Ger_communicator/mrs_generated >> $MYPATH/German_run/$1_out
+bash mod_mrs_sent.sh $HOME/communicator-tool/Eng_to_Ger_communicator/mrs_generated >> $MYPATH/German_run/$1_out
 #cat t2.txt
 

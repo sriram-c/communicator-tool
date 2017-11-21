@@ -1,0 +1,11 @@
+SENT: Were you reading a newspaper?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: past MOOD: indicative PROG: + PERF: - ]
+RELS: < [ pron<5:8> LBL: h4 ARG0: x3 [ x PERS: 2 PT: std ] ]
+ [ pronoun_q<5:8> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _read_v_1<9:16> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg ] ]
+ [ _a_q<17:18> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _newspaper_n_of<19:29> LBL: h12 ARG0: x8 ARG1: i13 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+
+

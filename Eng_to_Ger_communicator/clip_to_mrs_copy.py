@@ -18,6 +18,14 @@ arg =''
 def e_(li,xi):  #To split CLIPS fact and store information of verb
 	word =li.split()
 	str1 = " [ e  SF: "+word[2]+" TENSE: "+word[3].replace(')','')
+	if ' +)' in li:
+		k=li.index(" +)")
+		str3=li[k+1:]
+		wrd = str3.split()
+		str1=str1+" STAT: "+wrd[0].replace(')','')
+	        #/[int str1
+	else:
+		str1=str1+""
         file2.write(str1)
 	file2.write(' ]')
 	del mydict[xi]
@@ -111,7 +119,7 @@ def name_(li,xi):  #To split CLIPS fact and store information of all nodes
                 	pr_(mydict[xi],xi)
                 elif 'x_mrs_id' in mydict[xi]:
 			if '_q' in word[1]:
-				print xi
+				print ""
 			else:
                         	x_(mydict[xi],xi)
 	if xi in rstdic.keys():
@@ -130,7 +138,7 @@ def name_(li,xi):  #To split CLIPS fact and store information of all nodes
 	
 
 def mrs_(li,xi):  #To store information of all the ARGs
-	print li,':',xi
+	#print li,':',xi
 	word=li.split()
 	for i in range(len(word)):
      		if ( i >= 2) and (word[i]!=')'):
@@ -240,7 +248,7 @@ with open(fname, 'r') as file1:
 			rstdic[xr]=line4
 			
 
-		if (line.find('e_mrs_id-SF-Tns-Mood-prog-perf')!=-1):
+		if (line.find('e_mrs_id')!=-1):
 			line1 = line
 			word =line1.split()
 			x1 = word[1]
@@ -252,7 +260,7 @@ with open(fname, 'r') as file1:
 			xm = word[1]
 			mrsdic[xm]=line5
 
-	print qdict
+	#print qdict
 	for k,v in namedic.items():
 #		print "key: "+ k;
 #		print "value: "+v;	

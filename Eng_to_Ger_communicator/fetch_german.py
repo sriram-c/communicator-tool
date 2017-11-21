@@ -7,6 +7,8 @@ import fileinput
 ####################################
 fname=str(sys.argv[1])
 fname2=str(sys.argv[2])
+fname3=str(sys.argv[3])
+fname4=str(sys.argv[4])
 f=open(fname,"r+")
 f2=open(fname2,"w+")
 myfile=f.readlines()
@@ -28,7 +30,7 @@ for line in myfile:  #to store all English words that are to be replaced by Germ
         if rep1 != '':
                 engWrd.append(rep1)
 f2.close()
-print engWrd
+#print engWrd
 #############################################
 
 def replaceAll(files,searchExp,replaceExp):  #Function to replace
@@ -43,7 +45,7 @@ gerWrd=[]
 split_lines=[]
 wrdFetch=[]
 my_list=[]                              #to seperate all lines of concept dictionary on comma
-with open('/home/arpita/Eng_to_Ger_communicator/t1.txt','r') as file1:
+with open(fname3,'r') as file1:
         x=open(fname2,'r')
         mylines=x.readlines()           #to read the file having german facts
         lines=file1.readlines()
@@ -60,12 +62,12 @@ for word in engWrd:
                         string_str.append(wlist[0])
 #		print string_str
 wrd=''
-f2=open('/home/arpita/Eng_to_Ger_communicator/german_dict','r')
+f2=open(fname4,'r')
 line1=f2.readlines()
 for item in string_str: 
 	for string1 in line1:
 		wrd=string1.split(',')[0]
-		print item,'----',wrd 
+		#print item,'----',wrd 
 		if (item ==  wrd):
-			print string1
+		#	print string1
 			replaceAll('t2.txt',string1.split(',')[1],string1.split(',')[2].replace('\n',''))

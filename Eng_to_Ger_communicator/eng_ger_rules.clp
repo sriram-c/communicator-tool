@@ -30,6 +30,68 @@
        (retract ?f3)
        (assert (name-mrs_id-mrs_hndl-id "wh_q_rel" ?mrs_id ?hndl ?id) )
 )
+
+(defrule time
+?f22<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name time_n))
+=>
+       (retract ?f22)
+       (assert (name-mrs_id-mrs_hndl-id "time_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule loc
+?f23<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name loc_nonsp))
+=>
+       (retract ?f23)
+       (assert (name-mrs_id-mrs_hndl-id "unspec_loc_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule place
+?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name place_n))
+=>
+       (retract ?f24)
+       (assert (name-mrs_id-mrs_hndl-id "place_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule poss
+?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name poss))
+=>
+       (retract ?f24)
+       (assert (name-mrs_id-mrs_hndl-id "poss_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule poss_tense
+(declare (salience 100))
+?f241<-(name-mrs_id-mrs_hndl-id poss ?mid ?hndl ?id)
+?f242<-(e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf untensed $?p ) 
+=>
+       (retract ?f242)
+       (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf none $?p ) )
+)
+
+
+(defrule card
+?f26<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name card))
+=>
+       (retract ?f26)
+       (assert (name-mrs_id-mrs_hndl-id card_rel ?mrs_id ?hndl ?id) )
+)
+
+
+(defrule loc_Tns
+(declare (salience 100))
+?f25<-(name-mrs_id-mrs_hndl-id loc_nonsp ?mid ?hndl ?id)
+?f251<-(e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf untensed ?m ?prog ?perf )
+=>
+       (retract ?f251)
+       (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf none ) )
+)
+
+
 (defrule udef_q
 ?f4<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name udef_q))
@@ -37,6 +99,18 @@
        (retract ?f4)
        (assert (name-mrs_id-mrs_hndl-id "udef_q_rel" ?mrs_id ?hndl ?id) )
 )
+
+
+(defrule def_explicit_q
+?f4<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name def_explicit_q))
+=>
+       (retract ?f4)
+       (assert (name-mrs_id-mrs_hndl-id "udef_q_rel" ?mrs_id ?hndl ?id) )
+)
+
+
+
 (defrule udef_q
 ?f5<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name udef_q))
@@ -66,15 +140,6 @@
        (assert (name-mrs_id-mrs_hndl-id "_cause_a_rel" ?mrs_id ?hndl ?id) )
 )
 
-;(defrule pron_1
-;(declare (salience 10))
-;?f9<-(pr_mrs_id-pers-Num-Pt ?x_mrs_id ?pers&1|2 ?Num ?Pt)
-;?f91<-(name-mrs_id-mrs_hndl-id pron ?x_mrs_id ?hndl ?id)
-;=>
- ;       (retract ?f91)
-  ;      (assert (name-mrs_id-mrs_hndl-id "pron_n_rel" ?x_mrs_id ?hndl ?id) )
-;)
-
 (defrule pron
 ?f10<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name pron))
@@ -91,104 +156,83 @@
        (assert (x_mrs_id-pers-Num-Ind ?x_mrs_id ?pers ?Num) )
 )
 
-;(defrule in
-;?f10<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-;(test (eq ?name _in_p))
-;=>
- ;      (retract ?f10)
-  ;     (assert (name-mrs_id-mrs_hndl-id "_in_p_loc_rel" ?mrs_id ?hndl ?id) )
-;)
 
-(defrule Tense1
-(declare(salience 10))
-?f9<-(name-mrs_id-mrs_hndl-id _in_p ?e ?mrs_hndl ?id)
-?f91<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e ?SF ?Tns ?Mood ?prog ?perf)
-=>
-        (retract ?f91)
-        (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?e ?SF none) )
-)
-
-(defrule Tense2
-(declare(salience 10))
-?f9<-(name-mrs_id-mrs_hndl-id _on_p e8 ?mrs_hndl ?id)
-?f91<-(e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF ?Tns ?Mood ?prog ?perf)
-=>
-        (retract ?f91)
-        (assert (e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF none) )
-)
-
-(defrule Tense3
-(declare(salience 10))
-?f9<-(name-mrs_id-mrs_hndl-id _never_a_1 e8 ?mrs_hndl ?id)
-?f91<-(e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF ?Tns ?Mood ?prog ?perf)
-=>
-        (retract ?f91)
-        (assert (e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF none) )
-)
-
-;(defrule default2
-;?f14<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-;(test (eq(sub-string(-(length ?name)2)(length ?name)?name)"a_1"))
-;
-;=>
-;      (retract ?f14)
-;      
-;      (bind ?newname (string-to-field (str-cat (sub-string 1(-(length ?name)1)?name)"rel")))
-;      (assert (name-mrs_id-mrs_hndl-id ?newname ?mrs_id ?hndl ?id) )
-;)
-
-(defrule to
-?f15<-(name-mrs_id-mrs_hndl-id _to_p ?mrs_id ?hndl ?id)
-;(test (eq ?name _to_p)
-=>
-       (retract ?f15)
-       (assert (name-mrs_id-mrs_hndl-id "_nach_p_rel" ?mrs_id ?hndl ?id) )
-)
 
 (defrule default3
-?f11<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF ?Tns indicative - -)
+?f9<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF ?Tns indicative ?p ?pe)
 =>
-       (retract ?f11)
+       (retract ?f9)
        (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF ?Tns) )
 )
 
 (defrule default4
-?f11<-(pr_mrs_id-pers-Num-Pt ?pr_mrs_id ?pers ?Num std)
+?f12<-(pr_mrs_id-pers-Num-Pt ?pr_mrs_id ?pers ?Num std)
 =>
-       (retract ?f11)
+       (retract ?f12)
        (assert (pr_mrs_id-pers-Num-Pt ?pr_mrs_id ?pers ?Num) )
 )
 
-(defrule Tense
-?f9<-(name-mrs_id-mrs_hndl-id _to_p e8 ?mrs_hndl ?id)
-?f91<-(e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF ?Tns ?Mood ?prog ?perf)
-=>
-        (retract ?f91)
-        (assert (e_mrs_id-SF-Tns-Mood-prog-perf e8 ?SF none) )
-)
 
 (defrule rm_arg
-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
-?f0<-(mrs_id-Args ?mid ?arg)
+?f17<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
+?f171<-(mrs_id-Args ?mid $?pre ?arg $?post)
+(test (or (eq (sub-string 1 1 ?arg) "i")
+	  (eq (sub-string 1 1 ?arg) "p")
+	  (eq (sub-string 1 1 ?arg) "u")))
 =>
-        (retract ?f0)
-        (assert (mrs_id-Args  ?mid ))
+        (retract ?f171)
+        (assert (mrs_id-Args  ?mid $?pre $?post ))
 )
+
 
 (defrule mod_tense
-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
-?f0<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf untensed ?m ?prog ?perf )
-(test (or (eq (sub-string (- (length ?name) 3) (length ?name ) ?name) "_a_1")
-          (eq (sub-string (- (length ?name) 3) (length ?name ) ?name) "_p_1"))
+(declare (salience 100))
+?f14<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
+?f13<-(e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf untensed $?p1)
+(test (or (neq (str-index "_a" ?name) FALSE)
+          (neq (str-index "_p" ?name) FALSE))
 )
 =>
-        (retract ?f0)
-        (assert (e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf none ?m ?prog ?perf ))
+        (retract ?f13)
+        (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf none $?p1))
 )
 
 
+(defrule stat
+?f182<-(ltop-index ?h ?mid)
+?f18<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
+?f181<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf ?Tns ?m ?prog ?perf )
+(test (or (eq (sub-string (- (length ?name) 3) (- (length ?name ) 1) ?name) "_a_")
+          (eq (sub-string (- (length ?name) 3) (- (length ?name ) 1) ?name) "_p_"))
+)
+=>
+        (retract ?f181)
+        (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
+)
+
+(defrule stat1
+?f182<-(ltop-index ?h ?mid)
+?f18<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
+?f181<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf ?Tns ?m ?prog ?perf )
+(test (or (eq (sub-string (- (length ?name) 4) (- (length ?name ) 2) ?name) "_a_")
+          (eq (sub-string (- (length ?name) 4) (- (length ?name ) 2) ?name) "_p_"))
+)
+=>
+        (retract ?f181)
+        (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
+)
 
 
+(defrule stat2
+?f212<-(ltop-index ?h ?mid)
+?f21<-(name-mrs_id-mrs_hndl-id  _be_v_id ?mid ?m_hid ?id )
+?f211<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf ?Tns ?m ?prog ?perf )
+
+
+=>
+        (retract ?f211)
+        (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
+)
 
 
   

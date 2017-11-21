@@ -1,0 +1,21 @@
+SENT: RAma is going to the school
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: + PERF: - ]
+RELS: < [ proper_q<0:4> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:4> LBL: h7 CARG: "RAma" ARG0: x3 ]
+ [ _go_v_1<8:13> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _to_p<14:16> LBL: h1 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x10 [ x PERS: 3 NUM: sg ] ]
+ [ _the_q<17:20> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ _school_n_1<21:27> LBL: h14 ARG0: x10 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h12 qeq h14 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: + PERF: - ]
+RELS: < [ proper_q<0:4> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:4> LBL: h7 CARG: "RAma" ARG0: x3 ]
+ [ _go_v_1<8:13> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _to_p<14:16> LBL: h1 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x10 [ x PERS: 3 NUM: sg ] ]
+ [ _the_q<17:20> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ _school_n_1<21:27> LBL: h14 ARG0: x10 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h12 qeq h14 > ]
+
+

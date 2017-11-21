@@ -1,10 +1,10 @@
 [ LTOP: h0
 INDEX: e2
 RELS: <
- [ _junge_n_rel<-1:-1> LBL: h7 ARG0: x3 [ x PERS: 3 NUM: sg ] ]
- [ _apfel_n_rel<-1:-1> LBL: h12 ARG0: x8 [ x PERS: 3 NUM: sg ] ]
- [ _essen_v_n-a-haben_rel<-1:-1> LBL: h1 ARG0: e2 [ e  SF: prop TENSE: pres ] ARG1: x3 ARG2: x8 ]
- [ "_def_q_rel"<-1:-1> LBL: h4 ARG0: x3 RSTR: h5 BODY: h6 ]
- [ "_ein_q_rel"<-1:-1> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ "_pron_n_ppro_rel"<-1:-1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg ] ]
+ [ "_pron_n_ppro_rel"<-1:-1> LBL: h9 ARG0: x8 [ x PERS: 3 GEND: m NUM: sg ] ]
+ [ "_erzählen_v_n-a-d-haben_rel"<-1:-1> LBL: h1 ARG0: e2 [ e  SF: prop TENSE: past ] ARG1: x3 ARG2: x8 ]
+ [ "pronoun_q_rel"<-1:-1> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ "pronoun_q_rel"<-1:-1> LBL: h10 ARG0: x8 RSTR: h11 BODY: h12 ]
  [ topic-or-focus_d_rel<-1:-1> LBL: h1 ARG1: e2 ARG0: e22 ] >
-HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 > ]
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h9 > ]

@@ -1,0 +1,92 @@
+SENT: The boy eats an apple in the market. 
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _apple_n_1<16:21> LBL: h12 ARG0: x8 ]
+ [ _in_p<22:24> LBL: h12 ARG0: e13 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x8 ARG2: x14 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h15 ARG0: x14 RSTR: h16 BODY: h17 ]
+ [ _market_n_1<29:36> LBL: h18 ARG0: x14 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 h16 qeq h18 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _apple_n_1<16:21> LBL: h12 ARG0: x8 ]
+ [ _in_p<22:24> LBL: h1 ARG0: e13 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x14 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h15 ARG0: x14 RSTR: h16 BODY: h17 ]
+ [ _market_n_1<29:36> LBL: h18 ARG0: x14 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 h16 qeq h18 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ named<16:21> LBL: h12 CARG: "Apple" ARG0: x8 ]
+ [ _in_p<22:24> LBL: h12 ARG0: e14 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x8 ARG2: x15 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h16 ARG0: x15 RSTR: h17 BODY: h18 ]
+ [ _market_n_1<29:36> LBL: h19 ARG0: x15 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 h17 qeq h19 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ named<16:21> LBL: h12 CARG: "Apple" ARG0: x8 ]
+ [ _in_p<22:24> LBL: h1 ARG0: e14 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x15 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h16 ARG0: x15 RSTR: h17 BODY: h18 ]
+ [ _market_n_1<29:36> LBL: h19 ARG0: x15 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 h17 qeq h19 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:36> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ _the_q<0:3> LBL: h5 ARG0: x4 RSTR: h6 BODY: h7 ]
+ [ compound<4:12> LBL: h8 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x10 [ x IND: + ] ]
+ [ udef_q<4:7> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ _boy_n_1<4:7> LBL: h14 ARG0: x10 ]
+ [ _eats_n_1<8:12> LBL: h8 ARG0: x4 ]
+ [ _a_p_per<13:15> LBL: h8 ARG0: e15 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x16 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ udef_q<13:15> LBL: h17 ARG0: x16 RSTR: h18 BODY: h19 ]
+ [ _apple_n_1<16:21> LBL: h20 ARG0: x16 ]
+ [ _in_p<22:24> LBL: h8 ARG0: e21 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x22 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h23 ARG0: x22 RSTR: h24 BODY: h25 ]
+ [ _market_n_1<29:36> LBL: h26 ARG0: x22 ] >
+HCONS: < h0 qeq h1 h6 qeq h8 h12 qeq h14 h18 qeq h20 h24 qeq h26 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:36> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ _the_q<0:3> LBL: h5 ARG0: x4 RSTR: h6 BODY: h7 ]
+ [ compound<4:12> LBL: h8 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x10 [ x IND: + ] ]
+ [ udef_q<4:7> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ _boy_n_1<4:7> LBL: h14 ARG0: x10 ]
+ [ _eats_n_1<8:12> LBL: h8 ARG0: x4 ]
+ [ _a_p_per<13:15> LBL: h8 ARG0: e15 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x16 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ udef_q<13:15> LBL: h17 ARG0: x16 RSTR: h18 BODY: h19 ]
+ [ _apple_n_1<16:21> LBL: h20 ARG0: x16 ]
+ [ _in_p<22:24> LBL: h1 ARG0: e21 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: u22 ARG2: x23 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h24 ARG0: x23 RSTR: h25 BODY: h26 ]
+ [ _market_n_1<29:36> LBL: h27 ARG0: x23 ] >
+HCONS: < h0 qeq h1 h6 qeq h8 h12 qeq h14 h18 qeq h20 h25 qeq h27 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:36> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ _the_q<0:3> LBL: h5 ARG0: x4 RSTR: h6 BODY: h7 ]
+ [ compound<4:12> LBL: h8 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x10 [ x IND: + ] ]
+ [ udef_q<4:7> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ _boy_n_1<4:7> LBL: h14 ARG0: x10 ]
+ [ _eats_n_1<8:12> LBL: h8 ARG0: x4 ]
+ [ _a_p_per<13:15> LBL: h8 ARG0: e15 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x16 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ udef_q<13:15> LBL: h17 ARG0: x16 RSTR: h18 BODY: h19 ]
+ [ _apple_n_1<16:21> LBL: h20 ARG0: x16 ]
+ [ _in_p<22:24> LBL: h8 ARG0: e21 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e15 ARG2: x22 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<25:28> LBL: h23 ARG0: x22 RSTR: h24 BODY: h25 ]
+ [ _market_n_1<29:36> LBL: h26 ARG0: x22 ] >
+HCONS: < h0 qeq h1 h6 qeq h8 h12 qeq h14 h18 qeq h20 h24 qeq h26 > ]
+
+

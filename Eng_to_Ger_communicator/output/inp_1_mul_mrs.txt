@@ -1,0 +1,21 @@
+SENT: I live in Germany
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ pronoun_q<0:1> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _live_v_1<2:6> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _in_p<7:9> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<10:17> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<10:17> LBL: h13 CARG: "Germany" ARG0: x9 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ pronoun_q<0:1> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _live_v_1<2:6> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _in_p<7:9> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<10:17> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<10:17> LBL: h13 CARG: "Germany" ARG0: x9 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 > ]
+
+

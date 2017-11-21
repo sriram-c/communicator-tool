@@ -1,0 +1,46 @@
+SENT: She told Tom a story.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _tell_v_1<4:8> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ARG3: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<9:12> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<9:12> LBL: h13 CARG: "Tom" ARG0: x9 ]
+ [ _a_q<13:14> LBL: h15 ARG0: x8 RSTR: h16 BODY: h17 ]
+ [ _story_n_of<15:21> LBL: h18 ARG0: x8 ARG1: i19 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 h16 qeq h18 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _tell_v_1<4:8> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ARG3: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<9:12> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<9:12> LBL: h13 CARG: "Tom" ARG0: x9 ]
+ [ _a_q<13:14> LBL: h15 ARG0: x8 RSTR: h16 BODY: h17 ]
+ [ _story_n_1<15:21> LBL: h18 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 h16 qeq h18 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _tell_v_1<4:8> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ARG3: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<9:12> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<9:12> LBL: h13 CARG: "Tom" ARG0: x9 ]
+ [ udef_q<13:21> LBL: h15 ARG0: x8 RSTR: h16 BODY: h17 ]
+ [ card<13:14> LBL: h18 CARG: "1" ARG0: e20 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x8 ]
+ [ _story_n_1<15:21> LBL: h18 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 h16 qeq h18 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _tell_v_1<4:8> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<9:12> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ named<9:12> LBL: h12 CARG: "Tom" ARG0: x8 ]
+ [ loc_nonsp<13:21> LBL: h1 ARG0: e14 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x15 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ udef_q<13:21> LBL: h16 ARG0: x15 RSTR: h17 BODY: h18 ]
+ [ card<13:14> LBL: h19 CARG: "1" ARG0: e21 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x15 ]
+ [ _story_n_1<15:21> LBL: h19 ARG0: x15 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 h17 qeq h19 > ]
+
+

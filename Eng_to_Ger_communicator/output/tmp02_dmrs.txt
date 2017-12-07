@@ -1,16 +1,14 @@
 <dmrs cfrom="-1" cto="-1">
 <node cfrom="0" cto="1" nodeid="10000"><gpred>pron</gpred><sortinfo cvarsort="x" num="sg" pers="1" pt="std" /></node>
 <node cfrom="0" cto="1" nodeid="10001"><gpred>pronoun_q</gpred><sortinfo /></node>
-<node cfrom="2" cto="6" nodeid="10002"><realpred lemma="live" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="pres" /></node>
-<node cfrom="7" cto="9" nodeid="10003"><realpred lemma="in" pos="p" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
-<node cfrom="10" cto="17" nodeid="10004"><gpred>proper_q</gpred><sortinfo /></node>
-<node carg="&quot;Germany&quot;" cfrom="10" cto="17" nodeid="10005"><gpred>named</gpred><sortinfo cvarsort="x" ind="+" num="sg" pers="3" /></node>
+<node cfrom="2" cto="5" nodeid="10002"><realpred lemma="saw" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="pres" /></node>
+<node cfrom="6" cto="10" nodeid="10003"><gpred>pron</gpred><sortinfo cvarsort="x" gend="m" num="sg" pers="3" pt="std" /></node>
+<node cfrom="6" cto="10" nodeid="10004"><gpred>pronoun_q</gpred><sortinfo /></node>
 <link from="0" to="10002"><rargname /><post>H</post></link>
 <link from="10001" to="10000"><rargname>RSTR</rargname><post>H</post></link>
 <link from="10002" to="10000"><rargname>ARG1</rargname><post>NEQ</post></link>
-<link from="10003" to="10002"><rargname>ARG1</rargname><post>EQ</post></link>
-<link from="10003" to="10005"><rargname>ARG2</rargname><post>NEQ</post></link>
-<link from="10004" to="10005"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10003"><rargname>ARG2</rargname><post>NEQ</post></link>
+<link from="10004" to="10003"><rargname>RSTR</rargname><post>H</post></link>
 </dmrs>
 
 

@@ -70,4 +70,4 @@ for item in string_str:
 		#print item,'----',wrd 
 		if (item ==  wrd):
 		#	print string1
-			replaceAll('t2.txt',string1.split(',')[1],string1.split(',')[2].replace('\n',''))
+			replaceAll('ger_facts.txt',string1.split(',')[1],string1.split(',')[2].replace('\n',''))

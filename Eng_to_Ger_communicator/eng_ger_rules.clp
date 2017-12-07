@@ -197,31 +197,18 @@
         (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf none $?p1))
 )
 
-
 (defrule stat
+(declare (salience 100))
 ?f182<-(ltop-index ?h ?mid)
 ?f18<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
-?f181<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf ?Tns ?m ?prog ?perf )
-(test (or (eq (sub-string (- (length ?name) 3) (- (length ?name ) 1) ?name) "_a_")
-          (eq (sub-string (- (length ?name) 3) (- (length ?name ) 1) ?name) "_p_"))
+?f181<-(e_mrs_id-SF-Tns-Mood-prog-perf ?mid ?sf ?Tns $?p1)
+(test (or (neq (str-index "_a_" ?name) FALSE)
+          (neq (str-index "_p_" ?name) FALSE))
 )
 =>
         (retract ?f181)
         (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
 )
-
-(defrule stat1
-?f182<-(ltop-index ?h ?mid)
-?f18<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
-?f181<-(e_mrs_id-SF-Tns-Mood-prog-perf   ?mid ?sf ?Tns ?m ?prog ?perf )
-(test (or (eq (sub-string (- (length ?name) 4) (- (length ?name ) 2) ?name) "_a_")
-          (eq (sub-string (- (length ?name) 4) (- (length ?name ) 2) ?name) "_p_"))
-)
-=>
-        (retract ?f181)
-        (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
-)
-
 
 (defrule stat2
 ?f212<-(ltop-index ?h ?mid)
@@ -232,6 +219,16 @@
 =>
         (retract ?f211)
         (assert (e_mrs_id-SF-Tns-STAT   ?mid ?sf ?Tns +))
+)
+(defrule there
+(declare (salience 100))
+?f27<-(name-mrs_id-mrs_hndl-id  _there_a_1 ?mid ?m_hid ?id )
+?f272<-(name-mrs_id-mrs_hndl-id   ?name ?arg ?m ?id)
+=>
+        (retract ?f272 ?f27)
+        (assert (name-mrs_id-mrs_hndl-id  _there_a_1 ?mid ?m_hid ?id))
+       
+
 )
 
 

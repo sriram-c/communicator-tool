@@ -3,7 +3,7 @@
 	(ii)  Ace parser and pyDelphin should be installed.
 	(iii) bash should be the default shell script running command.
 	(iv)  In complex_sentence.py, the path: 
-		myfile = open('/home/arpita/create-hindi-parser/chl_to_dmrs/output/'+sent+'_dev.csv_sent.txt','r')
+		path = '/home/arpita/'
 	      change "arpita" with your user name. 
 
 
@@ -33,24 +33,26 @@
                  myclips -f eng_ger_rules.clp 
 	
 	(iv) To replace English words and senses:
-		python fetch_german.py ger_mrs.dat t2.txt
+		python fetch_german.py ger_mrs.dat ger_facts.txt dict.txt german_dict
 	
  	(v) To generate German MRS:
-		python clip_to_mrs_copy.py t2.txt mrs_generated
+		python clip_to_mrs_copy.py ger_facts.txt mrs_generated
 
 	(vi) To generate German sentence:
 		cd $HOME/german/german_src
                 bash mod_mrs_sent.sh $HOME/Eng_to_Ger_communicator/mrs_generated
 	
 	(vii) To generate complex German sentence:
-		python complex_sentence.py $HOME/create-hindi-parser/chl_to_dmrs/header_files/rAma_vixyAlaya_jA_rahA_hE_kyoM_ki_mEMne_usase_kahA.txt abc xyz
+		python complex_sentence.py $HOME/create-hindi-parser/chl_to_dmrs/header_files/rAma_vixyAlaya_jA_rahA_hE_kyoM_ki_mEMne_usase_kahA.txt sentence1 sentence2
 
 *where:
 	"demo" is the input file with English sentence.
 	"clip.txt" is the file containing English facts.
 	"mrs_facts.dat" is the file where English facts are loaded.
 	"ger_mrs.dat" is the file containing German facts with English words and senses.
-	"t2.txt" is the file containing German facts with German words and senses.
+	"ger_facts.txt" is the file containing German facts with German words and senses.
 	"mrs_generated" is the file containing generated German MRS.
 	"$HOME/ace-0.9.24/output/demo_mul_mrs.txt" is the complete path where English MRS of sentence in "demo" file is saved.
-	"$HOME/create-hindi-parser/chl_to_dmrs/header_files/rAma_vixyAlaya_jA_rahA_hE_kyoM_ki_mEMne_usase_kahA.txt" is the complete path where complex English sentence is stored.
+	"$HOME/create-hindi-parser/chl_to_dmrs/header_files/rAma_vixyAlaya_jA_rahA_hE_kyoM_ki_mEMne_usase_kahA.txt" is the complete path of the complex hindi sentence.
+	"sentence1" is the first english sentence of complex hindi sentence. 
+	"sentence2" is the second english sentence of complex hindi sentence. 

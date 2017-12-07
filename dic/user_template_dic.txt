@@ -4,7 +4,42 @@
 {[pahuzcanA_se][pahale]}	before you reached	kala_2	yesterday	yesterday
 {[[rAma]~Ora~[SyAma]_ke][bIca_meM]}	between Rama and Shyama	yahAz_1	here	here
 {[[xillI+yUnivarsitI]~Ora~[xUsarA~iMstItyUta]_meM]}	University and various others institutes	yUnivarsitI_1	university	university
+{[<xillI+yUnivarsitI><xUsarA~iMstItyUta>_meM][Ora]}	University and various others institutes	yUnivarsitI_1	iniversity	university
 {[apanA_se][CotA_ko]}	our younger	baccA_2	child	children
 {[viktara]~Ora~[manoja]_0}	Victor and Manoj	ladakA_1	boy	boys
 {<viktara><manoja>[Ora]}	Victor and Manoj	ladakA_1	boy	boys
 {<propn><propn>[Ora]}	<propn> and <propn>	ladakA_1	boy	boys
+{<selaKadZI>[nAmaka]<pawWarA>_se}	the stones called selaKadZI	pawWara_1	stone	stones
+{[{<selaKadZI>nAmaka<pawWarA>_se}][banA-yA_gayA][muhara]_ko}	the coins made from the stones called selaKadZI	muhara_1	coin	coins
+{<xaravAjZA>_[ke_pAsa]}	door	xaravAjZA_1	door	doors
+{<vikasiwa~hadZappA>se[pahale]}	mature Harappan	samaya_1	time	times
+{<maCalI><pakRI>kI<haddI>[waWA]}	Bones of fish and fowl	haddI_1	bone	bones
+{<10#minata>@[xera]_se}	10 minutes late	xera_1	late	late
+{<rAma_ke>[viRaya_meM]<eka~nibanXa>}	an essay about Rama	nibanXa_1	essay	essays
+{<bAjZAra_se><2@kilomItara~xUra_0>}	2 km away from the market	bAjZAra_1	market	markets
+{<hadZappA~saByawA_ke>[viRaya_meM]<kyA_0>}	about Harappan civilisation	saByawA_1	civilisation	civilisations
+{[prawi<hajAra>kI][<kareMsI>para<10%><diskAuMta>]}	10% discount per thousand rupees	diskAuMta_1	discount	discounts
+{<apanA_se><CotA_ko>}	our youngers	CotA_1	younger	youngers
+{<piCalA><xo@GaNtA>_se}	the last two hours	kala_2	yesterday	yesterday
+{<pahuzcanA_se>[pahale]}	before you reached	kala_2	yesterday	yesterday
+{[[xo_se][wIna][sAla*waka]_kA}	around 2 to 3 years	sAla_1	year	year
+{[<70#kilomItara>prawi<GaNtA>]}	70 km per hour	GaNtA_1	hour	hour
+{<yaha~kiwAba>_meM_se<cOWA~kiwAba>}	the 4th one of these books	kiwAba_1	book	books
+{[<yaha><xo@poSAka>]_meM_se}	from these two dresses	poSAka_1	dress	dresses
+{[<kvAlitI><priMta>Ora]}	quality and print	kvAlitI_1	quality	qualities
+{[<eka-xo>#<xina>]_meM}	within one or two days	xina_1	day	days
+{<KicadZI>_ke_alAvA<kuCa>*BI}	anything except cereal	KicadZI_1	cereal	cereal
+{[<tAipiMga><SArtahEMda>Ora_meM]<diplomA>}	diploma in typing and shorthand	diplomA_1	diploma	diploma
+{[[<2100>@rupayA>]<prawi~mahInA>]}	2100 rupees per month	mahInA_1	month	months
+{(<Aja_se>)[pahale]}	before today	kala_2	yesterday	yesterday
+{<yogA><kuCa~vyAyAma>Ora}	some yoga and exercise	vyAyAma_1	exercise	exercises
+{<rAma>_ke_alAvA[<SyAma><mohana><sIwA>_Axi]}	apart from Rama, Shyama, Mohana, Sita etc	ladakA_1	boy	boys
+{<rAma>kA_piwA<xaSaraWa>ko}	Rama's father Dasharath	ladakA_1	boy	boys
+{[<rAma>_ke_sWAna_para]<SyAma>}	Shyama in place of Rama	ladakA_1	boy	boys
+{<kakRA>_meM<xUsarA~sWAna>}	2nd place in the class	kakRA_1	class	classes
+{[<rAma><SyAma>_ke]Ora][bIca_meM]}	between Rama and Shyama	ladakA_1	boy	boys
+{[<yAwrA>]_ke_xOrAna}	during travel	yAwrA_1	travel	travel
+{[wuma] kA_BAI [rAjIva]}	your brother Rajeev	ladakA_1	boy	boys
+{[yahAM_se][kiwanA~xUra_0]}	how far	xUra_1	distance	distance
+{<yahAM_se><kiwanA~xUra_0>}	how far	xUra_1	distance	distance
+{[[kramaSaH]<xurga><nicalA~Sahara>[Ora]_kA]}	the Citadel  and the Lower Town respectively	xurga_1	citadel	citadels

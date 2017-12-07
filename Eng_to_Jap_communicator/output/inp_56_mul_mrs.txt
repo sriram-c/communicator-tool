@@ -1,0 +1,11 @@
+SENT: A dog eats a cat.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _a_q<0:1> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _dog_n_1<2:5> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<6:10> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<11:12> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _cat_n_1<13:17> LBL: h12 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 > ]
+
+

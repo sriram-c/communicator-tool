@@ -1,0 +1,11 @@
+SENT: Did you bring the samples?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<4:7> LBL: h4 ARG0: x3 [ x PERS: 2 PT: std ] ]
+ [ pronoun_q<4:7> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _bring_v_1<8:13> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ _the_q<14:17> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _sample_n_of<18:26> LBL: h12 ARG0: x8 ARG1: i13 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+
+

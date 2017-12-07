@@ -1,0 +1,23 @@
+SENT: Tom reads a letter.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ proper_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:3> LBL: h7 CARG: "Tom" ARG0: x3 ]
+ [ _read_v_1<4:9> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<10:11> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _letter_n_of<12:19> LBL: h13 ARG0: x9 ARG1: i14 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:19> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ udef_q<0:19> LBL: h5 ARG0: x4 RSTR: h6 BODY: h7 ]
+ [ compound<0:9> LBL: h8 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x10 [ x IND: + ] ]
+ [ proper_q<0:3> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ named<0:3> LBL: h14 CARG: "Tom" ARG0: x10 ]
+ [ _read_n_1<4:9> LBL: h8 ARG0: x4 ]
+ [ _a_p_per<10:11> LBL: h8 ARG0: e16 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x17 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ udef_q<10:11> LBL: h18 ARG0: x17 RSTR: h19 BODY: h20 ]
+ [ _letter_n_of<12:19> LBL: h21 ARG0: x17 ARG1: i22 ] >
+HCONS: < h0 qeq h1 h6 qeq h8 h12 qeq h14 h19 qeq h21 > ]
+
+

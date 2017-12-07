@@ -1,0 +1,11 @@
+SENT: Is she watching a movie?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: + PERF: - ]
+RELS: < [ pron<3:6> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<3:6> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _watch_v_1<7:15> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<16:17> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _movie_n_of<18:24> LBL: h12 ARG0: x8 ARG1: i13 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+
+

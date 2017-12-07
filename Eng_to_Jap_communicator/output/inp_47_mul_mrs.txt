@@ -1,0 +1,9 @@
+SENT: Will she have gone?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: fut MOOD: indicative PROG: - PERF: + ]
+RELS: < [ pron<5:8> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<5:8> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _go_v_1<14:19> LBL: h1 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 > ]
+
+

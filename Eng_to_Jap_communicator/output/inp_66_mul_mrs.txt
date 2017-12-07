@@ -1,0 +1,9 @@
+SENT: The boy has come.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: + ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _come_v_1<12:17> LBL: h1 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 > ]
+
+

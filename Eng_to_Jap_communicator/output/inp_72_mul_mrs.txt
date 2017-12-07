@@ -1,0 +1,11 @@
+SENT: The cat ate the mouse.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _cat_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _eat_v_1<8:11> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<12:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _mouse_n_1<16:22> LBL: h12 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h10 qeq h12 > ]
+
+

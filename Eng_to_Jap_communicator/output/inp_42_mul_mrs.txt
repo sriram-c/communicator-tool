@@ -1,0 +1,12 @@
+SENT: The boy was absent from the school.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _boy_n_1<4:7> LBL: h7 ARG0: x3 ]
+ [ _absent_a_1<12:18> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _from_p<19:23> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ARG2: x9 [ x PERS: 3 NUM: sg ] ]
+ [ _the_q<24:27> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _school_n_1<28:35> LBL: h13 ARG0: x9 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+
+

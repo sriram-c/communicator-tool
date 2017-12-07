@@ -1,0 +1,11 @@
+SENT: He accepted the idea.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:2> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: m PT: std ] ]
+ [ pronoun_q<0:2> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _accept_v_1<3:11> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<12:15> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _idea_n_of<16:21> LBL: h12 ARG0: x8 ARG1: i13 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+
+

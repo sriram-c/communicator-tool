@@ -1,0 +1,32 @@
+SENT: He will help the blind man.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: fut MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:2> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: m PT: std ] ]
+ [ pronoun_q<0:2> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _help_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg ] ]
+ [ _the_q<13:16> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ _blind_a_1<17:22> LBL: h12 ARG0: e13 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x8 ]
+ [ _man_n_1<23:27> LBL: h12 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: fut MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:2> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: m PT: std ] ]
+ [ pronoun_q<0:2> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _help_v_1<8:12> LBL: h8 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<13:16> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _blind_n_1<17:22> LBL: h13 ARG0: x9 ]
+ [ _man_a_1<23:27> LBL: h1 ARG0: e14 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: h15 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h11 qeq h13 h15 qeq h8 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: fut MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:2> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: m PT: std ] ]
+ [ pronoun_q<0:2> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _help_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg ] ]
+ [ _the_q<13:16> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ compound<17:27> LBL: h12 ARG0: e13 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x8 ARG2: x14 [ x IND: + ] ]
+ [ udef_q<17:22> LBL: h15 ARG0: x14 RSTR: h16 BODY: h17 ]
+ [ _blind_n_1<17:22> LBL: h18 ARG0: x14 ]
+ [ _man_n_1<23:27> LBL: h12 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 h16 qeq h18 > ]
+
+

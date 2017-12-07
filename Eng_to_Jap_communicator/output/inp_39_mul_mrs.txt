@@ -1,0 +1,29 @@
+SENT: I will cook.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: fut MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ pronoun_q<0:1> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _cook_v_1<7:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: p8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:1> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ pronoun_q<0:1> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _will_v_1<2:6> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<7:12> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ named<7:12> LBL: h12 CARG: "Cook" ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:12> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<0:12> LBL: h5 ARG0: x4 RSTR: h6 BODY: h7 ]
+ [ compound<0:12> LBL: h8 ARG0: e9 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ARG2: x10 [ x PERS: 3 NUM: sg ] ]
+ [ udef_q<0:6> LBL: h11 ARG0: x10 RSTR: h12 BODY: h13 ]
+ [ compound<0:6> LBL: h14 ARG0: e15 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x10 ARG2: x16 [ x PERS: 3 NUM: pl IND: + ] ]
+ [ proper_q<0:1> LBL: h17 ARG0: x16 RSTR: h18 BODY: h19 ]
+ [ named<0:1> LBL: h20 CARG: "I" ARG0: x16 ]
+ [ _will_n_1<2:6> LBL: h14 ARG0: x10 ]
+ [ named<7:12> LBL: h8 CARG: "Cook" ARG0: x4 ] >
+HCONS: < h0 qeq h1 h6 qeq h8 h12 qeq h14 h18 qeq h20 > ]
+
+

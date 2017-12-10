@@ -23,6 +23,7 @@
  (load-facts "user_gnp_info.dat")
  (load-facts "user_lemma_info.dat")
  (load-facts "prep_insertion_based_on_verb.dat")
+ (load-facts "default_prep_insertion_based_on_rel.dat")
  (load "path.clp")
  (defmodule PREP_DISAMBIGUATION_MODULE (export ?ALL)
                        (import MAIN ?ALL))

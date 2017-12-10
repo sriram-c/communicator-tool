@@ -42,10 +42,12 @@
 (declare (salience -1000))
 (user_id-chunk-vib ?id ?chunk ?vib)
 (or (user_inter_chunk_rel-ids ?rel ?h  ?id) (user_discourse_rel-ids ?rel ?h  ?id))
+(rel_name-default_prep ?rel ?prep)
+
 ;(user_id-cat ?id ?cat&~poss_propn&~poss_n&~poss_pron&~place_adv&~time_adv);[rAma_kA betA] vixyAlaya_meM paDawA_hE. She does not come [here].
-(test (eq (gdbm_lookup_p "default_prep.gdbm" ?rel) TRUE))
-(not (file_loaded ?id))
+;(test (eq (gdbm_lookup_p "default_prep.gdbm" ?rel) TRUE))
+;(not (file_loaded ?id))
 =>
-	(bind ?prep  (gdbm_lookup "default_prep.gdbm" ?rel))
+;	(bind ?prep  (gdbm_lookup "default_prep.gdbm" ?rel))
 	(assert (prep_wrd-ids (string-to-field ?prep) ?h ?id))
 )

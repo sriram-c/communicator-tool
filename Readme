@@ -6,14 +6,18 @@ Pre-requisites:
 --------------
 1. pydelphin need to be installed in $HOME/
 2. Ace parser 0.24 version or higher in $HOME/
-3. Install the following packages
+3. Clips 
+    1. Download zip file : (https://sourceforge.net/projects/clipsrules/files/CLIPS/6.40_Beta_1/clips_core_source_640.zip/download)
+    2. copy zip file in communicator-tool folder
+    3. unzip clips_core_source_640.zip 
+4. Install the following packages
 	libicu-dev flex
 
-Set pydelphin and chl_to_dmrs path in ~/.bashrc:
+Set pydelphin and communicator-tool path in ~/.bashrc:
 -------------------------------
 Copy below lines in end of ~/.bashrc 
 export PYDELPHIN=$HOME/pydelphin
-export DMRS=$HOME/chl_to_dmrs
+export DMRS=$HOME/communicator-tool
 export PATH=$DMRS/bin:$HOME/bin:$PATH
 
 
@@ -21,7 +25,10 @@ source ~/.bashrc
 
 Compile:
 -------
-sh compile.sh
+1. cd $DMRS/clips_core_source_640/core
+2. make -f makefile
+3. mv clips $DMRS/bin/
+4. sh compile.sh
 
 Run:
 ----
@@ -32,12 +39,12 @@ Run:
 #To generate only developer csv from user csv:
 #############################################
 	bash convert_user_to_dev_csv.sh  <user.csv> <dev.csv>
-		Ex: bash convert_user_to_dev_csv.sh boy_can_eat_rice_with_the_spoon_user.csv dev.csv
+		Ex: bash convert_user_to_dev_csv.sh boy_can_eat_rice_with_the_spoon_user.csv boy_can_eat_rice_with_the_spoon_dev.csv
 
 #To run only devloper csv:
 #########################	
 	bash run.sh <dev.csv>
-		Ex: bash run.sh sleep.csv
+		Ex: bash run.sh boy_can_eat_rice_with_the_spoon_dev.csv
 
 
 #If sentence is not generated, to generate sentence by changing dmrs manually :

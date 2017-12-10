@@ -14,9 +14,9 @@ filenames = [
 		"user_cat_info.dat",
 		"user_definiteness_info.dat",
 		"user_gnp_info.dat",
-		"user_intrachunk_rel.dat",
-		"user_interchunk_rel.dat",
-		"user_discourse_rel.dat"
+		"user_intrachunk_rel_tmp.dat",
+		"user_interchunk_rel_tmp.dat",
+		"user_discourse_rel_tmp.dat"
 	]
 
 

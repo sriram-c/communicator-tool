@@ -17,11 +17,11 @@ myfile=f.readlines()
 pos = 0
 engWrd=[]
 x=[]
-for line in myfile:  #to store all English words that are to be replaced by japanese words
+for line in myfile:  #to store all English words that are to be replaced by German words
         f2.write(line)
-#       if line.find("_rel") != -1:    #to find japanese facts in clip file
+#       if line.find("_rel") != -1:    #to find german facts in clip file
 #               print line
-#               f2.write(line)         # to write japanese facts in second file
+#               f2.write(line)         # to write german facts in second file
         rep=re.findall(r' \_.*?\_',line) # to fetch words
         rep1=str(rep).strip('[]')
         rep1=rep1.replace("_",'')
@@ -41,13 +41,13 @@ def replaceAll(files,searchExp,replaceExp):  #Function to replace
     	sys.stdout.write(line)
 
 #############################################
-japaneseWrd=[]
+gerWrd=[]
 split_lines=[]
 wrdFetch=[]
 my_list=[]                              #to seperate all lines of concept dictionary on comma
 with open(fname3,'r') as file1:
         x=open(fname2,'r')
-        mylines=x.readlines()           #to read the file having japanese facts
+        mylines=x.readlines()           #to read the file having german facts
         lines=file1.readlines()
         for string in lines:
                 line1=string.split(',')
@@ -61,7 +61,7 @@ for word in engWrd:
                 eng=wlist[2]                    #english entry
                 if word == eng.split('_')[0]:
                         string_str.append(wlist[0])
-print string_str
+#print string_str
 wrd=''
 f2=open(fname4,'r')
 line1=f2.readlines()

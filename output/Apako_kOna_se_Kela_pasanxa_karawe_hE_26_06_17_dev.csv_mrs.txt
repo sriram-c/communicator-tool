@@ -1,6 +1,0 @@
-[ RELS: < [ _which_q LBL: h1 ARG0: x8 [ x PERS: 3 NUM: pl ] RSTR: h10 ]
-          [ _like_v_1 LBL: h2 ARG0: e6 [ e PROG: - TENSE: pres MOOD: indicative PERF: - SF: ques ] ]
-          [ pron LBL: h3 ARG0: x7 [ x PERS: 2 PT: std ] ]
-          [ pronoun_q LBL: h4 ARG0: x7 RSTR: h9 ]
-          [ _game_n_1 LBL: h5 ARG0: x8 ] >
-  HCONS: < h9 qeq h3 h10 qeq h5 > ]

@@ -1,9 +1,0 @@
-[ RELS: < [ def_explicit_q LBL: h1 ARG0: x11 [ x PERS: 3 NUM: sg ] RSTR: h14 ]
-          [ poss LBL: h2 ARG0: e8 [ e PROG: - TENSE: untensed MOOD: indicative PERF: - SF: prop ] ARG1: x11 ARG2: x9 [ x PERS: 2 PT: std ] ]
-          [ pronoun_q LBL: h3 ARG0: x9 RSTR: h13 ]
-          [ pron LBL: h4 ARG0: x9 ]
-          [ _love_v_1 LBL: h5 ARG0: e10 [ e PROG: - TENSE: pres MOOD: indicative PERF: - SF: ques ] ARG1: x11 ARG2: x12 [ x PERS: 2 PT: std ] ]
-          [ _mother_n_of LBL: h2 ARG0: x11 ]
-          [ pron LBL: h6 ARG0: x12 ]
-          [ pronoun_q LBL: h7 ARG0: x12 RSTR: h15 ] >
-  HCONS: < h13 qeq h4 h14 qeq h2 h15 qeq h6 > ]

@@ -1,8 +1,0 @@
-<node cfrom="-1" cto="1" nodeid="10000"><gpred>def_explicit_q</gpred><sortinfo /></node>
-<node cfrom="-1" cto="1" nodeid="10001"><gpred>poss</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
-<node cfrom="-1" cto="1" nodeid="10002"><gpred>pronoun_q</gpred><sortinfo /></node>
-<node cfrom="-1" cto="1" nodeid="10003"><gpred>pron</gpred><sortinfo cvarsort="x" pers="2" pt="std" /></node>
-<node cfrom="-1" cto="1" nodeid="10007"><realpred lemma="love" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="ques" tense="pres" /></node>
-<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="mother" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
-<node cfrom="-1" cto="1" nodeid="10005"><gpred>pron</gpred><sortinfo cvarsort="x" pers="2" pt="std" /></node>
-<node cfrom="-1" cto="1" nodeid="10006"><gpred>pronoun_q</gpred><sortinfo /></node>

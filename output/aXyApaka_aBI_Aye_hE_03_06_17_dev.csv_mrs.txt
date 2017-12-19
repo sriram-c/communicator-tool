@@ -1,5 +1,0 @@
-[ RELS: < [ _the_q LBL: h1 ARG0: x6 [ x PERS: 3 NUM: sg ] RSTR: h7 ]
-          [ _just_a_1 LBL: h2 ARG0: e4 [ e PROG: - TENSE: untensed MOOD: indicative PERF: - SF: prop ] ARG1: e5 [ e PROG: - TENSE: pres MOOD: indicative PERF: + SF: prop ] ]
-          [ _come_v_1 LBL: h2 ARG0: e5 ARG1: x6 ]
-          [ _teacher_n_of LBL: h3 ARG0: x6 ] >
-  HCONS: < h7 qeq h3 > ]

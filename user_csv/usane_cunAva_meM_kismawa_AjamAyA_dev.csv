@@ -1,0 +1,8 @@
+vaha_ne,cunAva_meM,vaha_kA,kisamawa_0,AjamA-yA,.
+he,election,he,luck,test_ed,in
+1,2,3,4,5,6
+pron,n,poss_pron,n,v,p
+,def,,,
+[m sg a],[- sg a],[m sg a],[- sg a],[- - past],
+prop,
+5:ARG1/NEQ,,4:ARG1/EQ-poss_pron-3:ARG2/NEQ,5:ARG2/NEQ,,5:ARG1/EQ-in-2:ARG2/NEQ,

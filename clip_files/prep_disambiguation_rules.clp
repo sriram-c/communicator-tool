@@ -28,8 +28,9 @@
 (defrule disambiguate_using_verb
 (declare (salience -500))
 (verb-rel-prep ?verb ?rel ?prep) ;verb = AjamA
-(user_id-lemma ?h ?lem)  ;lem = AjamA_1
-(test (eq (string-to-field (sub-string 1 (- (str-index "_" ?lem) 1) ?lem)) ?verb)) 
+;(user_id-lemma ?h ?lem)  ;lem = AjamA_1
+(user_id-lemma ?h ?verb)  ;lem = AjamA_1
+;(test (eq (string-to-field (sub-string 1 (- (str-index "_" ?lem) 1) ?lem)) ?verb)) 
 (user_inter_chunk_rel-ids ?rel ?h  ?id)
 (not (file_loaded ?id))
 =>

@@ -1,0 +1,8 @@
+mEM_kA,vaha_se,kala_0,SimalA_meM,mila-WA,.
+I,he,yesterday,SimalA,meet_was,in
+1,2,3,4,5,6
+pron,pron,time_adv,propn,v,p
+,,,,
+[- sg u],[m sg a],[- pl a],[- sg a],[- - past],
+prop,
+5:ARG1/NEQ,5:ARG2/NEQ,5:ARG1/EQ,,,5:ARG1/EQ-in-4:ARG2/NEQ,

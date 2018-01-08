@@ -1,0 +1,18 @@
+Every verb in a sentence has TAM (Tense Aspect and Modality) feature. For row 1 in user csv, we split the inflected verb into two parts.
+a) bare form
+b) TAM information
+In hindi, TAM information sometimes come together and sometimes with separated words.
+For e.g: खाया has the bare form खा. या denotes the TAM. Here, the TAM information is attached to the verb.
+In खा रहा है, रहा denotes the aspectual information and है denotes the tense. Here, the TAM information is not attached to the verb. Rather two different words denote the TAM.
+in खा सकता है, सकता denotes the modality and है denotes the tense. As we are separating the inflected verb into 2 parts, the TAM information will be grouped together.
+In Hindi, the verb agrees with the GNP of noun/pronoun/propernoun.
+e.g:	लड़का जा रहा है
+	लड़की जा रही है
+As we keep the GNP information in the respected columns of noun/pronoun/propernoun, we have decided not to keep the agreement information in verb. So we have taken a decision to keep masculine as default gender, singular as default number and third person as default person for TAM.
+for e.g:	लड़का जा रहा है
+		लड़की जा रही है
+		लड़के जा रहे हैं
+For all the 3 above, रहा है will be the default TAM.
+
+Note: Check the guideline for how to group the verb and TAM.
+For the list of TAM, you can refer to the TAM list file in ~/communicator-tool/dic/tam_mapping.csv

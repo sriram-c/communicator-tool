@@ -48,14 +48,9 @@ The TAM is separated from the root by '-'. When the root is in bare form, we pos
 
 है/था,थी are irregular verbs in the language. There are represented as it is.
 
-krdanta:
-	खा कर	खाया हुया		खाते खाते
-	खा_कर	खा-या_हुया	खा-ते खा-ते
-
 Negation - Negation indicators should be written after the verb.
 	e.g. रहा_है,नहीं
 
-Compound Verbs - 
 
 Complex Predicate - A complex predicate consists of a क्रियामूल and a क्रिया. They are joined by "+".
 	For स्नान किया - स्नान+कर-या
@@ -78,7 +73,7 @@ Particles - तक, ही, भी
 	Particles will be joined by '*'. e.g घर*तक, राम*ही, तुम*भी
 	Other words such as 'साहब', 'जी' which denote respect will also be joined by '*'.
 
-saMKyA (number) - A number can be followed by a measuring unit or by noun or (viSeRaNa+noun). When the following word is ameasuring unit then join by "#". e.g. चार#किलोमीटर, 4#किलोमीटर
+saMKyA (number) - A number can be followed by a measuring unit or by noun or (viSeRaNa+noun). When the following word is a measuring unit then join by "#". e.g. चार#किलोमीटर, 4#किलोमीटर
 
 
 When the following word is noun or (viSeRaNa+noun), then join the number by '@'. 
@@ -108,10 +103,10 @@ Noun conjunctions - और, या, आदि
 	All the nouns/pronouns/propernouns which are joined with the conjunction(s), will be written in separate "[]" and the vibhakti (if any) will be added after all the nouns/pronouns/propernouns. At the end of the construction, और will be added within "{}".
 
 End of the sentence - The punctualtion occurs at the last column of the row 1.
-		राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+		राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
 
 
-Row 1:	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+Row 1:	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 Row 2: Concept from Concept dictionary
@@ -124,8 +119,8 @@ Note: a. For Proper nouns the sense id will always be '1'.
       b. No id will be used for pronouns.
 
 Row 2:
-	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Row 3: Index for Concepts
@@ -133,8 +128,8 @@ Row 3: Index for Concepts
 Each concept (i.e. the prakrti) is indexed
 
 Row 3:
-	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -146,25 +141,13 @@ Only the categories such as proper noun, pronoun will be provided in the 4th row
 The abbreviations of categories are given below
 
 		Category	Abbr.
-		noun		n
-		verb		v
 		pronoun		pron	#Ex: वह, मैं, तुम, आप
 		proper_noun     propn	#Ex: राम, सीता
-		adverb		adv	#Ex: धीरे
-		adjective	adj	#Ex: अच्छा, छोटा
-		time adv	कालवाची	#Ex: कब
-		place adv	स्थानवाची	#Ex: कहाँ
-		wh_pronoun	wh-pron	#Ex: क्या, कौन
-		conjunction	c	#Ex: और, या
-		quantifiers	det	#Ex: बहुत
-		mass noun	massn	#Ex: चावल, चीनी, पानी
-		cardinal nos.	संख्या	#Ex: दो, 2
-		compound noun	comp_n		#Ex:बस-अड्डा	
-		relative pron	rel_pron	#Ex: जो
-		quasi-compound	quasi_comp	#Ex: एक~अच्छा~लड़का
+		
+
 Row 4:
-	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 
@@ -175,8 +158,8 @@ For an introduction of Ontological Information see Appendix 4.
 If the noun is a definite noun and not preceeded by a possessive pronoun or a determiner, write 'def'. Otherwise leave it blank as it is. If the noun is a mass noun then write 'mass'.
 
 Row 4:
- 	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+ 	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 	
@@ -202,8 +185,8 @@ GNP information is mentioned for nouns, proper nouns and pronouns. It is written
 ####Note: For 1st person gender information is not necessary. For 2nd person both gender and number fields can be left blank and marked as '-'. For nouns, gender information is not required.#####
 
 Row 5:
- 	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+ 	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 	[m sg a],[- sg a],[m sg a],
@@ -221,13 +204,13 @@ At Intrachunk level, the relations between a chunk head and its modifiers (depen
 		परिमाणवाची-विशेषण	परिमाणवाची
 		क्रमवाची-विशेषण	क्रमवाची
 The head and dependents are indexed internally. For example, the intra-chunk index of the NP एक~अच्छा_ही~लड़का_के_साथ  which as index 3 (see below in the example) is:
-	एक~अच्छा*ही~लड़का_के_साथ
+	एक@अच्छा*ही~लड़का_के_साथ
 	3.1~3.2~3.3
 
 The relation is written for the child with the intra-chunk index id of its head specified:
 
-Row 6:	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+Row 6:	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 	[m sg a],[- sg a],[m sg a],
@@ -258,18 +241,9 @@ a. kaarak relation between a verb and its participants:
 		कर्ता-समानाधिकरण		k1s
 		कर्म-समानाधिकरण		k2s
 
-c. Relation between two verbs within a sentence:
-
-		Relation		Abbr.
-
-		if-then relation	condition
-		पूर्व_कालिक_क्रिया		पूर्व_कालिक
-		सम_कालिक_क्रिया		सम_कालिक
-		
-
 Row 7: 	
-	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 	[m sg a],[- sg a],[m sg a],
@@ -285,17 +259,16 @@ Relations such as emphasis, delimitation, co-refencing are marked in this row.
 		Relation	Abbr.		
 		emphasis	emph
 		boundary/	सीमा
-		delimitation
-		Co-ref		यत्-तत्
+		Co-reference	co-ref
 
 
 Row 8:
- 	राम_ने,बस+अड्डा_पर,एक~अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
-	राम_1,बस+अड्डा_1,एक_1~अच्छा_1~लड़का_1,बात+कर_1
+ 	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.
+	राम_1,बस+अड्डा_1,एक_1@अच्छा_1~लड़का_1,बात+कर_1
 	1,2,3,4
 	propn,def,,
 	[m sg a],[- sg a],[m sg a],
 	,,3.3:संख्या-विशेषण~3.3:विशेषण,
 	4:k1,4:स्थानवाची,4:ras-k1,
-	,,3.2:emp,
+	,,3.2:emph,
 

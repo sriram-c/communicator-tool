@@ -15,7 +15,7 @@ import tkMessageBox
 ## 1. Communicator Tool ##
 ##########################
 
-CommunicatorPath='/home/mangal/communicator-tool'
+CommunicatorPath='/home/anusaaraka/communicator-tool'
 
 
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
@@ -399,6 +399,39 @@ class Example2(Frame):
                             break
                         elif ' ' in sent:
                             comOutList.append(sent)
+                            
+                    
+       
+                    def popupeditor(filelocation):
+                        os.system('gedit -s '+ filelocation)
+
+       
+        #if len(my_output) != 0:
+            #return my_output
+                    global my_finaloutput
+
+                    if len(comOutList) > 0:
+           
+                        my_finaloutput = comOutList[0]
+           
+                    elif len(comOutList) == 0:
+                        os.chdir(CommunicatorPath)
+                        sentname = filename.split('/')[len(filename.split('/'))-1]
+   
+                        newdmrsfile= 'output/'+sentname.replace('_user.csv','')+'_dev.csv_new_dmrs.txt'
+                        popupeditor(newdmrsfile)
+           
+                   
+                        my_finaloutput = subprocess.check_output(['bash run_mod_dmrs.sh '+sentname.replace('_user.csv','')+"_dev.csv"], shell=True)
+                        
+                    for sent in my_finaloutput.split('\n')[len(communicatorOut.split('\n'))-2:None:-1]:
+                        if ' ' not in sent:
+                            break
+                        elif ' ' in sent:
+                            comOutList.append(sent)
+                        
+                            
+                    #return comOutList
 
                     sentid = key.split('.')[0]
 
@@ -408,7 +441,7 @@ class Example2(Frame):
 
                     indexdic = {}
 
-                    csv = open(CommunicatorPath+'/output/'+sentcsv,'r')
+                    csv = open(CommunicatorPath+'/'+sentcsv,'r')
 
                     csvlines = csv.readlines()
 

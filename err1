@@ -1,0 +1,10 @@
+Checking Syntax Errors in CSV file ...
+Map user category to developer category ...
+Convert user csv to facts format ...
+Convert user csv facts to csv
+Traceback (most recent call last):
+  File "src/convert_facts_to_csv.py", line 59, in <module>
+    out = print_facts_into_csv(open(filenames[i], "r"), fact_info[i])
+IOError: [Errno 2] No such file or directory: 'user_intrachunk_rel.dat'
+Convert user csv to developer csv
+girl,doll,make_be_ing

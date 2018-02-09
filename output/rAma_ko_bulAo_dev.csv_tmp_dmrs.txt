@@ -1,0 +1,12 @@
+<dmrs cfrom="-1" cto="1">
+<node cfrom="-1" cto="1" nodeid="10002"><gpred>pronoun_q</gpred><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><gpred>pron</gpred><sortinfo cvarsort="x" pers="2" pt="zero" /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="call" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="comm" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>proper_q</gpred><sortinfo /></node>
+<node carg="&quot;rAma&quot;" cfrom="-1" cto="1" nodeid="10001"><gpred>named</gpred><sortinfo cvarsort="x" ind="+" num="sg" pers="3" /></node>
+<link from="10002" to="10003"><rargname>RSTR</rargname><post>H</post></link>
+<link from="10004" to="10003"><rargname>ARG1</rargname><post>NEQ</post></link>
+
+<link from="10000" to="10001"><rargname>RSTR</rargname><post>H</post></link>
+
+</dmrs>

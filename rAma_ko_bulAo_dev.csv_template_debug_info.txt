@@ -1,0 +1,2 @@
+(id-template_info	1	templates/propn.txt)
+(id-template_info	2	templates/imperative.txt)

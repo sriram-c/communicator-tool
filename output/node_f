@@ -1,0 +1,5 @@
+<node cfrom="-1" cto="1" nodeid="10000"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10002"><realpred lemma="a" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="make" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="+" sf="prop" tense="pres" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><realpred lemma="girl" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10003"><realpred lemma="doll" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>

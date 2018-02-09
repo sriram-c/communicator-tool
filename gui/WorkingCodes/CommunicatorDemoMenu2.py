@@ -15,7 +15,7 @@ import tkMessageBox
 ## 1. Communicator Tool ##
 ##########################
 
-CommunicatorPath='/home/anusaaraka/communicator-tool'
+CommunicatorPath='/home/mangal/communicator-tool'
 
 
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
@@ -390,7 +390,7 @@ class Example2(Frame):
                     communicatorOut = subprocess.check_output(['bash run_communicator.sh '+directory+'/'+sentusercsv], shell=True)
                    
                     
-                    return communicatorOut
+                    #return communicatorOut
                     
                     comOutList=[]
                     
@@ -408,7 +408,7 @@ class Example2(Frame):
 
                     indexdic = {}
 
-                    csv = open(directory+'/'+sentcsv,'r')
+                    csv = open(CommunicatorPath+'/output/'+sentcsv,'r')
 
                     csvlines = csv.readlines()
 

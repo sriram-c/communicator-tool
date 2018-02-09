@@ -15,7 +15,7 @@ import tkMessageBox
 ## 1. Communicator Tool ##
 ##########################
 
-CommunicatorPath='/home/anusaaraka/communicator-tool'
+CommunicatorPath='/home/mangal/communicator-tool'
 
 
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
@@ -424,20 +424,21 @@ class Example2(Frame):
                    
                         my_finaloutput = subprocess.check_output(['bash run_mod_dmrs.sh '+sentname.replace('_user.csv','')+"_dev.csv"], shell=True)
                         
-                    for sent in my_finaloutput.split('\n')[len(communicatorOut.split('\n'))-2:None:-1]:
-                        if ' ' not in sent:
-                            break
-                        elif ' ' in sent:
-                            comOutList.append(sent)
+                        for sent in my_finaloutput.split('\n')[len(communicatorOut.split('\n'))-2:None:-1]:
+                            if ' ' not in sent:
+                                break
+                            elif ' ' in sent:
+                                comOutList.append(sent)
+                                comOutList = comOutList[0]
                         
                             
                     #return comOutList
 
                     sentid = key.split('.')[0]
 
-                    comOutList_line1 = comOutList[0]
+                    # comOutList_line1 = comOutList
 
-                    sentcsv = sentusercsv.replace('user.csv','dev.csv')
+                    sentcsv = sentusercsv.replace('user.csv','dev.csv').replace('__','_')
 
                     indexdic = {}
 
@@ -454,9 +455,9 @@ class Example2(Frame):
                                 engword = csvlines[1].split(',')[valueindex]
 
                             #splitsent = comOutList_line1.split(engword)
-                                execoutput = comOutList_line1.replace(engword,engword+'-'+index)
+                                execoutput = comOutList[0].replace(engword,engword+'-'+index)
                                 
-                                outputdic[key]['execoutput'] = communicatorOut #execoutput
+                                outputdic[key]['execoutput'] = execoutput #execoutput
                             
                 #devcsv.close()
 
@@ -470,17 +471,22 @@ class Example2(Frame):
                     splitvalue1 = splitvalue[0]
                     splitvalue2 = splitvalue[1]
 
-                    sentid = splitvalue2[0:value.index(')')]
+                    sentid = splitvalue2[0:splitvalue2.index(')')]
 
                     sentence = outputdic[sentid]['execoutput']
 
                     indexdic = {}
 
-                    for indexedword in re.findall(r"\S+-\d+", sentence):
+                    #return sentence
+
+                    for indexedword in re.findall(r"\S+-\d", sentence):
                         for index in re.findall(r"-\d+",indexedword):
                             word = indexedword.replace(index)
+                            #return word
 
                             indexdic[index]=word
+
+                    #return indexdic
 
                     outputdic[key]['indices'] = indexdic
 

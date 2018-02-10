@@ -430,6 +430,7 @@ class Example2(Frame):
                             elif ' ' in sent:
                                 comOutList.append(sent)
                                 comOutList = comOutList[0]
+                            return comOutList
                         
                             
                     #return comOutList
@@ -481,7 +482,7 @@ class Example2(Frame):
 
                     for indexedword in re.findall(r"\S+-\d", sentence):
                         for index in re.findall(r"-\d+",indexedword):
-                            word = indexedword.replace(index)
+                            word = indexedword.replace(index, '')
                             #return word
 
                             indexdic[index]=word
@@ -504,15 +505,18 @@ class Example2(Frame):
 
                     outputdic[key]['execoutput'] = splitoutput[int(part)-1]
 
+                #return outputdic
+
                 if 'd(' in value:
 
                     splitvalue = value.split(',')
                     splitvalue1 = splitvalue[0]
                     splitvalue2 = splitvalue[1]
-
-                    sentid = splitvalue2[0:value.index(')')]
+                    
+                    sentid = splitvalue2[0:splitvalue2.index('g')+1]
 
                     sentence = outputdic[sentid]['execoutput']
+                    #return sentence
 
                     indexdic = {}
 
@@ -526,7 +530,10 @@ class Example2(Frame):
 
                     index = splitvalue1[splitvalue1.index('*')+1:len(splitvalue1)]
 
-                    word = outputdic[key]['indices'][index]
+                    #return indexdic
+
+
+                    word = outputdic[key]['indices'][index.replace('-','')]
 
                     outputdic[key]['execoutput'] = sentence.replace(word,'')
 

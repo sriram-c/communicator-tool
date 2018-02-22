@@ -1,6 +1,6 @@
-s	vaha ladakI jo gudZiyA banA rahI hE kala mumbaI jA rahI hE
-s1	ladakI-1 kala mumbaI jA rahI hE
-s2	ladakI-1 gudiyA banA rahI hE 
+s	vaha ladakI jo kala mumbaI jA rahI hE gudZiyA banA rahI hE
+s1	ladakI-1 gudiyA banA rahI hE
+s2	ladakI-1 kala mumbaI jA rahI hE 
 s1.g	t(s1)[retained_pointers]
 s2.g	t(s2)[retained_pointers]
 s1.g'	s(*-1,s1.g)[1]

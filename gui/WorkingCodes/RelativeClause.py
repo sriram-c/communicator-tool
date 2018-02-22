@@ -62,7 +62,7 @@ class relclausehandler():
             indexdic = {} # To fetch any indexed word in the sentences and stores them as id:word pair in dictionary format (inside indexdic)
             for num in '123456789':
                 if num in sent:
-                    indexed_word = re.findall('\S+'+num, sent)
+                    indexed_word = re.findall('[A-Za-z]+'+'-'+num, sent)
                     indexed_word = indexed_word[0].replace('-'+num,'')
                            
                     indexdic[num] = indexed_word
@@ -97,6 +97,7 @@ class relclausehandler():
                     #return outputdic
                     
                 communicatorOut = subprocess.check_output(['bash run_communicator.sh '+directory+'/'+sentusercsv], shell=True)
+                
                    
                     
                 #return communicatorOut
@@ -109,7 +110,7 @@ class relclausehandler():
                     elif ' ' in sent:
                         comOutList.append(sent)
                            
-                    
+                   
        
                 def popupeditor(filelocation):
                         os.system('gedit -s '+ filelocation)
@@ -142,6 +143,7 @@ class relclausehandler():
            
                    
                     my_finaloutput = subprocess.check_output(['bash run_mod_dmrs.sh '+sentusercsv.replace('_user.csv','_dev.csv')], shell=True)
+                    
                     #print '\nhello hello hello :::\n'
                     #print my_finaloutput
                     comOutList.append(my_finaloutput)
@@ -191,7 +193,8 @@ class relclausehandler():
             #print "\noutputdic::::\n", outputdic
 
 
-
+            #print '\n\noutputdic\n\n', outputdic
+            
             if 's(' in value:
 
                 splitvalue = value.split(',')
@@ -289,7 +292,7 @@ class relclausehandler():
 
         #return outputdic
             
-        if key == 's.g': # matches keys such as "s1.g", "s2.g'" and so on.
+        if key == 's.g':
             outputdic[key] = {}
             
             #print "headerdict['s.g']", str(headerdict[key])
@@ -314,6 +317,8 @@ class relclausehandler():
 
 
     print '\n\nOutput ::::::::::::::::\n\n', outputdic[key]['execoutput']+'.','\n\n'
+    
+    #print outputdic
 
 
 relclausehandler()

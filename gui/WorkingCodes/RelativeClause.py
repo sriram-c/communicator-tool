@@ -323,16 +323,17 @@ class complex_sent_handler():
         # create a new dictionary: headerdict = {'col1key' : {'info': 'col2value', 'indexdic': {'id': 'indexedItem'}, 'execoutput':''}}
     headerdict = OrderedDict()
     
-    relclauselist=[' jo ']
-    sentconjlist=[' aur ']
-    condsentlist=[' agar ']
-    
     for row in x:
         headerdict[row.split('\t')[0]] = row.split('\t')[1].strip('\n') # headerdict has left column as key and right column as value:
     
 ##################################################
 ## Conditionally defined sentence type handlers ##
 ##################################################
+
+    relclauselist=[' jo ']
+    sentconjlist=[' aur ']
+    condsentlist=[' agar ']
+
     for word in sentconjlist:    
         if word in headerdict['s']:
             conjsenthandler(headerdict)

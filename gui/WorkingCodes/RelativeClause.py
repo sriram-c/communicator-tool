@@ -15,6 +15,7 @@ import sys
 
 CommunicatorPath="/home/anusaaraka/communicator-tool"
 
+directory = os.path.dirname(os.path.abspath(sys.argv[1]))
 
 def rbind(): # creates a two lists for two columns in the header txt file where values are seperated by a "\t" character
     global col1 # will take the information such as s1 s2 s.g... etc as a list.
@@ -25,28 +26,7 @@ def rbind(): # creates a two lists for two columns in the header txt file where 
         col1.append(row.split('\t')[0])
         col2.append(row.split('\t')[1])
 
-class relclausehandler():
-
-    directory = os.path.dirname(os.path.abspath(sys.argv[1]))
-    
-    f = open(sys.argv[1],'r')
-    
-    os.chdir(CommunicatorPath)
-    
-    userdict= open(CommunicatorPath+'/dic/concept_dictionary_user.txt',"r")
-    
-    userdict=userdict.readlines()
-        
-    
-        
-    global x
-    x=f.readlines()
-    rbind()
-        # create a new dictionary: headerdict = {'col1key' : {'info': 'col2value', 'indexdic': {'id': 'indexedItem'}, 'execoutput':''}}
-    headerdict = OrderedDict()
-    for row in x:
-            headerdict[row.split('\t')[0]] = row.split('\t')[1].strip('\n') # headerdict has left column as key and right column as value:
-
+def relclausehandler(headerdict):
         
 # conditionally store values for each key from headerdic in the following dictionary format into "outputdic"
 # outputdic = {'col1key' : {'info': 'col2value', 'indices': {'id': 'indexedItem'}, 'execoutput':''}}
@@ -62,8 +42,9 @@ class relclausehandler():
             indexdic = {} # To fetch any indexed word in the sentences and stores them as id:word pair in dictionary format (inside indexdic)
             for num in '123456789':
                 if num in sent:
-                    indexed_word = re.findall('[A-Za-z]+'+'-'+num, sent)
-                    indexed_word = indexed_word[0].replace('-'+num,'')
+                    indexed_word_group = re.findall('\S+'+num, sent)
+                    indexed_word_head = re.findall('[A-Za-z]+'+'-'+num, sent)
+                    indexed_word = indexed_word_head[0].replace('-'+num,'')
                            
                     indexdic[num] = indexed_word
                     outputdic[key]['info'] = outputdic[key]['info'].replace('-'+num,'')
@@ -321,11 +302,59 @@ class relclausehandler():
     #print outputdic
 
 
-relclausehandler()
+#relclausehandler()
 
+class complex_sent_handler():
+
+    
+    f = open(sys.argv[1],'r')
+    
+    os.chdir(CommunicatorPath)
+    
+    userdict= open(CommunicatorPath+'/dic/concept_dictionary_user.txt',"r")
+    
+    userdict=userdict.readlines()
+        
+    
+        
+    global x
+    x=f.readlines()
+    rbind()
+        # create a new dictionary: headerdict = {'col1key' : {'info': 'col2value', 'indexdic': {'id': 'indexedItem'}, 'execoutput':''}}
+    headerdict = OrderedDict()
+    
+    relclauselist=[' jo ']
+    sentconjlist=[' aur ']
+    condsentlist=[' agar ']
+    
+    for row in x:
+        headerdict[row.split('\t')[0]] = row.split('\t')[1].strip('\n') # headerdict has left column as key and right column as value:
+    
+##################################################
+## Conditionally defined sentence type handlers ##
+##################################################
+    for word in sentconjlist:    
+        if word in headerdict['s']:
+            conjsenthandler(headerdict)
+        break
+    
+    for word in relclauselist:   
+        if word in headerdict['s']:
+            relclausehandler(headerdict)
+        break
+        
+    for word in condsentlist:    
+        if word in headerdict['s']:
+            condclausehandler(headerdict)
+        break       
+        
+        
+complex_sent_handler()
     
 
 
+            
+    
 
 
 

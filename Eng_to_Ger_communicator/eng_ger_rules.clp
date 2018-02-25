@@ -16,6 +16,7 @@
        (retract ?f1)
        (assert (named-mrs_id-mrs_hndl-id named_rel ?mrs_id ?hndl ?CARG) )
 )
+
 (defrule pronoun_q
 ?f2<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name pronoun_q))
@@ -23,6 +24,32 @@
        (retract ?f2)
        (assert (name-mrs_id-mrs_hndl-id "pronoun_q_rel" ?mrs_id ?hndl ?id) )
 )
+
+(defrule person
+?f31<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name person))
+=>
+       (retract ?f31)
+       (assert (name-mrs_id-mrs_hndl-id "abstr_nom_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule parg_d
+?f21<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name parg_d))
+=>
+       (retract ?f21)
+       (assert (name-mrs_id-mrs_hndl-id parg_d_rel ?mrs_id ?hndl ?id) )
+)
+
+;(defrule every_q
+;?f30<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+;(test (eq ?name every_q))
+;=>
+;       (retract ?f30)
+;       (assert (name-mrs_id-mrs_hndl-id "_jed_q_rel" ?mrs_id ?hndl ?id) )
+;)
+
+
 (defrule which_q
 ?f3<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name which_q))
@@ -73,9 +100,9 @@
 )
 
 
-(defrule card
+(defrule card_rel
 ?f26<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-(test (eq ?name card))
+(test (eq ?name card_rel))
 =>
        (retract ?f26)
        (assert (name-mrs_id-mrs_hndl-id card_rel ?mrs_id ?hndl ?id) )
@@ -111,13 +138,14 @@
 
 
 
-(defrule udef_q
-?f5<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-(test (eq ?name udef_q))
-=>
-       (retract ?f5)
-       (assert (name-mrs_id-mrs_hndl-id "focus_d_rel" ?mrs_id ?hndl ?id) )
-)
+;(defrule udef_q
+;?f5<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+;(test (eq ?name udef_q))
+;=>
+;       (retract ?f5)
+;       (assert (name-mrs_id-mrs_hndl-id "focus_d_rel" ?mrs_id ?hndl ?id) )
+;)
+
 (defrule _a_q
 ?f6<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name _a_q))
@@ -125,6 +153,7 @@
        (retract ?f6)
        (assert (name-mrs_id-mrs_hndl-id "_ein_q_rel" ?mrs_id ?hndl ?id) )
 )
+
 (defrule _the_q
 ?f7<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name _the_q))
@@ -132,6 +161,7 @@
        (retract ?f7)
        (assert (name-mrs_id-mrs_hndl-id "_def_q_rel" ?mrs_id ?hndl ?id) )
 )
+
 (defrule _for_p
 ?f8<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name _for_p))
@@ -139,6 +169,64 @@
        (retract ?f8)
        (assert (name-mrs_id-mrs_hndl-id "_cause_a_rel" ?mrs_id ?hndl ?id) )
 )
+
+(defrule _in_p
+?f41<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _in_p))
+=>
+       (retract ?f41)
+       (assert (name-mrs_id-mrs_hndl-id "_in_p_loc_rel" ?mrs_id ?hndl ?id) )
+)
+
+;(defrule _at_p_temp
+;?f48<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+;(test (eq ?name _at_p_temp))
+;=>
+;       (retract ?f48)
+;       (assert (name-mrs_id-mrs_hndl-id "_in_p_loc_rel" ?mrs_id ?hndl ?id) )
+;)
+
+
+(defrule _from_p_dir
+?f45<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _from_p_dir))
+=>
+       (retract ?f45)
+       (assert (name-mrs_id-mrs_hndl-id "udef_q_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule neg
+?f45<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name neg))
+=>
+       (retract ?f45)
+       (assert (name-mrs_id-mrs_hndl-id "_neg_a_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _about_p
+?f46<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _about_p))
+=>
+       (retract ?f46)
+       (assert (name-mrs_id-mrs_hndl-id "_ueber_p_loc_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _with_p
+?f47<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _with_p))
+=>
+       (retract ?f47)
+       (assert (name-mrs_id-mrs_hndl-id "_mit_p_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _such_a_1
+?f42<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _such_a_1))
+=>
+       (retract ?f42)
+       (assert (name-mrs_id-mrs_hndl-id "_solch_a_rel" ?mrs_id ?hndl ?id) )
+)
+
 
 (defrule pron
 ?f10<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
@@ -181,7 +269,7 @@
 	  (eq (sub-string 1 1 ?arg) "u")))
 =>
         (retract ?f171)
-        (assert (mrs_id-Args  ?mid $?pre $?post ))
+        (assert (mrs_id-Args  ?mid $?pre ?img $?post ))
 )
 
 
@@ -229,6 +317,22 @@
         (assert (name-mrs_id-mrs_hndl-id  _there_a_1 ?mid ?m_hid ?id))
        
 
+)
+
+(defrule _this_q
+?f41<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _this_q))
+=>
+       (retract ?f41)
+       (assert (name-mrs_id-mrs_hndl-id "_this_q_dem" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _into_p
+?f49<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _into_p))
+=>
+       (retract ?f49)
+       (assert (name-mrs_id-mrs_hndl-id "_in_p_dir_rel" ?mrs_id ?hndl ?id) )
 )
 
 

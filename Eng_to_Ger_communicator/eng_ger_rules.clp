@@ -167,7 +167,7 @@
 (test (eq ?name _for_p))
 =>
        (retract ?f8)
-       (assert (name-mrs_id-mrs_hndl-id "_cause_a_rel" ?mrs_id ?hndl ?id) )
+       (assert (name-mrs_id-mrs_hndl-id "_zu_p_rel" ?mrs_id ?hndl ?id) )
 )
 
 (defrule _in_p
@@ -335,6 +335,14 @@
        (assert (name-mrs_id-mrs_hndl-id "_in_p_dir_rel" ?mrs_id ?hndl ?id) )
 )
 
+
+(defrule _to_p
+?f42<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _to_p))
+=>
+       (retract ?f42)
+       (assert (name-mrs_id-mrs_hndl-id "_nach_p_rel" ?mrs_id ?hndl ?id) )
+)
 
   
 (facts)

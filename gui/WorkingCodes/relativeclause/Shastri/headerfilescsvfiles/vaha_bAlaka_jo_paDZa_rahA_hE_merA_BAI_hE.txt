@@ -1,0 +1,10 @@
+s	vaha~bAlaka jo paDZa rahA hE merA BAI hE
+s1	vaha~bAlaka-1 merA BAI hE
+s2	bAlaka-1 paDZa rahA hE
+s1.g	t(s1)[retained_pointers]
+s2.g	t(s2)[retained_pointers]
+s1.g'	s(*-1,s1.g)[1]
+s1.g''	s(*-1,s1.g)[2]
+s2.g'	d(*-1,s2.g)
+s2.g''	a(^who,s2.g')
+s.g	s1.g'+s2.g''+s1.g''

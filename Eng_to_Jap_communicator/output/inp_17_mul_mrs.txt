@@ -1,0 +1,9 @@
+SENT: The morning is clear.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: n ] RSTR: h5 BODY: h6 ]
+ [ _morning_n_of<4:11> LBL: h7 ARG0: x3 ]
+ [ _clear_a_of<15:21> LBL: h1 ARG0: e2 ARG1: x3 ARG2: i8 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 > ]
+
+

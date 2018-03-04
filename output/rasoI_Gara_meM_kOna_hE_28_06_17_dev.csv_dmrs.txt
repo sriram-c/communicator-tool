@@ -1,0 +1,8 @@
+<node cfrom="-1" cto="1" nodeid="10002"><realpred lemma="the" pos="q" /><sortinfo /></node>
+<node cfrom="-1" cto="1" nodeid="10004"><realpred lemma="be" pos="v" sense="1" /><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="ques" tense="pres" /></node>
+
+<node cfrom="-1" cto="1" nodeid="10000"><gpred>person</gpred><sortinfo cvarsort="x" num="sg" pers="3" /></node>
+<node cfrom="-1" cto="1" nodeid="10001"><gpred>which_q</gpred><sortinfo /></node>
+<link from="10001" to="10000" ><rargname>RSTR</rargname><post>H</post></link>
+<link from="10002" to="10003"><rargname>RSTR</rargname><post>H</post></link>
+<node cfrom="-1" cto="1" nodeid="10003"><realpred lemma="kitchen" pos="n" sense="1" /><sortinfo cvarsort="x" num="sg" pers="3" /></node>

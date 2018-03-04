@@ -1,0 +1,4 @@
+(id-template_info	2	provisional_templates/who_user_defined_template.txt)
+(id-template_info	0	templates/quant.txt)
+(id-template_info	1	templates/noun_with_quant.txt)
+(id-template_info	3	templates/verb.txt)

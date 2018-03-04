@@ -1,7 +1,7 @@
 #Programme to get concept dictionary info from user
-#RUN: python src/get_concept_info.py output/boy_can_eat_rice_with_the_spoon_user.csv.tmp3 dic/concept_dictionary_user.txt dic/concept_dictionary_dev.txt  dic/pronoun_lemma_dic.txt
+#RUN: python src/get_concept_info.py output/boy_can_eat_rice_with_the_spoon_user.csv.tmp3 dic/concept_dictionary_user.txt dic/concept_dictionary_dev.txt  dic/pronoun_lemma_dic.txt output/$1.tmp4 output/replace_id.dat
 #Written by Roja(28-06-17)
-#(Note: seprated below code from convert_user_to_devloper_csv.py)
+#(Note: separated below code from convert_user_to_devloper_csv.py)
 ############################################################################################################################################## 
 import sys, pdb
 
@@ -30,7 +30,7 @@ gnp_lst = []
 #Store user concept info
 for line in open(sys.argv[2]):
 	lst = line.strip().split(',')
-	concept_user_dic[lst[0]] = lst[1] 
+	concept_user_dic[lst[0]] = lst[2] #lst[2] is english column 
 
 #Store dev concept info
 for line in open(sys.argv[3]):

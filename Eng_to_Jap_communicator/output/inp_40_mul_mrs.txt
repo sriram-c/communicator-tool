@@ -1,0 +1,10 @@
+SENT: The thief ran quickly.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _thief_n_1<4:9> LBL: h7 ARG0: x3 ]
+ [ _run_v_1<10:13> LBL: h1 ARG0: e2 ARG1: x3 ]
+ [ _quick_a_1<14:22> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: e2 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 > ]
+
+

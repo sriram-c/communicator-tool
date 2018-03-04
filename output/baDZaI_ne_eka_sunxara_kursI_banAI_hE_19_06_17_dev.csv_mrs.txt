@@ -1,7 +1,0 @@
-[ RELS: < [ _the_q LBL: h1 ARG0: x8 [ x PERS: 3 NUM: sg ] RSTR: h10 ]
-          [ _a_q LBL: h2 ARG0: x9 [ x PERS: 3 NUM: sg ] RSTR: h11 ]
-          [ _beautiful_a_1 LBL: h3 ARG0: e6 [ e PROG: - TENSE: untensed MOOD: indicative PERF: - SF: prop ] ARG1: x9 ]
-          [ _make_v_1 LBL: h4 ARG0: e7 [ e PROG: - TENSE: pres MOOD: indicative PERF: + SF: prop ] ARG1: x8 ARG2: x9 ]
-          [ _carpenter_n_1 LBL: h5 ARG0: x8 ]
-          [ _chair_n_1 LBL: h3 ARG0: x9 ] >
-  HCONS: < h10 qeq h5 h11 qeq h3 > ]

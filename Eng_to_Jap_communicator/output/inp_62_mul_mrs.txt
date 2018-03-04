@@ -1,0 +1,9 @@
+SENT: He slept.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:2> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: m PT: std ] ]
+ [ pronoun_q<0:2> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _sleep_v_1<3:9> LBL: h1 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 > ]
+
+

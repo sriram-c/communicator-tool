@@ -20,8 +20,12 @@ python src/map_chunk_info.py  output/$1.tmp  > output/$1.tmp1
 python src/map_rel_nd_cat.py output/$1.tmp1 > output/$1.tmp2
 echo "Convert user csv to facts format ..."
 python src/convert_user_csv_to_facts.py output/$1.tmp2
-python src/get_prep_from_verb.py dic/verb_rel_prep_mapping.txt > prep_insertion_based_on_verb.dat
-#timeout 10 myclips -f clip_files/run.bat > output/err
+#python src/get_prep_from_verb.py dic/verb_rel_prep_mapping.txt > prep_insertion_based_on_verb.dat
+python src/get_prep_from_verb.py dic/verb_kAraka_prep_mapping.txt > prep_insertion_based_on_verb.dat
+sed 's/^/(rel_name-default_prep  /g' dic/chl_rel_prep_mapping.txt | sed 's/$/)/g' > default_prep_insertion_based_on_rel.dat
+
+timeout 10 clips -f clip_files/run.bat > output/err 2>&1
+
 echo "Convert user csv facts to csv"
 python src/convert_facts_to_csv.py output/$1.tmp2 > output/$1.tmp3
 if [ -e provisional_dics/concept_dictionary_user.txt ] ; then

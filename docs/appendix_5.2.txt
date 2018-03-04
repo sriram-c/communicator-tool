@@ -1,0 +1,10 @@
+The inter chunk relation is the dependency relation between the chunk heads of the sentences. Many of the inter chunk relations are represented with respect to the main verb of the sentence.
+For e.g. वह लड़का अाज जल्दी घर जा रहा है ।
+Here, the chunk heads are लड़का, अाज, जल्दी, घर and जा.
+In the user csv we will represent the relations present between the chunk heads and the main verb (here जा).
+
+These inerchunk relations are otherwise known as kaaraka relations.
+Some examples of kaaraka relations:
+कर्ता, कर्म, करण, सम्प्रदान, अपादान etc.
+
+Note: Check the main guideline for how to represent the relation(s) in user csv. 

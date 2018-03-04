@@ -1,0 +1,6 @@
+[ RELS: < [ pronoun_q LBL: h1 ARG0: x6 [ x PERS: 2 PT: zero ] RSTR: h9 ]
+          [ pron LBL: h2 ARG0: x6 ]
+          [ _call_v_1 LBL: h3 ARG0: e7 [ e PROG: - TENSE: pres MOOD: indicative PERF: - SF: comm ] ARG1: x6 ]
+          [ proper_q LBL: h4 ARG0: x8 [ x IND: + PERS: 3 NUM: sg ] RSTR: h10 ]
+          [ named LBL: h5 ARG0: x8 CARG: "rAma" ] >
+  HCONS: < h9 qeq h2 h10 qeq h5 > ]

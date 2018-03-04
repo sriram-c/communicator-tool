@@ -1,8 +1,0 @@
-[ RELS: < [ _the_q LBL: h1 ARG0: x8 [ x PERS: 3 NUM: pl ] RSTR: h11 ]
-          [ _the_q LBL: h2 ARG0: x10 [ x PERS: 3 NUM: sg ] RSTR: h13 ]
-          [ _sow_v_1 LBL: h3 ARG0: e7 [ e PROG: - TENSE: past MOOD: indicative PERF: - SF: prop ] ARG1: x9 [ x PERS: 3 GEND: n NUM: sg PT: std ] ARG2: x10 ]
-          [ _son_n_of LBL: h4 ARG0: x8 ]
-          [ pron LBL: h3 ARG0: x9 ]
-          [ pronoun_q LBL: h5 ARG0: x9 RSTR: h12 ]
-          [ _seed_n_1 LBL: h6 ARG0: x10 ] >
-  HCONS: < h11 qeq h4 h12 qeq h3 h13 qeq h6 > ]

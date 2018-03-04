@@ -1,0 +1,13 @@
+SENT: The principal gave Sohan a scholarship.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _the_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg ] RSTR: h5 BODY: h6 ]
+ [ _principal_n_1<4:13> LBL: h7 ARG0: x3 ]
+ [ _give_v_1<14:18> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg ] ARG3: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<19:24> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<19:24> LBL: h13 CARG: "Sohan" ARG0: x9 ]
+ [ _a_q<25:26> LBL: h15 ARG0: x8 RSTR: h16 BODY: h17 ]
+ [ _scholarship_n_1<27:39> LBL: h18 ARG0: x8 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 h16 qeq h18 > ]
+
+

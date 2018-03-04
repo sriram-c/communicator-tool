@@ -1,0 +1,8 @@
+the intra chunk relation is the dependency relation between the tokens of a chunk.
+For e.g: वह अच्छा लड़का है ।
+Here, while grouping, अच्छा लड़का will be grouped as one chunk. The relation between अच्छा and लड़का is known as intrachunk relation.
+There are numbers of intrachunk relations possible.
+विशेषण, संख्या-विशेषण, परिमाण-विशेषण etc.
+
+
+Note: Check the main guideline for how to represent the relation(s) in user csv. 

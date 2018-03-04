@@ -1,0 +1,9 @@
+SENT: A girl laughs.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _a_q<0:1> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ _girl_n_1<2:6> LBL: h7 ARG0: x3 ]
+ [ _laugh_v_at<7:14> LBL: h1 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 > ]
+
+

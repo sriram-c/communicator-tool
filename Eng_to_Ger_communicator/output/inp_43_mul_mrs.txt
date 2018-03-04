@@ -1,0 +1,25 @@
+SENT: s Rita watching the movie?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: + PERF: - ]
+RELS: < [ proper_q<2:6> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<2:6> LBL: h7 CARG: "Rita" ARG0: x3 ]
+ [ _watch_v_1<7:15> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<16:19> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _movie_n_of<20:26> LBL: h13 ARG0: x9 ARG1: i14 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: untensed MOOD: indicative PROG: - PERF: - ]
+RELS: < [ unknown<0:26> LBL: h1 ARG0: e2 ARG: x4 [ x PERS: 3 NUM: sg GEND: n ] ]
+ [ proper_q<0:6> LBL: h5 ARG0: x6 [ x PERS: 3 NUM: sg IND: + ] RSTR: h7 BODY: h8 ]
+ [ compound<0:6> LBL: h9 ARG0: e10 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x6 ARG2: x11 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<0:1> LBL: h12 ARG0: x11 RSTR: h13 BODY: h14 ]
+ [ named<0:1> LBL: h15 CARG: "S" ARG0: x11 ]
+ [ named<2:6> LBL: h9 CARG: "Rita" ARG0: x6 ]
+ [ udef_q<7:26> LBL: h18 ARG0: x4 RSTR: h19 BODY: h20 ]
+ [ nominalization<7:26> LBL: h21 ARG0: x4 ARG1: h22 ]
+ [ _watch_v_1<7:15> LBL: h22 ARG0: e23 [ e SF: prop TENSE: untensed MOOD: indicative PROG: + PERF: - ] ARG1: x6 ARG2: x24 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<16:19> LBL: h25 ARG0: x24 RSTR: h26 BODY: h27 ]
+ [ _movie_n_of<20:26> LBL: h28 ARG0: x24 ARG1: i29 ] >
+HCONS: < h0 qeq h1 h7 qeq h9 h13 qeq h15 h19 qeq h21 h26 qeq h28 > ]
+
+

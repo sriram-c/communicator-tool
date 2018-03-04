@@ -1,0 +1,11 @@
+SENT: Tom had a fruit.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ proper_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:3> LBL: h7 CARG: "Tom" ARG0: x3 ]
+ [ _have_v_1<4:7> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg ] ]
+ [ _a_q<8:9> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _fruit_n_1<10:16> LBL: h13 ARG0: x9 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+
+

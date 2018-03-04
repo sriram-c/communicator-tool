@@ -1,6 +1,6 @@
-rm -rf databases/default_prep.gdbm  
+#rm -rf databases/default_prep.gdbm  
 
- src/create-gdbm.pl databases/default_prep.gdbm < dic/chl_rel_prep_mapping.txt
+# src/create-gdbm.pl databases/default_prep.gdbm < dic/chl_rel_prep_mapping.txt
 
  ./comp.sh src/ir
  mv src/ir.out  $DMRS/bin/ir

@@ -1,0 +1,26 @@
+SENT: Are you ill?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<4:7> LBL: h4 ARG0: x3 [ x PERS: 2 PT: std ] ]
+ [ pronoun_q<4:7> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _ill_a_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _be_v_id<0:3> LBL: h1 ARG0: e2 ARG1: x3 [ x PERS: 2 PT: std ] ARG2: x4 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ pron<4:7> LBL: h5 ARG0: x3 ]
+ [ pronoun_q<4:7> LBL: h6 ARG0: x3 RSTR: h7 BODY: h8 ]
+ [ proper_q<8:12> LBL: h9 ARG0: x4 RSTR: h10 BODY: h11 ]
+ [ named<8:12> LBL: h12 CARG: "Illinois" ARG0: x4 ] >
+HCONS: < h0 qeq h1 h7 qeq h5 h10 qeq h12 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ ellipsis_ref<0:3> LBL: h1 ARG0: e2 ARG1: x3 [ x PERS: 2 PT: std ] ]
+ [ appos<4:12> LBL: h1 ARG0: e4 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x3 ARG2: x5 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ pron<4:7> LBL: h6 ARG0: x3 ]
+ [ pronoun_q<4:7> LBL: h7 ARG0: x3 RSTR: h8 BODY: h9 ]
+ [ proper_q<8:12> LBL: h10 ARG0: x5 RSTR: h11 BODY: h12 ]
+ [ named<8:12> LBL: h13 CARG: "Illinois" ARG0: x5 ] >
+HCONS: < h0 qeq h1 h8 qeq h6 h11 qeq h13 > ]
+
+

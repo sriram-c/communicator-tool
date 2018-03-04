@@ -1,0 +1,30 @@
+SENT: Am I confusing Tom?
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: + PERF: - ]
+RELS: < [ pron<3:4> LBL: h4 ARG0: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ pronoun_q<3:4> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ _confuse_v_1<5:14> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x8 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ proper_q<15:19> LBL: h9 ARG0: x8 RSTR: h10 BODY: h11 ]
+ [ named<15:19> LBL: h12 CARG: "Tom" ARG0: x8 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h10 qeq h12 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ _be_v_id<0:2> LBL: h1 ARG0: e2 ARG1: x3 [ x PERS: 1 NUM: sg PT: std ] ARG2: x4 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ pron<3:4> LBL: h5 ARG0: x3 ]
+ [ pronoun_q<3:4> LBL: h6 ARG0: x3 RSTR: h7 BODY: h8 ]
+ [ proper_q<5:19> LBL: h9 ARG0: x4 RSTR: h10 BODY: h11 ]
+ [ _confusing_a_1<5:14> LBL: h12 ARG0: e13 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x4 ]
+ [ named<15:19> LBL: h12 CARG: "Tom" ARG0: x4 ] >
+HCONS: < h0 qeq h1 h7 qeq h5 h10 qeq h12 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: ques TENSE: pres MOOD: indicative PROG: - PERF: - ]
+RELS: < [ ellipsis_ref<0:2> LBL: h1 ARG0: e2 ARG1: x3 [ x PERS: 1 NUM: sg PT: std ] ]
+ [ appos<3:19> LBL: h1 ARG0: e4 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x3 ARG2: x5 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ pron<3:4> LBL: h6 ARG0: x3 ]
+ [ pronoun_q<3:4> LBL: h7 ARG0: x3 RSTR: h8 BODY: h9 ]
+ [ proper_q<5:19> LBL: h10 ARG0: x5 RSTR: h11 BODY: h12 ]
+ [ _confusing_a_1<5:14> LBL: h13 ARG0: e14 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: x5 ]
+ [ named<15:19> LBL: h13 CARG: "Tom" ARG0: x5 ] >
+HCONS: < h0 qeq h1 h8 qeq h6 h11 qeq h13 > ]
+
+

@@ -1,0 +1,17 @@
+SENT: She did not come.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ neg<8:11> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: h9 ]
+ [ _come_v_1<12:17> LBL: h10 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h9 qeq h10 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ pron<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg GEND: f PT: std ] ]
+ [ pronoun_q<0:3> LBL: h5 ARG0: x3 RSTR: h6 BODY: h7 ]
+ [ neg<8:11> LBL: h1 ARG0: e8 [ e SF: prop TENSE: untensed MOOD: indicative PROG: - PERF: - ] ARG1: h9 ]
+ [ _come_v_1<12:17> LBL: h10 ARG0: e2 ARG1: x3 ] >
+HCONS: < h0 qeq h1 h6 qeq h4 h9 qeq h10 > ]
+
+

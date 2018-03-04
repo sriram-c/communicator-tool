@@ -1,0 +1,3 @@
+We are only keeping the ontological information about the nouns. As the user/speaker is in the best place to provide the definiteness information of a particular noun, the machine will ask the user/speaker to provide tha same. If the user is convinced that the noun s/he is talking about is a particular one and not generic then it is a definite noun; else it is not. In the user csv, the user has to give the information about the definiteness of the noun in 4th row.
+
+Note: Check the guideline.

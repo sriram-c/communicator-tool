@@ -1,6 +1,0 @@
-[ RELS: < [ _the_q LBL: h1 ARG0: x7 [ x PERS: 3 NUM: sg ] RSTR: h9 ]
-          [ _eat_v_1 LBL: h2 ARG0: e6 [ e PROG: - TENSE: pres MOOD: indicative PERF: - SF: prop ] ARG1: x7 ARG2: x8 [ x PERS: 3 NUM: sg ] ]
-          [ _cow_n_1 LBL: h3 ARG0: x7 ]
-          [ udef_q LBL: h4 ARG0: x8 RSTR: h10 ]
-          [ _grass_n_1 LBL: h5 ARG0: x8 ] >
-  HCONS: < h9 qeq h3 h10 qeq h5 > ]

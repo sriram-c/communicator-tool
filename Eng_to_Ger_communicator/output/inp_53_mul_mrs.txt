@@ -1,0 +1,13 @@
+SENT: Tom handed the book to Mary.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ proper_q<0:3> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:3> LBL: h7 CARG: "Tom" ARG0: x3 ]
+ [ _hand_v_1<4:10> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ARG3: x10 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _the_q<11:14> LBL: h11 ARG0: x9 RSTR: h12 BODY: h13 ]
+ [ _book_n_of<15:19> LBL: h14 ARG0: x9 ARG1: i15 ]
+ [ proper_q<23:28> LBL: h16 ARG0: x10 RSTR: h17 BODY: h18 ]
+ [ named<23:28> LBL: h19 CARG: "Mary" ARG0: x10 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h12 qeq h14 h17 qeq h19 > ]
+
+

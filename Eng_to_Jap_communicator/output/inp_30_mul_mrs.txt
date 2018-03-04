@@ -1,0 +1,19 @@
+SENT: Sudhira told a lie.
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ proper_q<0:7> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:7> LBL: h7 CARG: "Sudhira" ARG0: x3 ]
+ [ _tell_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:14> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ _lie_n_1<15:19> LBL: h13 ARG0: x9 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+[ LTOP: h0
+INDEX: e2 [ e SF: prop TENSE: past MOOD: indicative PROG: - PERF: - ]
+RELS: < [ proper_q<0:7> LBL: h4 ARG0: x3 [ x PERS: 3 NUM: sg IND: + ] RSTR: h5 BODY: h6 ]
+ [ named<0:7> LBL: h7 CARG: "Sudhira" ARG0: x3 ]
+ [ _tell_v_1<8:12> LBL: h1 ARG0: e2 ARG1: x3 ARG2: x9 [ x PERS: 3 NUM: sg IND: + ] ]
+ [ _a_q<13:14> LBL: h10 ARG0: x9 RSTR: h11 BODY: h12 ]
+ [ named<15:19> LBL: h13 CARG: "Lie" ARG0: x9 ] >
+HCONS: < h0 qeq h1 h5 qeq h7 h11 qeq h13 > ]
+
+

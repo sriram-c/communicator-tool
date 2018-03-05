@@ -6,7 +6,7 @@ for e.g.
 COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 
 
-python csv-generator.py parallel-sent/hnd-tamil-sent.csv tamil.csv hnd-tamil-concept.dic
+python csv-generator.py parallel-sent/hnd-tamil-sent.csv tamil.csv hnd-tamil-concept.dic karaka-vib > tamil-morph.txt
 
 tamil.csv : file containing the tamil csv o/p
 hnd-tamil-concept.dic: Hindi and Tamil concept dictionary

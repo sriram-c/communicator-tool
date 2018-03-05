@@ -3,55 +3,39 @@
 # -*- coding: utf-8 -*-
 
 #######################################################################
-#                               content                               #
 
+README
 
-# Objective
+    1. USR(Universal Semantic Representation) file structure:
+
+        each usr file should come with a schema which will contain information regarding the rows in the usr file. 
+
+    2. Individual sentences in the parallel sentence database will have uniq id.
+        e.g. 
+            id | Eng_sent   id | Hnd_sent   id | Tamil_sent   id | Telugu_sent
+
+    Logic:
+
+    1. Read the Source (Hindi) USR file and the schema and store each rows information in a hash.
+
+    1. Read Source (Hindi) and Target (Tamil) parallel sentence and map the words in the sentences.
+
+    2. Run the Target(Tamil) morph on each word of the Target(Tamil) sentence.
+
+            2.1. mark the root, vibhakti, tam for each word
+
+    3. generate following files for the target language.
     
-#    Given the csv file for a source language and morphological analyser for a target language
-#    
-#    generate following files for the target language.
-#
-#    
-#        1.  CSV file
-#        2.  Concept-dictionary
-#        3.  karaka-vibhakti mapping
-#
-#Logic:
-#
-#1. Read Hindi and Telugu parallel sentence and map the words in the sentences.
-#
-#2. Run the telugu morph on each word of the Telugu sentence
-#
-#	2.1. mark the root, vibhakti, tam for each word
-#
-#3. start writing the Telugu csv file similar to the Hindi csv rows.
-
-#
-
-#Functions:
-#
-#    1. Create_concept_dictionary
-#    2. Create_karaka_vibhakti_mapping
-#    3. create_csv
-#
+        1.  CSV file
+        2.  Concept-dictionary
+        3.  karaka-vibhakti mapping
 
 
-#
-#Assumption: 
-#
-#Hindi and Telugu sentences are parallel and word aligned (i.e same number of words in Hindi and Telugu)
-#
-#
-#Required files/tools:
-#
-#1. Hindi csv file
-#2. Hindi - Telugu parallel sentences
-#3. Telugu morph analyser
-#4. Lttoolbox
-#
+    Assumption: 
 
+    Source and Target sentences are parallel and word aligned (i.e same number of words in Hindi and Telugu)
 
+   
 #######################################################################
 
 
@@ -61,11 +45,7 @@ import subprocess
 import os.path
 import re
 
-<<<<<<< HEAD
-COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
-=======
-COMMUNICATOR_TOOL_PATH = "/home/soma/communicator-tool/"
->>>>>>> bb902af1501ec11f839b086cd457f96595fb578f
+COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 #read the hindi csv file
 
 #run tamil morph
@@ -92,12 +72,73 @@ def run_morph(tamil_snt):
     return tamil_morph
 
 
+#read csv (usr) schema
+with open(sys.argv[3], 'rb') as fp:
+    csv_schema = fp.readlines()
+fp.close()
+
+#read the src (Hindi) and Target (Tamil) parallel sentences
+
+#read src sent with id.
+src_id_snt={}
+with open(sys.argv[1], 'rb') as fp:
+    src_snts_id = fp.readlines()
+    for line in src_snts_id:
+        src_id = line.strip().split('\t')[0]
+        src_snt = line.strip().split('\t')[1]
+        src_id_snt[id] = src_snt
+
+fp.close()
+
+#read target sent with id.
+trg_id_snt={}
+with open(sys.argv[2], 'rb') as fp:
+    trg_snts_id = fp.readlines()
+    for line in trg_snts_id:
+        trg_id = line.strip().split('\t')[0]
+        trg_snt = line.strip().split('\t')[1]
+        trg_id_snt[id] = trg_snt
+
+fp.close()
+
+
+#for each snt in trg and src do the processing
+for key in trg_id_snt:
+
+    UsrId = key
+
+    trg_snt = trg_id_snt[UsrId]
+    src_snt = src_id_snt[UsrId]
+
+    #run the target (Tamil) morph
+    tamil_morph = run_morph(trg_snt)
+
+    #read csv file and convert it to wx
+    csv_file_name = UsrId + ".csv"
+    csv_file_path = COMMUNICATOR_TOOL_PATH+'user_csv/'+csv_file_name
+
+
+    #convert to wx
+    if(os.path.isfile(csv_file_path)):
+        fp_csv_wx = open(COMMUNICATOR_TOOL_PATH+'csv-generator/tools/converter/tmp_wx', 'w')
+        cmd = COMMUNICATOR_TOOL_PATH+'csv-generator/tools/converter/utf8_wx ' + csv_file_path
+        p = subprocess.Popen([cmd], stdout=fp_csv_wx,shell=True)
+        ret_code = p.wait()
+        fp_csv_wx.flush()
+        fp_csv_wx.close()
+
+        with  open(COMMUNICATOR_TOOL_PATH+'csv-generator/tools/converter/tmp_wx', 'r') as fp:
+            csv_cont = fp.readlines()
+
+
+    for line in csv_schema:
 
 
 
-#read the Hindi Tamil parallel sentences
+
 
 with open(sys.argv[1], 'rb') as fp_csv:
+
     csv_cont = csv.DictReader(fp_csv)
     
     for row in csv_cont:

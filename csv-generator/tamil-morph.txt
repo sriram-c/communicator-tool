@@ -1,0 +1,6 @@
+nAnY inwa attavaNEyE inYrYu ceVywenY
+['^nAnY/nAnY<pn><any><sg><1><d><0>/nAnY<pn><any><sg><1_exc><d><0>$\n', '^inwa/inwa<cat:det>$\n', '^attavaNEyE/attavaNE<n><0><sg><0><d><E>$\n', '^inYrYu/inYrYu<nst><null><sg><null><d><0>$\n', '^ceVywenY/ceVy<v><any><sg><1><0><nw>$\n']
+nAfkalY pottiyil veVnYrYom
+['^nAfkalY/nAnY<pn><any><pl><1_exc><d><0>$\n', '^pottiyil/potti<n><0><sg><0><d><il>$\n', '^veVnYrYom/veVl<v><any><pl><1><0><nw>$\n']
+kovinwanY wanYnYutEya pAtawwE FApakawwil koVNtAnY.
+['^kovinwanY/kovinwanY<n><0><sg><0><d><0>$\n', 'w^anYnYutEya/AnY<pn><any><sg><3><o><utEya>$\n', '^pAta/pAtu<v><any><any><any><0><a>$w^wE/wE<n><0><sg><0><d><0>/wE<n><0><sg><0><o><ti>/wE<v><any><sg><2><0><0>$\n', '^FApakawwil/FApakam<n><0><sg><0><d><il>$\n', '^koVNtAnY/koVlY<v><m><sg><3><0><nw>/koVlY<v><m><sg><3><0><nw_wAnY>/koVNtAnY<n><0><sg><0><d><0>/koVNtAnY<n><0><sg><0><o><ti>$^./.<punc>$\n']

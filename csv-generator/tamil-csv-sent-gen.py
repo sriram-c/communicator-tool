@@ -21,7 +21,7 @@ import subprocess
 import os.path
 import re
 
-COMMUNICATOR_TOOL_PATH = "/home/anusaaraka/communicator-tool/"
+COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 
 #read the concept dic
 with open(sys.argv[2],'r') as fp:

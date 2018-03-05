@@ -10,6 +10,19 @@ README
 
         each usr file should come with a schema which will contain information regarding the rows in the usr file. 
 
+        for e.g.
+
+        schema file: (currently using the default schema given in "../docs/updated_user_csv_guideline.pdf")
+
+            1: Grouping
+            2: Concept from Concept dictionary
+            3: Index for Concepts
+            4: Lexical Category (only for proper nouns, pronouns) AND Ontological Information about nouns
+            5: GNP (Gender, Number, Person) Information
+            6: Intrachunk Dependency Relations
+            7: Interchunk Dependency Relations
+            8: Discourse Relations
+
     2. Individual sentences in the parallel sentence database will have uniq id.
         e.g. 
             id | Eng_sent   id | Hnd_sent   id | Tamil_sent   id | Telugu_sent
@@ -72,7 +85,7 @@ def run_morph(tamil_snt):
     return tamil_morph
 
 
-#read csv (usr) schema
+#read usr schema file and store each row information in a hash
 with open(sys.argv[3], 'rb') as fp:
     csv_schema = fp.readlines()
 fp.close()
@@ -102,7 +115,10 @@ with open(sys.argv[2], 'rb') as fp:
 fp.close()
 
 
-#for each snt in trg and src do the processing
+#for each snt in trg and src, 
+    # align the words
+    # run morph on each target word.
+
 for key in trg_id_snt:
 
     UsrId = key

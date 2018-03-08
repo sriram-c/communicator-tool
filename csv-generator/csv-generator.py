@@ -82,6 +82,9 @@ import re
 #path for communicator tool
 COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 
+#read the target language from argument 4.
+
+trg_lang = sys.argv[4]
 #Function to run tamil morph in Apertium format
 
 def run_morph(tamil_snt):
@@ -273,13 +276,15 @@ for key in trg_id_snt:
             trg_hash['gnp'] = src_usr_hash['gnp'].strip()
             trg_hash['intra_chk'] = src_usr_hash['intra_chk'].strip()
             trg_hash['inter_chk'] = src_usr_hash['inter_chk'].strip()
+            trg_hash['disc_rel'] = src_usr_hash['disc_rel'].strip()
 
 
 
 
 
     #write the target usr file for this sentence in the order given in usr-schema file
-    fp = open(sys.argv[4],'w')
+    print "writing target usr file"
+    fp = open(usr_id+"-"+trg_lang+".usr",'w')
     for i in range(0, len(usr_schema)):
         key = usr_schema[i].split('\t')[1].strip()
         line = trg_hash[key]

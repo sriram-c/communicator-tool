@@ -11,7 +11,7 @@
 #   Given the csv file for a language, generate the sentence.
 #   Currently it is done for Tamil, Hindi
 #    
-#   
+#  Need to rename all csv occurences to usr 
 #######################################################################
 
 
@@ -21,6 +21,7 @@ import subprocess
 import os.path
 import re
 
+#path for communicator tool
 COMMUNICATOR_TOOL_PATH = "/home/sriram/phd/communicator/communicator-tool/"
 
 #read the concept dic
@@ -29,8 +30,12 @@ with open(sys.argv[2],'r') as fp:
 
 fp.close()
 
-#read the tamil csv file
-with open(COMMUNICATOR_TOOL_PATH+'csv-generator/tamil.csv', 'r') as fp:
+#read the tamil usr file
+
+#with open(COMMUNICATOR_TOOL_PATH+'csv-generator/tamil.csv', 'r') as fp:
+with open(COMMUNICATOR_TOOL_PATH+'csv-generator/'+sys.argv[1], 'r') as fp:
+
+
     #csv_cont = csv.DictReader(fp)
     csv_cont = csv.reader(fp)
     

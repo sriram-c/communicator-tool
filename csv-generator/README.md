@@ -54,7 +54,7 @@
 
 
    To Run:
-   python  csv-generator.py   usr-hnd usr-tamil  usr-schema  tamil.usr hnd-tamil-concept.dic karaka-vib 
+   python  csv-generator.py   usr-hnd usr-tamil  usr-schema  tamil hnd-tamil-concept.dic karaka-vib 
 
    Files Required:
 
@@ -68,7 +68,8 @@
 
     File output:
 
-   tamil.usr:  File contains the Tamil usr file for the corresponding Hindi usr file
+   id-tamil.usr:  File contains the Tamil usr file for the corresponding Hindi usr file
+	e.g. 1-tamil.usr, 2-tamil.usr 
    hnd-tamil-concept.dic: File contains the concept dictionary for Hindi and Tamil sentence pairs.
    karaka-vib: karaka and vibhakti mapping for  Hindi and Tamil 
     

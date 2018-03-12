@@ -175,6 +175,30 @@
        (assert (name-mrs_id-mrs_hndl-id "abstr_nom_rel" ?mrs_id ?hndl ?id) )
 )
 
+(defrule _about_p
+?f46<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _about_p))
+=>
+       (retract ?f46)
+       (assert (name-mrs_id-mrs_hndl-id "_ueber_p_loc_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _with_p
+?f47<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _with_p))
+=>
+       (retract ?f47)
+       (assert (name-mrs_id-mrs_hndl-id "_mit_p_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule _such_a_1
+?f42<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name _such_a_1))
+=>
+       (retract ?f42)
+       (assert (name-mrs_id-mrs_hndl-id "_solch_a_rel" ?mrs_id ?hndl ?id) )
+)
+
 
 ;"I" went to Germany.
 ;"He" laughs.

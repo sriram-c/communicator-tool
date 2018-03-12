@@ -80,6 +80,7 @@
 
 
 # Tamil Generation:
+#generate tamil sentence, given the tamil usr file and hnd-tamil concept dictionary
 
 sh run-tamil-gen.sh
 

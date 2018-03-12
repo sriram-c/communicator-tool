@@ -1,0 +1,2 @@
+<node carg="&quot;?&quot;" cfrom="-1" cto="1" nodeid="?1"><gpred>ord</gpred><sortinfo cvarsort="e" mood="indicative" perf="-" prog="-" sf="prop" tense="untensed" /></node>
+<link from="?1" to="?" ><rargname>ARG1</rargname><post>EQ</post></link>

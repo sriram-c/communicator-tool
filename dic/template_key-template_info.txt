@@ -17,6 +17,7 @@ pred_adj	pred_adj.txt
 adj	adj.txt
 how_pred_adj	how_pred_adj.txt
 card	cardinal.txt
+ord	ordinal.txt
 please	please.txt
 time_adv	time.txt
 place_adv	place.txt

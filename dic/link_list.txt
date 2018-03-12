@@ -28,6 +28,8 @@ k7	ARG2/NEQ
 k7te	ARG2/EQ
 k7ts	ARG2/EQ
 r6-k2	ARG2/NEQ
+karwA-karma	ARG2/NEQ
+karma-karwA	ARG1/NEQ
 
 ####noun-noun####
 ------------------------------------
@@ -49,3 +51,4 @@ rt	ARG1/H
 kriyA-viSeRaNa	ARG1/EQ
 control_v	ARG2/H
 vAkya-viSeRaNa	ARG1/H
+k7tf	ARG1/EQ

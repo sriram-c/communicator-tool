@@ -8,10 +8,23 @@
 
 # Objective
     
-#   Given the csv file for a language, generate the sentence.
+#   Given the usr file for a language, generate the target language sentence.
 #   Currently it is done for Tamil, Hindi
 #    
 #  Need to rename all csv occurences to usr 
+
+# Logic:
+#   
+    1. Read the concept dictionary
+    2. Read the usr file and capture all the information for giving to target generator (inverse of apertium morph) 
+    3. 
+
+
+Running :
+
+    python  tamil-csv-sent-gen.py tamil.csv hnd-tamil-concept.dic  > tamil-gen.tmp
+    lt-proc -cg tools/morph/Tamil/Tamilgenerator_KP_CALTS_030917.mo < tamil-gen.tmp 
+
 #######################################################################
 
 
@@ -30,15 +43,15 @@ with open(sys.argv[2],'r') as fp:
 
 fp.close()
 
-#read the tamil usr file
+#read the tamil usr file  and prepare  all the information required for generation (apertium input)
 
-#with open(COMMUNICATOR_TOOL_PATH+'csv-generator/tamil.csv', 'r') as fp:
 with open(COMMUNICATOR_TOOL_PATH+'csv-generator/'+sys.argv[1], 'r') as fp:
 
 
     #csv_cont = csv.DictReader(fp)
     csv_cont = csv.reader(fp)
     
+    # Intialise  all the information related lists
     i = 0
     group = []
     root = []
@@ -47,6 +60,10 @@ with open(COMMUNICATOR_TOOL_PATH+'csv-generator/'+sys.argv[1], 'r') as fp:
     gnp = []
     const = []
     karaka = []
+
+    #read each row in usr file according to the usr-schema provided
+    #need to do as per the usr-schema
+    #maintain a hash instead of a simple list
 
     for row in csv_cont:
 
@@ -69,11 +86,18 @@ with open(COMMUNICATOR_TOOL_PATH+'csv-generator/'+sys.argv[1], 'r') as fp:
 
     #print group,root, wid, pos, gnp, const, karaka
 
+#since the way of writing in the usr file and the apertium input in the target language are
+# different, so we have to map those acronyms as per the apertium input required.
+
+
 map_pos = {"pron":"pn"}
 
 map_gen = {"m":"any"}
 map_num = {"sg":"sg"}
 map_per = {"u":"1"}
+
+
+#for each word in the usr file generate the required information to generate the final word in the apertium generator.
 
 for i in range(0,len(wid)):
     

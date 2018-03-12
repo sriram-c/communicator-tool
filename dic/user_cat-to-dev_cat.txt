@@ -13,3 +13,5 @@ quasi_comp_n	comp_n
 conj	conj
 emp	manner_adv
 q-quant	q_quant
+kramavAcI-viSeRaNa	ord
+k7tf	manner_adv

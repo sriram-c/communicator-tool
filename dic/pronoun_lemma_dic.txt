@@ -15,3 +15,6 @@ yaha_1,pron,[- sg a]	this
 yaha_1,pron,[- pl a]	these
 vaha_1,pron,[- sg a]	that
 vaha_1,pron,[- pl a]	those
+jo_1,pron,[- sg a]	who
+jo_2,pron,[- pl a]	who
+jo_3,pron,[- sg a]	which

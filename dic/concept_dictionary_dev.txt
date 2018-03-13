@@ -452,7 +452,6 @@ any_1,det
 any_2,adj
 try_1,n
 course_1,n
-course_2,n
 coat_1,n
 cricket-match_1,comp_n
 cricket-player_1,comp_n

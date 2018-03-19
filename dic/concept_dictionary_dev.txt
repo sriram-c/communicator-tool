@@ -220,7 +220,7 @@ great_1,manner_adv
 sister_1,n
 argue_1,v
 valuable_1,adj
-many_1,det
+many_1,q_det
 very_2,intf
 too-much_3,manner_adv
 play_3,v
@@ -446,7 +446,7 @@ luck_1,n
 kitty_1,n
 book_1,n
 how-much_1,q_quant
-much_1,manner_adv
+much_1,q_det
 how-many_2,q_quant
 any_1,det
 any_2,adj
@@ -866,6 +866,7 @@ war_1,n
 consider_1,v
 juice_1,massn
 chocolate_1,n
+chocolate_2,n
 navy_1,n
 indian,adj
 stone_1,n
@@ -912,3 +913,4 @@ dead_1,n
 religious_1,adj
 archer_1,n
 disciple_1,n
+memorize_1,v

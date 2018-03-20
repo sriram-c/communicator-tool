@@ -18,3 +18,4 @@ vaha_1,pron,[- pl a]	those
 jo_1,pron,[- sg a]	who
 jo_2,pron,[- pl a]	who
 jo_3,pron,[- sg a]	which
+jo_4,pron,[- pl a]	which

@@ -110,6 +110,7 @@ fruit_1,n
 result_2,n
 Feb_1,month
 then_1,c
+then_2,manner_adv
 again_2,manner_adv
 football_1,n
 football-match_1,comp_n
@@ -271,7 +272,7 @@ want_2,v
 clever_1,adj
 conduct_1,n
 rice_1,massn
-tea_1,n
+tea_1,massn
 thing_1,n
 chew_1,v
 make walk_1,v_cause

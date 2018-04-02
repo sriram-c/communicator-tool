@@ -52,3 +52,4 @@ kriyA-viSeRaNa	ARG1/EQ
 control_v	ARG2/H
 vAkya-viSeRaNa	ARG1/H
 k7tf	ARG1/EQ
+polite	ARG1/EQ

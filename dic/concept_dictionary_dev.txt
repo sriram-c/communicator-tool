@@ -63,6 +63,7 @@ watch_3,n
 thickly_1,adj
 close_1,adj
 hour_1,n
+hour_2,n
 house_1,n
 home_2,n
 hate_1,v
@@ -323,6 +324,7 @@ fall_1,v
 guitar_1,n
 adopt_1,v
 quality_1,n
+quality_2,n
 doll_1,n
 doll_2,n
 master_1,n
@@ -365,7 +367,7 @@ life_1,n
 win_1,v
 Jun_1,month
 lie_2,n
-please_1,n
+please_1,polite
 survive_1,v
 insist_1,v
 high_1,adj
@@ -388,6 +390,7 @@ considerably_1,intf
 lot_2,n
 very_3,adj
 paper_1,n
+paper_2222222222222222222222,n
 black_1,adj
 black and white_1,adj
 collage_1,n
@@ -914,4 +917,6 @@ dead_1,n
 religious_1,adj
 archer_1,n
 disciple_1,n
-memorize_1,v
+imemorize_1,v
+diploma-course_1,comp_n
+speed_1,massn

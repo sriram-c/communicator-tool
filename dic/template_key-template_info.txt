@@ -28,3 +28,4 @@ day	day_of_week.txt
 month	month_of_year.txt
 q_quant	q_quantifier.txt
 q_det	q_det.txt
+polite	polite.txt

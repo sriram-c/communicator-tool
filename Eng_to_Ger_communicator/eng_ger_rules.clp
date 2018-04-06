@@ -1,5 +1,11 @@
-(load-facts "mrs_facts.dat")
+( load-facts "mrs_facts.dat")
 (assert (default_line))
+
+(defrule topic_focus_to_be
+(declare (salience 10))
+=>
+	(assert (topic_focus_to_be_assigned))
+)
 
 ;I live in "Germany".
 ;"Tom" slept.
@@ -19,6 +25,7 @@
 =>
        (retract ?f1)
        (assert (named-mrs_id-mrs_hndl-id named_rel ?mrs_id ?hndl ?CARG) )
+       
 )
 
 ;"He" is a thief.
@@ -37,16 +44,16 @@
 (test (eq ?name time_n))
 =>
        (retract ?f22)
-       (assert ())
+       (assert (name-mrs_id-mrs_hndl-id "time_rel" ?mrs_id ?hndl ?id))
 )
 
-;(defrule loc
-;?f23<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-;(test (eq ?name loc_nonsp))
-;=>
-;      (retract ?f23)
-;     (assert (name-mrs_id-mrs_hndl-id "unspec_loc_rel" ?mrs_id ?hndl ?id) )
-;)
+(defrule loc
+?f23<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name loc_nonsp))
+=>
+      (retract ?f23)
+     (assert (name-mrs_id-mrs_hndl-id "unspec_loc_rel" ?mrs_id ?hndl ?id) )
+)
 
 (defrule place
 ?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
@@ -63,6 +70,34 @@
        (retract ?f24)
        (assert (name-mrs_id-mrs_hndl-id "poss_rel" ?mrs_id ?hndl ?id) )
 )
+
+(defrule much
+?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name much-many_a))
+=>
+       (retract ?f24)
+       (assert (name-mrs_id-mrs_hndl-id "_viel_a_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule which
+?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+?f1<-(q_mrs_hndl-Rstr-Body  ?mrs_id ?h11 ?h12)
+?f0<-(Restrictor-Restricted  ?h11 ?h8 ) 
+(test (eq ?name which_q))
+=>
+       (retract ?f24)
+       (retract ?f0)
+      ; (assert (name-mrs_id-mrs_hndl-id "_viel_a_rel" ?mrs_id ?hndl ?id) )
+)
+
+(defrule measure
+?f24<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name measure))
+=>
+       (retract ?f24)
+      ; (assert (name-mrs_id-mrs_hndl-id "_viel_a_rel" ?mrs_id ?hndl ?id) )
+)
+
 
 (defrule poss_tense
 (declare (salience 100))
@@ -102,13 +137,13 @@
 )
 
 
-;(defrule def_explicit_q
-;?f4<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
-;(test (eq ?name def_explicit_q))
-;=>
-;      (retract ?f4)
+(defrule def_explicit_q
+?f4<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name def_explicit_q))
+=>
+      (retract ?f4)
 ;     (assert (name-mrs_id-mrs_hndl-id "udef_q_rel" ?mrs_id ?hndl ?id) )
-;)
+)
 
 
 
@@ -229,6 +264,32 @@
        (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF ?Tns) )
 )
 
+(defrule default5
+(declare (salience 7))
+?f9<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF untensed indicative ?p ?pe)
+?f33<-(name-mrs_id-mrs_hndl-id ?name ?e_mrs_id ?hndl ?id )
+(test(eq ?name parg_d))
+=>
+       (retract ?f9)
+       (assert (e_mrs_id-SF-Tns-Mood-prog-perf-STAT ?e_mrs_id ?SF none -) )
+)
+
+
+(defrule default7
+(declare (salience 8))
+?f1<-(ltop-index ?h0 ?e2 )
+?f9<-(name-mrs_id-mrs_hndl-id ?name ?e2 ?hndl ?id)
+?f33<-(name-mrs_id-mrs_hndl-id parg_d ?e_mrs_id ?hndl ?id )
+?f0<-(mrs_id-Args  ?e2 ?x9 ?x3 ) 
+(test(eq (sub-string 1 1 ?x9) "x"))
+=>
+       
+       (assert (name-mrs_id-mrs_hndl-id _von_p_sel_rel e12 h15 4 ))
+       (assert (mrs_id-Args e12 i11 ?x9))
+       (assert (e_mrs_id-SF-Tns-Mood-prog-perf e12 prop none -))
+)
+
+
 ;"I" went to Germany.
 ;"Tom" operates a school.
 (defrule default4
@@ -241,13 +302,13 @@
 ;I am a "good" doctor.
 ;The girl is "making" a doll.
 (defrule rm_arg
-;(declare (salience -5))
-?f17<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
-;?f172<-(name-mrs_id-mrs_hndl-id ?name1 ?mid1 ?m_hid ?id )
+;;(declare (salience 4 ))
+?f17<-(name-mrs_id-mrs_hndl-id ?name ?mid ?m_hid ?id )
+;;?f172<-(name-mrs_id-mrs_hndl-id parg_d ?mid1 ?m_hid ?id )
 ?f171<-(mrs_id-Args ?mid $?pre ?arg $?post)
-(test (or (eq (sub-string 1 1 ?arg) "i")
-	  (eq (sub-string 1 1 ?arg) "p")
-	  (eq (sub-string 1 1 ?arg) "u")))
+(test (or (eq (sub-string 1 1 ?arg) "u")
+	  (eq (sub-string 1 1 ?arg) "p")))
+;	  (eq (sub-string 1 1 ?arg) "u")))
 =>
         	(retract ?f171)
         	(assert (mrs_id-Args ?mid $?pre $?post ))
@@ -255,20 +316,67 @@
 )
 
 
+(defrule default6
+(declare (salience 7))
+?f9<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF untensed indicative ?p ?pe)
+?f33<-(name-mrs_id-mrs_hndl-id ?name ?e_mrs_id ?hndl ?id )
+(test (neq (str-index "_x_" ?name) FALSE))
+=>
+       (retract ?f9)
+       (assert (e_mrs_id-SF-Tns-Mood-prog-perf-STAT ?e_mrs_id ?SF none ) )
+)
+
+
+
+
+(defrule rm_arg1
+(declare (salience 5))
+?f17<-(name-mrs_id-mrs_hndl-id ?name ?mid ?m_hid ?id )
+;?f172<-(name-mrs_id-mrs_hndl-id parg_d ?mid1 ?m_hid ?id )
+?f171<-(mrs_id-Args ?mid $?pre ?arg $?post)
+(test (and (or (neq (str-index "_n_" ?name) FALSE ) 
+	       (neq (str-index "_a_" ?name) FALSE ))
+           (eq (sub-string 1 1 ?arg) "i")))
+           
+=>
+                (retract ?f171)
+                (assert (mrs_id-Args ?mid $?pre $?post))
+
+)
 
 
 
 ;(defrule rm_arg1
-;?f27<-(name-mrs_id-mrs_hndl-id  ?name ?mid ?m_hid ?id )
+;(declare (salience 5))
+;?f17<-(name-mrs_id-mrs_hndl-id ?name ?mid ?m_hid ?id )
+;;?f172<-(name-mrs_id-mrs_hndl-id parg_d ?mid1 ?m_hid ?id )
+;?f171<-(mrs_id-Args ?mid $?pre ?arg $?post) 
+;(test (and (or (neq (str-index "_n_" ?name) FALSE ) 
+ ;              (neq (str-index "_a_" ?name) FALSE ))
+  ;         (or (eq (sub-string 1 1 ?arg) "p")
+   ;            (eq (sub-string 1 1 ?arg) "i")
+    ;           (eq (sub-string 1 1 ?arg) "u"))))
+  
+;=>
+ ;               (retract ?f171)
+  ;              (assert (mrs_id-Args ?mid $?pre $?post))
+
+;)
+
+
+
+;(defrule rm_arg1
+;(declare (salience 8))
+;?f27<-(name-mrs_id-mrs_hndl-id  ?name ?e2 ?hndl ?id )
 ;?f37<-((ltop-index ?h0 ?e2 )
-;;?f272<-(name-mrs_id-mrs_hndl-id ?name1 ?mid1 ?m_hid ?id )
-;;?f271<-(mrs_id-Args ?mid $?pre ?arg $?post)
-;?f371<-(mrs_id-Args  ?e2 $?pre ?arg2 $?post )
+;?f272<-(name-mrs_id-mrs_hndl-id parg_d ?mrs_id ?hndl ?id )
+;;;?f271<-(mrs_id-Args ?mid $?pre ?arg $?post)
+;?f371<-(mrs_id-Args  ?e2 $?pre ?arg $?post )
 ;(test (eq ?name parg_d))
 ;=>
-;
+
 ;	(retract ?f371)
- ;       (assert (mrs_id-Args ?e2 $?pre ?arg2 $?post ))
+ ;       (assert (mrs_id-Args ?e2 $?pre ?arg $?post ))
 		
 
         
@@ -282,6 +390,18 @@
 
 
 
+(defrule mod_tense1
+(declare (salience 5))
+?f11<-(ltop-index ?h0 ?e2 )
+?f14<-(name-mrs_id-mrs_hndl-id parg_d ?mrs_id ?hndl ?id )
+?f1<-(name-mrs_id-mrs_hndl-id ?name ?e2 ?hndl ?id )
+?f13<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e2 ?SF ?Tns indicative ?p ?pe)
+(test (neq (str-index "_v_" ?name) FALSE))
+
+=>
+        (retract ?f13)
+        (assert (e_mrs_id-SF-Tns-Mood-prog-perf---PSV-MOOD ?e2 ?SF ?Tns apsv indicative))
+)
 
 
 
@@ -341,11 +461,16 @@
 ;He cannot swim.
 ;He was "not" running.
 (defrule neg
+(declare (salience 5))
+?f1<-(ltop-index ?h0 ?e2)
 ?f48<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+;?msg<-(topic_focus_to_be_assigned)
 (test (eq ?name neg))
 =>
        (retract ?f48)
+ ;      (retract ?msg)
        (assert (name-mrs_id-mrs_hndl-id "_neg_a_rel" ?mrs_id ?hndl ?id) )
+      ; (assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?e2 ARG0: e22 ) )
 )
 
 
@@ -357,13 +482,21 @@
        (assert (name-mrs_id-mrs_hndl-id "_in_p_dir_rel" ?mrs_id ?hndl ?id) )
 )
 
+(defrule every_q
+?f1<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+(test (eq ?name every_q))
+=>
+       (retract ?f1)
+       (assert (name-mrs_id-mrs_hndl-id "_all_q_rel" ?mrs_id ?hndl ?id) )
+)
+
 
 (defrule parg_d
 ?f50<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name parg_d))
 =>
        (retract ?f50)
-       (assert (name-mrs_id-mrs_hndl-id parg_d_rel ?mrs_id ?hndl ?id) )
+       (assert (name-mrs_id-mrs_hndl-id parg_d_rel ?mrs_id ?hndl ?id ) )
 )
 
 
@@ -376,23 +509,6 @@
        (assert (name-mrs_id-mrs_hndl-id "_von_p_rel" ?mrs_id ?hndl ?id) )
 )
 
-;(defrule defaultin
-;(declare (salience -1))
-;(default_line)
-;?f100<-(ltop-index ?h0 ?mrs_id)
-;?f101<-(name-mrs_id-mrs_hndl-id  ?name ?mrs_id ?hndl ?id)
-;?f202<-(mrs_id-Args  ?mrs_iid ?mrs_id ?iid)
-;?f203<-(name-mrs_id-mrs_hndl-id  ?name1 ?mrs_iid ?hndl ?id)
-;;(test (eq ?e2 ?mrs_id))
-;;(not (added_line))
-;=>
-;;	(assert (added_line))
-;	(if (eq ?name1 parg_d) then
-;	(assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?mrs_id ARG0: e22 ))
-;	else
-;	(assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?mrs_id ARG0: e22 ARG2: ?iid ))
-;	)
-;)
 
 
 (defrule defaultin1
@@ -400,24 +516,28 @@
 (default_line)
 ?f200<-(ltop-index ?h0 ?e2)
 ?f201<-(name-mrs_id-mrs_hndl-id  ?name ?mrs_id ?hndl ?id)
+?msg<-(topic_focus_to_be_assigned)
 ;?f202<-(mrs_id-Args  ?e10 ?mrs_id ?iid)
 ;?f203<-(name-mrs_id-mrs_hndl-id  ?name1 ?mrs_iid ?hndl ?id1)
-(test (eq ?e2 ?mrs_id))
-;;(not (added_line))
+(test (eq ?e2 ?mrs_id ))
+
 =>
-; ;      (assert (added_line))
+;; ;      (assert (added_line))
+	 (retract ?msg)
 	 (assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?mrs_id ARG0: e22 ))
 )
 
-(defrule pargdef
+;Rule made by Amandeep Kaur[Btect intern] 29/03/18
+(defrule negdef
 (declare (salience -1))
-(default_line)
+;(default_line)
+?msg<-(topic_focus_to_be_assigned)
 ?f300<-(ltop-index ?h0 ?e2)
 ?f301<-(name-mrs_id-mrs_hndl-id ?name ?e2 ?hndl ?id)
-?f302<-(name-mrs_id-mrs_hndl-id ?name1 ?mrs_id ?hndl ?id1)
-(test (eq ?name1 parg_d))
+?f302<-(name-mrs_id-mrs_hndl-id "_neg_a_rel" ?mrs_id ?hndl1 ?id1)
 =>
-	(assert (topic-or-focus_d_rel<-1:-1> LBL:  ARG1:  ARG0: e22 ARG2:  ) )
+	(retract ?msg)
+	(assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl1 ARG1: ?e2 ARG0: e22 ))
 )
   
 (facts)

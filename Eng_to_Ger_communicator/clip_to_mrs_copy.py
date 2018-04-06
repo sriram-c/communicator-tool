@@ -20,18 +20,27 @@ def e_(li,xi):  #To split CLIPS fact and store information of verb
 	word =li.split()
 	str1 = " [ e  SF: "+word[2]+" TENSE: "+word[3].replace(')','')
 
-	print word[3]
-	if ' +)' in li:
-		k=li.index(" +)")
-		str3=li[k+1:]
-		wrd = str3.split()
-		str1=str1+" STAT: "+wrd[0].replace(')','')
-	        #/[int str1
-	else:
-		str1=str1+""
+        print word[3]
+        if ' +)' in li:
+                k=li.index(" +)")
+                str3=li[k+1:]
+                wrd = str3.split()
+                str1=str1+" STAT: "+wrd[0].replace(')','')
+                #/[int str1
+        if ' -)' in li:
+                k=li.index(" -)")
+                str3=li[k+1:]
+                wrd = str3.split()
+                str1=str1+" STAT: "+wrd[0].replace(')','')
+                #/[int str1
+
+        if 'apsv' in li:
+                str1=str1+" --PSV: "+word[4]+" MOOD: "+word[5].replace(')','')
+        else:
+                str1=str1+""
         file2.write(str1)
-	file2.write(' ]')
-	del mydict[xi]
+        file2.write(' ]')
+        del mydict[xi]
 
 def x_(li,xi):  #To split CLIPS fact and store information of noun
         word =li.split()

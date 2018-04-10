@@ -27,7 +27,8 @@ Compile:
 1. cd $DMRS/clips_core_source_640/core
 2. make -f makefile
 3. mv clips $DMRS/bin/
-4. sh compile.sh
+4. cd $DMRS
+5. sh compile.sh
 
 Run:
 ----

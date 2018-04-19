@@ -1,0 +1,8 @@
+s	rameSa mere BAI kA betA hE jo muMbaI meM kAma karawA hE
+s1	rameSa mere BAI kA betA hE
+s2	rameSa muMbaI meM kAma karawA hE
+s1.g	t(s1)[retained_pointers]
+s2.g	t(s2)[retained_pointers]
+s2.g'	d(*-1,s2.g)
+s2.g''	a(^who,s2.g')
+s.g	s1.g+s2.g''+s1.g''

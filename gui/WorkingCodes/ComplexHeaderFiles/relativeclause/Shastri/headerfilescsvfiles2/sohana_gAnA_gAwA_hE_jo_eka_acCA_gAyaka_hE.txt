@@ -1,0 +1,8 @@
+s	sohana gAnA gAwA hE jo eka acCA ladZakA hE
+s1	sohana gAnA gAwA hE
+s2	sohana eka acCA ladZakA hE
+s1.g	t(s1)[retained_pointers]
+s2.g	t(s2)[retained_pointers]
+s2.g'	d(*-1,s2.g)
+s2.g''	a(^who,s2.g')
+s.g	s1.g+s2.g''+s1.g''

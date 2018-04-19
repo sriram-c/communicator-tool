@@ -1,0 +1,8 @@
+s	usa kiwAba kA nAma gIwA hE jo mEMne kala paDZI WI
+s1	usa~kiwAba kA nAma gIwA hE
+s2	usa~kiwAba-1 ko mEMne kala paDZI WI
+s1.g	t(s1)[retained_pointers]
+s2.g	t(s2)[retained_pointers]
+s2.g'	d(*-1,s2.g)
+s2.g''	a(^which,s2.g')
+s.g	s1.g+s2.g''+s1.g''

@@ -1,0 +1,6 @@
+s	mEMne vaha kiwAbeM KarIxa lI jo Apa cAhawe We.
+s1	mEMne vaha kiwAbeM KarIxa lI.
+s2	vaha kiwAbeM Apa cAhawe We.
+r.w.s	jo - vaha kiwAbeM
+r.w.g	vaha kiwAbeM - those books - which
+s.g	s1.g+which+s2.g

@@ -1,0 +1,4 @@
+s	arjuna,eka~mahAna~XanurXara,WA,jo,xroNAcArya kA,SiRya,WA
+c	,,,jo_1,,,
+s1	arjuna eka mahAna XanurXara WA
+s2	arjuna-1 xroNAcArya kA SiRya WA

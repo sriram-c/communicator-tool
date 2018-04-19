@@ -40,7 +40,7 @@ k1s	ARG2/NEQ
 k2s	ARG1/NEQ
 saMKyA-viSeRaNa	ARG1/EQ
 intf	ARG1/EQ
-
+quant	RSTR/H
 ####verb-verb link####
 -------------------------------
 causative_verb	ARG2/H
@@ -52,3 +52,4 @@ kriyA-viSeRaNa	ARG1/EQ
 control_v	ARG2/H
 vAkya-viSeRaNa	ARG1/H
 k7tf	ARG1/EQ
+polite	ARG1/EQ

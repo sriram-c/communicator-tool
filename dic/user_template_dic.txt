@@ -1,4 +1,4 @@
-{[Aja_se][xo+sAla][pahale]}	about two-years before	kala_2	yesterday	yesterday
+{[Aja_se][xo+sAla][pahale]}	about two-years ago	kala_2	yesterday	yesterday
 {[piCalA][xo~GaNtA_se]}	the last two hours	kala_2	yesterday	yesterday
 {[kala][yaha~samaya]}	tomorrow at this time	kala_1	tomorrow	tomorrow
 {[pahuzcanA_se][pahale]}	before you reached	kala_2	yesterday	yesterday

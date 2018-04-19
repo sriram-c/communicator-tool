@@ -10,12 +10,12 @@ hama_1,pron,[- pl u]	we
 wuma_1,pron,[- - m]	you
 Apa_1,pron,[- - m]	you
 jaba_1,rel_pron,	when
-waba_1,pron,	then
+waba_1,rel_pron,	then
 yaha_1,pron,[- sg a]	this
 yaha_1,pron,[- pl a]	these
 vaha_1,pron,[- sg a]	that
 vaha_1,pron,[- pl a]	those
-jo_1,pron,[- sg a]	who
-jo_2,pron,[- pl a]	who
-jo_3,pron,[- sg a]	which
-jo_4,pron,[- pl a]	which
+jo_1,rel_pron,[- sg a]	who
+jo_2,rel_pron,[- pl a]	who
+jo_3,rel_pron,[- sg a]	which
+jo_4,rel_pron,[- pl a]	which

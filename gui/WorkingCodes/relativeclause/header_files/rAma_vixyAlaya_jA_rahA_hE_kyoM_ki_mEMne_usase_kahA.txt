@@ -1,4 +1,0 @@
-s:	rAma vixyAlaya jA rahA hE kyoM ki mEMne usase kahA.
-s1:	rAma vixyAlaya jA rahA hE
-s2:	mEMne usase kahA
-s.g:	s1.g+kyoM-ki+s2.g

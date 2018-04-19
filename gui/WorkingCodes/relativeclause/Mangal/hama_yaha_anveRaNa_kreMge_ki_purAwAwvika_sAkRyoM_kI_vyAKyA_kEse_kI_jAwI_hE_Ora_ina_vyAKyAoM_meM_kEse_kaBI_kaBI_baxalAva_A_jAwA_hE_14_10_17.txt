@@ -1,6 +1,0 @@
-s	हम यह अन्वेषण करेगें कि पुरातात्विक साक्ष्यों की व्याख्या कैसे की जाती है और इन व्याख्याओं में कैसे कभी-कभी बदलाव आ जाता है.
-s1	hama_yaha_anveRaNa_kreMge
-s2	purAwAwvika_sAkRyoM_kI_vyAKyA_kEse_kI_jAwI_hE
-s3	ina_vyAKyAoM_meM_kEse_kaBI_kaBI_baxalAva_A_jAwA_hE
-r.w.g	
-sg	s1.g+ki+s2.g+Ora+s3.g

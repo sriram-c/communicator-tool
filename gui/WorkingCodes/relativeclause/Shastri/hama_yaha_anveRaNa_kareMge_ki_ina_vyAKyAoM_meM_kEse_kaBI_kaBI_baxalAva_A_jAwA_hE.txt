@@ -1,5 +1,0 @@
-s	hama yaha anveRaNa kareMge ki ina vyAKyAyoM meM kEse kaBI kaBI baxalAva A jAwA hE.
-s1	hama yaha anveRaNa kareMge
-s2	ina vyAKyAoM meM kEse kaBI kaBI baxalAva A jAwA hE
-r.w.g	 -  - 
-s.g	s1.g++s2.g

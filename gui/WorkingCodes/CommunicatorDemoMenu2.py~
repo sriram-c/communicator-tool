@@ -15,7 +15,7 @@ import tkMessageBox
 ## 1. Communicator Tool ##
 ##########################
 
-CommunicatorPath='/home/anusaaraka/communicator-tool'
+CommunicatorPath="/home/anusaaraka/communicator-tool"
 
 
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
@@ -380,6 +380,7 @@ class Example2(Frame):
             if '.g' in key and len(key) > 3: # matches keys such as "s1.g", "s2.g'" and so on.
                 value = headerdict[key]
                 outputdic[key]['info'] = value
+                
 
                 if 't(' in value:
 
@@ -390,7 +391,7 @@ class Example2(Frame):
                     communicatorOut = subprocess.check_output(['bash run_communicator.sh '+directory+'/'+sentusercsv], shell=True)
                    
                     
-                    return communicatorOut
+                    #return communicatorOut
                     
                     comOutList=[]
                     
@@ -399,16 +400,57 @@ class Example2(Frame):
                             break
                         elif ' ' in sent:
                             comOutList.append(sent)
+                            
+                    
+       
+                    def popupeditor(filelocation):
+                        os.system('gedit -s '+ filelocation)
+
+       
+        #if len(my_output) != 0:
+            #return my_output
+                    global my_finaloutput
+
+                    if len(comOutList) > 0:
+           
+                        my_finaloutput = comOutList[0]
+           
+                    elif len(comOutList) == 0:
+                        os.chdir(CommunicatorPath+'/output')
+                        #os.system('ls')
+                        
+                        #sentname = filename.split('/')[len(filename.split('/'))-1]
+                        #return sentname
+                        newdmrsfile= sentusercsv.replace('_user.csv','_dev.csv_new_dmrs.txt')
+                        
+                        #return newdmrsfile
+                        #return sentusercsv
+                        os.system('gedit -s '+ newdmrsfile)
+           
+                   
+                        my_finaloutput = subprocess.check_output(['bash run_mod_dmrs.sh '+sentusercsv.replace('_user.csv','_dev.csv')], shell=True)
+                        return my_finaloutput
+                        
+                        for sent in my_finaloutput.split('\n')[len(communicatorOut.split('\n'))-2:None:-1]:
+                            if ' ' not in sent:
+                                break
+                            elif ' ' in sent:
+                                comOutList.append(sent)
+                                comOutList = comOutList[0]
+                            #return comOutList
+                        
+                            
+                    #return comOutList
 
                     sentid = key.split('.')[0]
 
-                    comOutList_line1 = comOutList[0]
+                    # comOutList_line1 = comOutList
 
-                    sentcsv = sentusercsv.replace('user.csv','dev.csv')
+                    sentcsv = sentusercsv.replace('user.csv','dev.csv').replace('__','_')
 
                     indexdic = {}
 
-                    csv = open(directory+'/'+sentcsv,'r')
+                    csv = open(CommunicatorPath+'/'+sentcsv,'r')
 
                     csvlines = csv.readlines()
 
@@ -421,9 +463,9 @@ class Example2(Frame):
                                 engword = csvlines[1].split(',')[valueindex]
 
                             #splitsent = comOutList_line1.split(engword)
-                                execoutput = comOutList_line1.replace(engword,engword+'-'+index)
+                                execoutput = comOutList[0].replace(engword,engword+'-'+index)
                                 
-                                outputdic[key]['execoutput'] = communicatorOut #execoutput
+                                outputdic[key]['execoutput'] = execoutput #execoutput
                             
                 #devcsv.close()
 
@@ -437,17 +479,22 @@ class Example2(Frame):
                     splitvalue1 = splitvalue[0]
                     splitvalue2 = splitvalue[1]
 
-                    sentid = splitvalue2[0:value.index(')')]
+                    sentid = splitvalue2[0:splitvalue2.index(')')]
 
                     sentence = outputdic[sentid]['execoutput']
 
                     indexdic = {}
 
-                    for indexedword in re.findall(r"\S+-\d+", sentence):
+                    #return sentence
+
+                    for indexedword in re.findall(r"\S+-\d", sentence):
                         for index in re.findall(r"-\d+",indexedword):
-                            word = indexedword.replace(index)
+                            word = indexedword.replace(index, '')
+                            #return word
 
                             indexdic[index]=word
+
+                    #return indexdic
 
                     outputdic[key]['indices'] = indexdic
 
@@ -465,15 +512,18 @@ class Example2(Frame):
 
                     outputdic[key]['execoutput'] = splitoutput[int(part)-1]
 
+                #return outputdic
+
                 if 'd(' in value:
 
                     splitvalue = value.split(',')
                     splitvalue1 = splitvalue[0]
                     splitvalue2 = splitvalue[1]
-
-                    sentid = splitvalue2[0:value.index(')')]
+                    
+                    sentid = splitvalue2[0:splitvalue2.index('g')+1]
 
                     sentence = outputdic[sentid]['execoutput']
+                    #return sentence
 
                     indexdic = {}
 
@@ -487,7 +537,10 @@ class Example2(Frame):
 
                     index = splitvalue1[splitvalue1.index('*')+1:len(splitvalue1)]
 
-                    word = outputdic[key]['indices'][index]
+                    #return indexdic
+
+
+                    word = outputdic[key]['indices'][index.replace('-','')]
 
                     outputdic[key]['execoutput'] = sentence.replace(word,'')
 

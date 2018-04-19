@@ -1,4 +1,0 @@
-s	agara wuma jAoge wo mEM jAUMgA
-s1	wuma jAoge
-s2	mEM jAUMgA
-s.g	if+s1.g+then+s2.g

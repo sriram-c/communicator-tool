@@ -1,7 +1,6 @@
 #!/bin/bash
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Dr. Abhijit Debnath, RS, Anusaaraka Lab, IIIT-Hyd.
 
 import webbrowser
 from Tkinter import *
@@ -14,6 +13,9 @@ import re
 ##########################
 ## 1. Communicator Tool ##
 ##########################
+
+CommunicatorPath='/home/soma/Hindi-parser/create-hindi-parser/chl_to_dmrs'
+
 class Example(Frame): # FrameClass in which the given button will open the File Dialogue Interface to upload a usercsv
 
     def __init__(self, parent):
@@ -51,14 +53,13 @@ class Example(Frame): # FrameClass in which the given button will open the File 
     def readFile(self, filename):
 
         f = open(filename, "r+") # Open the file that has been selected through file dialogue in Tkinter.
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs') # Target the directory to whichever folder location the run_communicator.sh file is located
+        os.chdir(CommunicatorPath) # Target the directory to whichever folder location the run_communicator.sh file is located
 		
 	
         communicatorOut = subprocess.check_output(['bash run_communicator.sh '+filename], shell=True) # Store the output of the communicator.sh command that has been run upon the filename(i.e., the user.csv).
         return filename + "\n" + "\n" + communicatorOut # In the popup window, displays the list of probable english sentences preceded by the steps of executions (advanced level information).
 
-#####################################	
-    	
+#####################################    	
 
 def main(): # A command that the relevant button can call and execute.
 
@@ -122,7 +123,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
+        os.chdir(CommunicatorPath)
         conceptdic=open('dic/concept_dictionary_user.txt')
         myconcepts= conceptdic.readlines()
         
@@ -151,7 +152,7 @@ class Example4(Frame): # Starts a class of operation definitions for the simple 
 	
 	global wrd2delete
 	
-	relWrdRow = col2[col1.index("r.w.g2")].split('\n')[0].split(' - ')
+	relWrdRow = col2[col1.index("r.w.g")].split('\n')[0].split(' - ')
 	wrd2delete= relWrdRow[1]
 	
 	
@@ -267,8 +268,8 @@ class Example2(Frame):
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
-        userdict= open('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/provisional_dics/concept_dictionary_user.txt',"r")
+        os.chdir(CommunicatorPath)
+        userdict= open(CommunicatorPath+'/dic/concept_dictionary_user.txt',"r")
         userdict=userdict.readlines()
         
         
@@ -289,44 +290,45 @@ class Example2(Frame):
 	
 	# Do operations according to types of key in the dictionary
 	
-	# This code looks at the values of the second column of the last row (as splitted by "+" symbol) as keys of the dictionary "sg" and does the following operations according to given conditions.
+	
 	for key in sg:
-	    if '_' in key: # if an index id is available in a key (indicated by "_" + index number) then it identifies the mentioned sub-sentence-id in that Key and finds the sub-sentence and looks for a word having that same index attached to it.
+	    if '_' in key:
 	        for x in col1:
 	            if x in key:
 	                wordlist=col2[col1.index(x)].split('.\n')[0]
 	                wordlist=wordlist.split()
 	                for word in wordlist:
 	                    if '_'+key[key.index('_')+1] in word:
-	                       global indexedwrd
-	                       indexedwrd=word.split('_')[0]
-	                       for string in userdict:
-	                           if word ==  string.split('\n')[0].split(',')[0]:
-	                               meaning = string.split('\n')[0].split(',')[1].split('_')[0]
-	                               #return meaning
-	                               sg[key]= meaning
-	                           else:
+	                        global indexedwrd
+	                        indexedwrd=word.split('_')[0]
+	                        for string in userdict:
+	                            if word ==  string.split('\n')[0].split(',')[0]:
+	                                meaning = string.split('\n')[0].split(',')[1].split('_')[0]
+	                                #return meaning
+	                                sg[key]= meaning
+	                            else:
 	                               sg[key]=indexedwrd
 	                               #return indexedwrd
 	                               #return sg
+
+        if "'" in key:
+            
 	                               
 	    
 	    elif len(re.findall('[A-Za-z]+',key)) == 1:
 	        sg[key] = key
 	        
 	    elif '.g' in key:
-	        
 	        sentid = key[key.index('.')-1]
 	        for item in col1:
-	            if "r.w.g"+sentid in item:
+	            
+	            if "r.w.g"+sentid not in item:
+	                wrd2del = ''
+	                #return wrd2del, sentid
+	            elif "r.w.g"+sentid in item:
 	                wrd2delRow = col2[col1.index("r.w.g"+sentid)].split('\n')[0].split(' - ')
-	                #global wrd2del
 	                global wrd2del
 	                wrd2del = wrd2delRow[1]
-	                
-	            #else:
-	                #wrd2del = '' 
-	                #return wrd2del, sentid
 	                 
 	        
 	        for x in col1:
@@ -456,7 +458,7 @@ class Example3(Frame):
 
         f = open(filename, "r")
         directory = os.path.dirname(os.path.abspath(filename))
-        os.chdir('/home/anusaaraka/create-hindi-parser/chl_to_dmrs/')
+        os.chdir(CommunicatorPath)
         
 	global x
 	x=f.readlines()

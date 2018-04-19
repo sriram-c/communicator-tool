@@ -1,6 +1,0 @@
-s	mEMne use somavAra ko xeKA jaba vaha vixyAlaya gayA
-s1	mEMne use somavAra ko xeKA
-s2	somavAra ko vaha vixyAlaya gayA 
-r.w.s	jaba - somavAra ko
-r.w.g	somavAra ko - at Monday - when
-s.g	s1.g+when+s2.g

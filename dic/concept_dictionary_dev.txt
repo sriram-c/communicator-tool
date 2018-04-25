@@ -1,3 +1,5 @@
+juicy_1,adj
+fresh_1,adj
 which_2,wh-word
 last_1,n
 afternoon_1,n

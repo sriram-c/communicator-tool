@@ -50,6 +50,8 @@ The TAM is separated from the root by '-'. When the root is in bare form, we pos
 
 Negation - Negation indicators should be written after the verb.
 	e.g. रहा_है,नहीं
+The relation will be given with the verb id as shown below:
+	<verb_id>:neg
 
 
 Complex Predicate - A complex predicate consists of a क्रियामूल and a क्रिया. They are joined by "+".
@@ -254,13 +256,13 @@ Row 7:
 Row 8: Discourse Relations
 -----------
 
-Relations such as emphasis, delimitation, co-refencing are marked in this row.
+Relations such as emphasis, delimitation, co-refencing, negation are marked in this row.
 
 		Relation	Abbr.		
 		emphasis	emph
 		boundary/	सीमा
 		Co-reference	co-ref
-
+		negation	neg
 
 Row 8:
  	राम_ने,बस+अड्डा_पर,एक@अच्छा*ही~लड़का_के_साथ,बात+कर-या,.

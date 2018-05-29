@@ -5,6 +5,7 @@ vaha_1,pron,[f pl a]	they
 ve_1,pron,[m pl a]	they
 ve_1,pron,[f pl a]	they
 vaha_1,pron,[n sg a]	it
+vaha_1,pron,[n pl a]	they
 mEM_1,pron,[- sg u]	I
 hama_1,pron,[- pl u]	we
 wuma_1,pron,[- - m]	you

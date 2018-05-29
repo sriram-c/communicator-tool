@@ -258,7 +258,6 @@ cat_1,n
 bed_1,n
 blood-pressure_1,n
 sow_1,v
-spoke_1,v
 tell_3,v
 Thu_1,day
 breakfast-cereal_1,comp_n
@@ -275,6 +274,7 @@ flat_2,n
 should_3,modal
 want_2,v
 clever_1,adj
+clever_2,adj
 conduct_1,n
 rice_1,massn
 tea_1,massn
@@ -928,3 +928,12 @@ swim_1,v
 anchor_1,n
 need_2,v
 dog_1,n
+lion_1,n
+animal_1,n
+meeting_1,n
+elephant_1,n
+speak_1,v
+crow_1,n
+intention_2,n
+tooth_1,n
+intimate_1,adj

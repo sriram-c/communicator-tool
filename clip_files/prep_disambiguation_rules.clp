@@ -35,6 +35,7 @@
 (not (file_loaded ?id))
 =>
 	 (assert (prep_wrd-ids ?prep ?h ?id))
+	 (assert (file_loaded ?id)) ;Ex: ve_[usase]_prawixina_skUla_jAwe_We
 )
 
 
@@ -47,7 +48,7 @@
 
 ;(user_id-cat ?id ?cat&~poss_propn&~poss_n&~poss_pron&~place_adv&~time_adv);[rAma_kA betA] vixyAlaya_meM paDawA_hE. She does not come [here].
 ;(test (eq (gdbm_lookup_p "default_prep.gdbm" ?rel) TRUE))
-;(not (file_loaded ?id))
+(not (file_loaded ?id));Added this condition to check when preposition not loaded from any of the above rules. Ex: ve_[usase]_prawixina_skUla_jAwe_We
 =>
 ;	(bind ?prep  (gdbm_lookup "default_prep.gdbm" ?rel))
 	(assert (prep_wrd-ids (string-to-field ?prep) ?h ?id))

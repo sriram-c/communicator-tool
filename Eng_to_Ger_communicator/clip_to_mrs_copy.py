@@ -44,7 +44,7 @@ def e_(li,xi):  #To split CLIPS fact and store information of verb
 
 def x_(li,xi):  #To split CLIPS fact and store information of noun
         word =li.split()
-	str1 = " [ x PERS: "+word[2] 
+	str1 = " [ x PERS: "+word[2].replace(')','') 
 	if ' sg' or ' pl' in li:
 		if ' sg' in li:
                 	k=li.index(" sg")

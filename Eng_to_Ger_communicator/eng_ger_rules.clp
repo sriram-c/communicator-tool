@@ -1,11 +1,16 @@
 ( load-facts "mrs_facts.dat")
 (assert (default_line))
 
+
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule topic_focus_to_be
 (declare (salience 10))
 =>
 	(assert (topic_focus_to_be_assigned))
 )
+
+
+
 
 ;I live in "Germany".
 ;"Tom" slept.
@@ -167,6 +172,7 @@
 
 ;"The" boy eats a red apple.
 ;She sits on "the" chair.
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule _the_q
 ?f7<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name _the_q))
@@ -202,6 +208,7 @@
        (assert (name-mrs_id-mrs_hndl-id "_nach_p_rel" ?mrs_id ?hndl ?id) )
 )
 
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule person
 ?f60<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name person))
@@ -254,6 +261,14 @@
        (assert (x_mrs_id-pers-Num-Ind ?x_mrs_id ?pers ?Num) )
 )
 
+(defrule rm_IND1
+(declare (salience 7))
+?f11<-(x_mrs_id-pers-Num-Ind ?x_mrs_id ?pers ?Num +)
+=>
+       (retract ?f11)
+       (assert (x_mrs_id-pers-Num-Ind ?x_mrs_id ?pers) )
+)
+
 
 ;I "went" to Germany.
 ;I "will" go.
@@ -264,6 +279,7 @@
        (assert (e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF ?Tns) )
 )
 
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule default5
 (declare (salience 7))
 ?f9<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF untensed indicative ?p ?pe)
@@ -274,7 +290,7 @@
        (assert (e_mrs_id-SF-Tns-Mood-prog-perf-STAT ?e_mrs_id ?SF none -) )
 )
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule default7
 (declare (salience 8))
 ?f1<-(ltop-index ?h0 ?e2 )
@@ -301,6 +317,7 @@
 
 ;I am a "good" doctor.
 ;The girl is "making" a doll.
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule rm_arg
 ;;(declare (salience 4 ))
 ?f17<-(name-mrs_id-mrs_hndl-id ?name ?mid ?m_hid ?id )
@@ -315,7 +332,7 @@
 
 )
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule default6
 (declare (salience 7))
 ?f9<-(e_mrs_id-SF-Tns-Mood-prog-perf ?e_mrs_id ?SF untensed indicative ?p ?pe)
@@ -328,7 +345,7 @@
 
 
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule rm_arg1
 (declare (salience 5))
 ?f17<-(name-mrs_id-mrs_hndl-id ?name ?mid ?m_hid ?id )
@@ -389,7 +406,7 @@
    ;    )
 
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule mod_tense1
 (declare (salience 5))
 ?f11<-(ltop-index ?h0 ?e2 )
@@ -463,13 +480,13 @@
 (defrule neg
 (declare (salience 5))
 ?f1<-(ltop-index ?h0 ?e2)
-?f48<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
+?f48<-(name-mrs_id-mrs_hndl-id ?name ?u7 ?hndl ?id)
 ;?msg<-(topic_focus_to_be_assigned)
 (test (eq ?name neg))
 =>
        (retract ?f48)
  ;      (retract ?msg)
-       (assert (name-mrs_id-mrs_hndl-id "_neg_a_rel" ?mrs_id ?hndl ?id) )
+       (assert (name-mrs_id-mrs_hndl-id "_neg_a_rel" ?u7 ?hndl ?id) )
       ; (assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?e2 ARG0: e22 ) )
 )
 
@@ -490,7 +507,7 @@
        (assert (name-mrs_id-mrs_hndl-id "_all_q_rel" ?mrs_id ?hndl ?id) )
 )
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule parg_d
 ?f50<-(name-mrs_id-mrs_hndl-id ?name ?mrs_id ?hndl ?id)
 (test (eq ?name parg_d))
@@ -510,7 +527,7 @@
 )
 
 
-
+;Rule made by Amandeep Kaur[Btech intern]
 (defrule defaultin1
 (declare (salience -2))
 (default_line)
@@ -527,7 +544,7 @@
 	 (assert (topic-or-focus_d_rel<-1:-1> LBL: ?hndl ARG1: ?mrs_id ARG0: e22 ))
 )
 
-;Rule made by Amandeep Kaur[Btect intern] 29/03/18
+;Rule made by Amandeep Kaur[Btech intern] 29/03/18
 (defrule negdef
 (declare (salience -1))
 ;(default_line)

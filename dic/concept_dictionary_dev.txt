@@ -941,3 +941,6 @@ donkey_1,n
 idiot_1,n
 announcer_1,n
 wake_1,v
+timid_1,adj
+drown_1,v
+old_6,adj
